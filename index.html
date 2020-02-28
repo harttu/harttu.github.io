@@ -737,7 +737,6 @@ function renderPackets(){
     var searchTerm = document.getElementById('searchField').value
     var list = dataNames.filter(word => word.includes(searchTerm) ).sort()
     
-    // add here
     var container = document.getElementById('packets')
     //debugger;
     
@@ -763,17 +762,6 @@ function renderPackets(){
     container.innerHTML = context
 }
 
-// For the right side
-/*
-function renderList(list){
-    var container = document.getElementById('packets')
-    
-    var context = list.forEach(p_name => "<a id='"+p_name+"' href='#' onclick=\"show('"+p_name+"');\">"+p_name+"</a><br /> ")
-    context.join("<br /");
-
-    container.innerHTML = context
-}
-*/
 // for the show more/less info button
 function toggleDescriptionVisibilityState(){
     if(document.getElementById('description_longID').style.display == 'none') {
@@ -789,7 +777,6 @@ function toggleDescriptionVisibilityState(){
 function show(item){ 
     console.log(data)
     data.forEach( (value) => { 
-        /*console.log(value.name,item);*/
         if( item === value.name ) { 
             console.log(value.name);
             document.getElementById("nameID").innerHTML = value.name 
