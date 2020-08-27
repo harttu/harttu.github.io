@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Mantamonas plastica sp. n.</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20884290</h3>The novel marine gliding zooflagellate genus Mantamonas (Mantamonadida ord. n.: Apusozoa). <br><br>Mantamonas is a novel genus of marine gliding zooflagellates probably related to apusomonad and planomonad Apusozoa. Using phase and differential interference contrast microscopy we describe the type species <span class="blue">Mantamonas plastica sp. n.</span> from coastal sediment in Cumbria, England. Cells are -5mum long, -5mum wide, asymmetric, flattened, biciliate, and somewhat plastic. The posterior cilium, on which they glide smoothly over the substratum, is long and highly acronematic. The much thinner, shorter, and almost immobile anterior cilium points forward to the cell's left. These morphological and behavioural traits suggest that Mantamonas is a member of the protozoan phylum Apusozoa. Analyses of 18S and 28S rRNA gene sequences of <span class="yellow">Mantamonas plastica</span> and a second genetically very different marine species from coastal sediment in Tanzania show Mantamonas as a robustly monophyletic clade, that is very divergent from all other eukaryotes. 18S rRNA trees mostly place Mantamonas within unikonts (opisthokonts, Apusozoa, and Amoebozoa) but its precise position varies with phylogenetic algorithm and/or taxon and nucleotide position sampling; it may group equally weakly as sister to Planomonadida, Apusomonadida or Breviata. On 28S rRNA and joint 18/28S rRNA phylogenies (including 11 other newly obtained apusozoan/amoebozoan 28S rRNA sequences) it consistently strongly groups with Apusomonadida (Apusozoa). 
+<h2>Mantamonas plastica sp. n.</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20884290</h3>The novel marine gliding zooflagellate genus Mantamonas (Mantamonadida ord. n.: Apusozoa). <br><br>Mantamonas is a novel genus of marine gliding zooflagellates probably related to apusomonad and planomonad Apusozoa. Using phase and differential interference contrast microscopy we describe the type species <span class="match annotated ">Mantamonas plastica sp. n.</span> from coastal sediment in Cumbria, England. Cells are -5mum long, -5mum wide, asymmetric, flattened, biciliate, and somewhat plastic. The posterior cilium, on which they glide smoothly over the substratum, is long and highly acronematic. The much thinner, shorter, and almost immobile anterior cilium points forward to the cell's left. These morphological and behavioural traits suggest that Mantamonas is a member of the protozoan phylum Apusozoa. Analyses of 18S and 28S rRNA gene sequences of <span class="annotated ">Mantamonas plastica</span> and a second genetically very different marine species from coastal sediment in Tanzania show Mantamonas as a robustly monophyletic clade, that is very divergent from all other eukaryotes. 18S rRNA trees mostly place Mantamonas within unikonts (opisthokonts, Apusozoa, and Amoebozoa) but its precise position varies with phylogenetic algorithm and/or taxon and nucleotide position sampling; it may group equally weakly as sister to Planomonadida, Apusomonadida or Breviata. On 28S rRNA and joint 18/28S rRNA phylogenies (including 11 other newly obtained apusozoan/amoebozoan 28S rRNA sequences) it consistently strongly groups with Apusomonadida (Apusozoa). 
 </body></html>

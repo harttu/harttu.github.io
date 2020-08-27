@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Gordonia amarae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20154330</h3><span class="yellow">Gordonia humi sp. nov.</span>, isolated from soil.<br><br>A Gram-stain-positive, non-endospore-forming actinobacterium (<span class="yellow">CC-12301(T)</span>) was isolated from soil attached to a spawn used in the laboratory to grow the edible mushroom <span class="yellow">Agaricus brasiliensis</span>. Based on 16S rRNA gene sequence similarities, strain <span class="yellow">CC-12301(T)</span> was shown to belong to the genus Gordonia and was most closely related to the type strains of <span class="yellow">Gordonia hydrophobica</span> (97.6 % similarity), <span class="yellow">Gordonia terrae</span> (97.5 %), <span class="blue">Gordonia amarae</span> (97.5 %) and <span class="yellow">Gordonia malaquae</span> (97.4 %). The quinone system was determined to consist predominantly of menaquinone MK-9(H(2)), minor amounts of MK-8(H(2)) and MK-7(H(2)). The polar lipid profile consisted of the major compounds diphosphatidylglycerol and phosphatidylethanolamine, moderate amounts of two phosphatidylinositol mannosides and phosphatidylinositol and minor amounts of phosphatidylglycerol, three unidentified glycolipids, two phosphoglycolipids and a phospholipid. Mycolic acids were present. These chemotaxonomic traits and the major fatty acids, which were C(16 : 1) cis9, C(16 : 0), C(18 : 1) and tuberculostearic acid (10-methyl C(18 : 0)), supported the affiliation of strain <span class="yellow">CC-12301(T)</span> to the genus Gordonia. The results of physiological and biochemical tests allowed clear phenotypic differentiation of strain <span class="yellow">CC-12301(T)</span> from the most closely related Gordonia species. Strain <span class="yellow">CC-12301(T)</span> therefore represents a novel species, for which the name <span class="yellow">Gordonia humi sp. nov.</span> is proposed, with the type strain <span class="yellow">CC-12301(T)</span> (=DSM 45298(T) =CCM 7727(T)). 
+<h2>Gordonia amarae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20154330</h3><span class="annotated ">Gordonia humi sp. nov.</span>, isolated from soil.<br><br>A Gram-stain-positive, non-endospore-forming actinobacterium (<span class="annotated ">CC-12301(T)</span>) was isolated from soil attached to a spawn used in the laboratory to grow the edible mushroom <span class="annotated ">Agaricus brasiliensis</span>. Based on 16S rRNA gene sequence similarities, strain <span class="annotated ">CC-12301(T)</span> was shown to belong to the genus Gordonia and was most closely related to the type strains of <span class="annotated ">Gordonia hydrophobica</span> (97.6 % similarity), <span class="annotated ">Gordonia terrae</span> (97.5 %), <span class="match annotated ">Gordonia amarae</span> (97.5 %) and <span class="annotated ">Gordonia malaquae</span> (97.4 %). The quinone system was determined to consist predominantly of menaquinone MK-9(H(2)), minor amounts of MK-8(H(2)) and MK-7(H(2)). The polar lipid profile consisted of the major compounds diphosphatidylglycerol and phosphatidylethanolamine, moderate amounts of two phosphatidylinositol mannosides and phosphatidylinositol and minor amounts of phosphatidylglycerol, three unidentified glycolipids, two phosphoglycolipids and a phospholipid. Mycolic acids were present. These chemotaxonomic traits and the major fatty acids, which were C(16 : 1) cis9, C(16 : 0), C(18 : 1) and tuberculostearic acid (10-methyl C(18 : 0)), supported the affiliation of strain <span class="annotated ">CC-12301(T)</span> to the genus Gordonia. The results of physiological and biochemical tests allowed clear phenotypic differentiation of strain <span class="annotated ">CC-12301(T)</span> from the most closely related Gordonia species. Strain <span class="annotated ">CC-12301(T)</span> therefore represents a novel species, for which the name <span class="annotated ">Gordonia humi sp. nov.</span> is proposed, with the type strain <span class="annotated ">CC-12301(T)</span> (=DSM 45298(T) =CCM 7727(T)). 
 </body></html>

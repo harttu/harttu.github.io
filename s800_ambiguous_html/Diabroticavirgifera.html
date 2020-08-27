@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Diabrotica virgifera</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20840610</h3>The role of abscisic acid and water stress in root herbivore-induced leaf resistance. <br><br>* Herbivore-induced systemic resistance occurs in many plants and is commonly assumed to be adaptive. The mechanisms triggered by leaf-herbivores that lead to systemic resistance are largely understood, but it remains unknown how and why root herbivory also increases resistance in leaves. * To resolve this, we investigated the mechanism by which the root herbivore <span class="blue">Diabrotica virgifera</span> induces resistance against lepidopteran herbivores in the leaves of <span class="yellow">Zea mays</span>. * <span class="blue">Diabrotica virgifera</span> infested plants suffered less aboveground herbivory in the field and showed reduced growth of <span class="yellow">Spodoptera littoralis</span> caterpillars in the laboratory. Root herbivory did not lead to a jasmonate-dependent response in the leaves, but specifically triggered water loss and abscisic acid (ABA) accumulation. The induction of ABA by itself was partly responsible for the induction of leaf defenses, but not for the resistance against <span class="yellow">S. littoralis</span>. Root-herbivore induced hydraulic changes in the leaves, however, were crucial for the increase in insect resistance. * We conclude that the induced leaf resistance after root feeding is the result of hydraulic changes, which reduce the quality of the leaves for chewing herbivores. This finding calls into question whether root-herbivore induced leaf-resistance is an evolved response. 
+<h2>Diabrotica virgifera</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20840610</h3>The role of abscisic acid and water stress in root herbivore-induced leaf resistance. <br><br>* Herbivore-induced systemic resistance occurs in many plants and is commonly assumed to be adaptive. The mechanisms triggered by leaf-herbivores that lead to systemic resistance are largely understood, but it remains unknown how and why root herbivory also increases resistance in leaves. * To resolve this, we investigated the mechanism by which the root herbivore <span class="match annotated ">Diabrotica virgifera</span> induces resistance against lepidopteran herbivores in the leaves of <span class="annotated ">Zea mays</span>. * <span class="match annotated ">Diabrotica virgifera</span> infested plants suffered less aboveground herbivory in the field and showed reduced growth of <span class="annotated ">Spodoptera littoralis</span> caterpillars in the laboratory. Root herbivory did not lead to a jasmonate-dependent response in the leaves, but specifically triggered water loss and abscisic acid (ABA) accumulation. The induction of ABA by itself was partly responsible for the induction of leaf defenses, but not for the resistance against <span class="annotated ">S. littoralis</span>. Root-herbivore induced hydraulic changes in the leaves, however, were crucial for the increase in insect resistance. * We conclude that the induced leaf resistance after root feeding is the result of hydraulic changes, which reduce the quality of the leaves for chewing herbivores. This finding calls into question whether root-herbivore induced leaf-resistance is an evolved response. 
 </body></html>

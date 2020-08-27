@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Trichoderma reesei</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21220037</h3>New insights into the mechanism of light modulated signaling by heterotrimeric G-proteins: ENVOY acts on gna1 and gna3 and adjusts cAMP levels in <span class="blue">Trichoderma reesei</span> (<span class="yellow">Hypocrea jecorina</span>). <br><br>Sensing of environmental signals is often mediated by G-protein coupled receptors and their cognate heterotrimeric G-proteins. In <span class="blue">Trichoderma reesei</span> (<span class="yellow">Hypocrea jecorina</span>) the signals transmitted via the G-protein alpha subunits GNA1 and GNA3 cause considerable modulation of cellulase transcript levels and the extent of this adjustment is dependent on the light status. We therefore intended to elucidate the underlying mechanism connecting light response and heterotrimeric G-protein signaling. Analysis of double mutant strains showed that constitutive activation of GNA1 or GNA3 in the absence of the PAS/LOV domain protein ENVOY (ENV1) leads to the phenotype of constitutive G-alpha activation in darkness. In light, however the deletion-phenotype of Deltaenv1 was observed with respect to growth, conidiation and cellulase gene transcription. Additionally deletion of env1 causes decreased intracellular cAMP accumulation, even upon constitutive activation of GNA1 or GNA3. While supplementation of cAMP caused an even more severe growth phenotype of all strains lacking env1 in light, addition of the phosphodiesterase inhibitor caffeine rescued the growth phenotype of these strains. ENV1 is consequently suggested to connect the light response pathway with nutrient signaling by the heterotrimeric G-protein cascade by adjusting transcript levels of gna1 and gna3 and action on cAMP levels - presumably through inhibition of a phosphodiesterase. 
+<h2>Trichoderma reesei</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21220037</h3>New insights into the mechanism of light modulated signaling by heterotrimeric G-proteins: ENVOY acts on gna1 and gna3 and adjusts cAMP levels in <span class="match annotated ">Trichoderma reesei</span> (<span class="annotated ">Hypocrea jecorina</span>). <br><br>Sensing of environmental signals is often mediated by G-protein coupled receptors and their cognate heterotrimeric G-proteins. In <span class="match annotated ">Trichoderma reesei</span> (<span class="annotated ">Hypocrea jecorina</span>) the signals transmitted via the G-protein alpha subunits GNA1 and GNA3 cause considerable modulation of cellulase transcript levels and the extent of this adjustment is dependent on the light status. We therefore intended to elucidate the underlying mechanism connecting light response and heterotrimeric G-protein signaling. Analysis of double mutant strains showed that constitutive activation of GNA1 or GNA3 in the absence of the PAS/LOV domain protein ENVOY (ENV1) leads to the phenotype of constitutive G-alpha activation in darkness. In light, however the deletion-phenotype of Deltaenv1 was observed with respect to growth, conidiation and cellulase gene transcription. Additionally deletion of env1 causes decreased intracellular cAMP accumulation, even upon constitutive activation of GNA1 or GNA3. While supplementation of cAMP caused an even more severe growth phenotype of all strains lacking env1 in light, addition of the phosphodiesterase inhibitor caffeine rescued the growth phenotype of these strains. ENV1 is consequently suggested to connect the light response pathway with nutrient signaling by the heterotrimeric G-protein cascade by adjusting transcript levels of gna1 and gna3 and action on cAMP levels - presumably through inhibition of a phosphodiesterase. 
 </body></html>

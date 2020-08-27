@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>B. burgdorferi strain 31</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20935092</h3>Whole-genome sequences of thirteen isolates of <span class="yellow">Borrelia burgdorferi</span>.<br><br><span class="yellow">Borrelia burgdorferi</span> is a causative agent of Lyme disease in North America and Eurasia. The first complete genome sequence of <span class="blue">B. burgdorferi strain 31</span>, available for more than a decade, has assisted research on the pathogenesis of Lyme disease. Because a single genome sequence is not sufficient to understand the relationship between genotypic and geographic variation and disease phenotype, we determined the whole-genome sequences of 13 additional <span class="yellow">B. burgdorferi</span> isolates that span the range of natural variation. These sequences should allow improved understanding of pathogenesis and provide a foundation for novel detection, diagnosis, and prevention strategies. 
+<h2>B. burgdorferi strain 31</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20935092</h3>Whole-genome sequences of thirteen isolates of <span class="annotated ">Borrelia burgdorferi</span>.<br><br><span class="annotated ">Borrelia burgdorferi</span> is a causative agent of Lyme disease in North America and Eurasia. The first complete genome sequence of <span class="match annotated ">B. burgdorferi strain 31</span>, available for more than a decade, has assisted research on the pathogenesis of Lyme disease. Because a single genome sequence is not sufficient to understand the relationship between genotypic and geographic variation and disease phenotype, we determined the whole-genome sequences of 13 additional <span class="annotated ">B. burgdorferi</span> isolates that span the range of natural variation. These sequences should allow improved understanding of pathogenesis and provide a foundation for novel detection, diagnosis, and prevention strategies. 
 </body></html>

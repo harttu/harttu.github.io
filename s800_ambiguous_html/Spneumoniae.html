@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>S. pneumoniae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097633</h3>Genome annotation and intraviral interactome for the <span class="yellow">Streptococcus pneumoniae</span> virulent phage Dp-1. <br><br><span class="yellow">Streptococcus pneumoniae</span> causes several diseases, including pneumonia, septicemia, and meningitis. Phage Dp-1 is one of the very few isolated virulent <span class="blue">S. pneumoniae</span> bacteriophages, but only a partial characterization is currently available. Here, we confirmed that Dp-1 belongs to the family Siphoviridae. Then, we determined its complete genomic sequence of 56,506 bp. It encodes 72 open reading frames, of which 44 have been assigned a function. We have identified putative promoters, Rho-independent terminators, and several genomic clusters. We provide evidence that Dp-1 may be using a novel DNA replication system as well as redirecting host protein synthesis through queuosine-containing tRNAs. Liquid chromatography-mass spectrometry analysis of purified phage Dp-1 particles identified at least eight structural proteins. Finally, using comprehensive <span class="yellow">yeast</span> two-hybrid screens, we identified 156 phage protein interactions, and this intraviral interactome was used to propose a structural model of Dp-1. 
+<h2>S. pneumoniae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097633</h3>Genome annotation and intraviral interactome for the <span class="annotated ">Streptococcus pneumoniae</span> virulent phage Dp-1. <br><br><span class="annotated ">Streptococcus pneumoniae</span> causes several diseases, including pneumonia, septicemia, and meningitis. Phage Dp-1 is one of the very few isolated virulent <span class="match annotated ">S. pneumoniae</span> bacteriophages, but only a partial characterization is currently available. Here, we confirmed that Dp-1 belongs to the family Siphoviridae. Then, we determined its complete genomic sequence of 56,506 bp. It encodes 72 open reading frames, of which 44 have been assigned a function. We have identified putative promoters, Rho-independent terminators, and several genomic clusters. We provide evidence that Dp-1 may be using a novel DNA replication system as well as redirecting host protein synthesis through queuosine-containing tRNAs. Liquid chromatography-mass spectrometry analysis of purified phage Dp-1 particles identified at least eight structural proteins. Finally, using comprehensive <span class="unannotated ">yeast</span> two-hybrid screens, we identified 156 phage protein interactions, and this intraviral interactome was used to propose a structural model of Dp-1. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Galaxias anomalus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21426342</h3>Introduced <span class="yellow">brown trout</span> alter native acanthocephalan infections in native fish.<br><br>1. Native parasite acquisition provides introduced species with the potential to modify native host-parasite dynamics by acting as parasite reservoirs (with the 'spillback' of infection increasing the parasite burdens of native hosts) or sinks (with the 'dilution' of infection decreasing the parasite burdens of native hosts) of infection. 2. In New Zealand, negative correlations between the presence of introduced <span class="yellow">brown trout</span> (<span class="yellow">Salmo trutta</span>) and native parasite burdens of the native <span class="yellow">roundhead galaxias</span> (<span class="blue">Galaxias anomalus</span>) have been observed, suggesting that parasite dilution is occurring. 3. We used a multiple-scale approach combining field observations, experimental infections and dynamic population modelling to investigate whether native Acanthocephalus galaxii acquisition by <span class="yellow">brown trout</span> alters host-parasite dynamics in native <span class="yellow">roundhead galaxias</span>. 4. Field observations demonstrated higher infection intensity in introduced <span class="yellow">trout</span> than in <span class="yellow">native galaxias</span>, but only small, immature <span class="yellow">A</span>. galaxii were present in <span class="yellow">trout</span>. Experimental infections also demonstrated that <span class="yellow">A</span>. galaxii does not mature in <span class="yellow">trout</span>, although parasite establishment and initial growth were similar in the two hosts. Taken together, these results support the hypothesis that <span class="yellow">trout</span> may serve as an infection sink for the native parasite. 5. However, dynamic population modelling predicts that <span class="yellow">A</span>. galaxii infections in <span class="yellow">native galaxias</span><span class="yellow">galaxias</span> should at most only be slightly reduced by dilution in the presence of <span class="yellow">trout</span>. Rather, model exploration indicates parasite densities in <span class="yellow">galaxias</span> are highly sensitive to <span class="yellow">galaxias</span> predation on infected amphipods, and to relative abundances of <span class="yellow">galaxias</span> and <span class="yellow">trout</span>. Hence, <span class="yellow">trout</span> presence may instead reduce parasite burdens in <span class="yellow">galaxias</span> by either reducing <span class="yellow">galaxias</span> density or by altering <span class="yellow">galaxias</span> foraging behaviour. 
+<h2>Galaxias anomalus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21426342</h3>Introduced <span class="annotated ">brown trout</span> alter native acanthocephalan infections in native fish.<br><br>1. Native parasite acquisition provides introduced species with the potential to modify native host-parasite dynamics by acting as parasite reservoirs (with the 'spillback' of infection increasing the parasite burdens of native hosts) or sinks (with the 'dilution' of infection decreasing the parasite burdens of native hosts) of infection. 2. In New Zealand, negative correlations between the presence of introduced <span class="annotated ">brown trout</span> (<span class="annotated ">Salmo trutta</span>) and native parasite burdens of the native <span class="annotated ">roundhead galaxias</span> (<span class="match annotated ">Galaxias anomalus</span>) have been observed, suggesting that parasite dilution is occurring. 3. We used a multiple-scale approach combining field observations, experimental infections and dynamic population modelling to investigate whether native Acanthocephalus galaxii acquisition by <span class="annotated ">brown trout</span> alters host-parasite dynamics in native <span class="annotated ">roundhead galaxias</span>. 4. Field observations demonstrated higher infection intensity in introduced <span class="unannotated ">trout</span> than in <span class="annotated ">native galaxias</span>, but only small, immature <span class="unannotated ">A</span>. galaxii were present in <span class="annotated ">trout</span>. Experimental infections also demonstrated that <span class="unannotated ">A</span>. galaxii does not mature in <span class="annotated ">trout</span>, although parasite establishment and initial growth were similar in the two hosts. Taken together, these results support the hypothesis that <span class="annotated ">trout</span> may serve as an infection sink for the native parasite. 5. However, dynamic population modelling predicts that <span class="unannotated ">A</span>. galaxii infections in <span class="unannotated ">native galaxias</span><span class="annotated ">galaxias</span> should at most only be slightly reduced by dilution in the presence of <span class="annotated ">trout</span>. Rather, model exploration indicates parasite densities in <span class="annotated ">galaxias</span> are highly sensitive to <span class="annotated ">galaxias</span> predation on infected amphipods, and to relative abundances of <span class="annotated ">galaxias</span> and <span class="annotated ">trout</span>. Hence, <span class="annotated ">trout</span> presence may instead reduce parasite burdens in <span class="annotated ">galaxias</span> by either reducing <span class="annotated ">galaxias</span> density or by altering <span class="annotated ">galaxias</span> foraging behaviour. 
 </body></html>

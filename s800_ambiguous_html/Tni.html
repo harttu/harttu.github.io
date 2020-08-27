@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>T. ni</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21199020</h3>Genetic analysis of the xenobiotic resistance-associated ABC gene subfamilies of the Lepidoptera. <br><br>Some ATP-binding cassette (ABC) transporters of subfamilies B, C and G confer resistance to xenobiotics including insecticides. We identified genes of these subfamilies expressed by the lepidopterans <span class="yellow">Trichoplusia ni</span> and <span class="yellow">Bombyx mori</span>. The <span class="yellow">B. mori</span> genome includes eight, six and 13 ABC-B, -C and -G genes, respectively, which encode P-glycoprotein, multidrug resistance protein, MRP, and breast cancer resistance protein, BCRP, homologues. Among the ABC-C and -G subfamilies, gene duplication contributes to protein diversity. We have identified three ABC-B and two ABC-C <span class="blue">T. ni</span> genes. Analyses of the <span class="blue">T. ni</span> MRP (TrnMRP) revealed unique features, including the potential for TrnMRP4 hyperglycosylation and the alternative splicing of TrnMRP1. Taken together, these attributes of moth multidrug resistance-associated ABCs may confer distinct functional capacities to xenobiotic efflux. 
+<h2>T. ni</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21199020</h3>Genetic analysis of the xenobiotic resistance-associated ABC gene subfamilies of the Lepidoptera. <br><br>Some ATP-binding cassette (ABC) transporters of subfamilies B, C and G confer resistance to xenobiotics including insecticides. We identified genes of these subfamilies expressed by the lepidopterans <span class="annotated ">Trichoplusia ni</span> and <span class="annotated ">Bombyx mori</span>. The <span class="annotated ">B. mori</span> genome includes eight, six and 13 ABC-B, -C and -G genes, respectively, which encode P-glycoprotein, multidrug resistance protein, MRP, and breast cancer resistance protein, BCRP, homologues. Among the ABC-C and -G subfamilies, gene duplication contributes to protein diversity. We have identified three ABC-B and two ABC-C <span class="match annotated ">T. ni</span> genes. Analyses of the <span class="match annotated ">T. ni</span> MRP (TrnMRP) revealed unique features, including the potential for TrnMRP4 hyperglycosylation and the alternative splicing of TrnMRP1. Taken together, these attributes of <span class="linneaus_only ">moth</span> multidrug resistance-associated ABCs may confer distinct functional capacities to xenobiotic efflux. 
 </body></html>

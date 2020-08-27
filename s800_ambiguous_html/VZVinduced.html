@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>VZV-induced</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20980518</h3>Upregulation of CXCL10 in <span class="yellow">human</span> dorsal root ganglia during experimental and natural <span class="yellow">varicella-zoster virus</span> infection. <br><br>Varicella-zoster <span class="yellow">virus</span> (<span class="yellow">VZV</span>) reactivation causes herpes zoster, which is accompanied by an influx of lymphocytes into affected ganglia, but the stimulus for this infiltrate is not known. We report that <span class="yellow">VZV</span> infection of ganglia leads to increased CXCL10 production in vitro, in an explant ganglion model and in naturally infected dorsal root ganglia (DRG) during herpes zoster. Lymphocytes expressing the receptor for CXCL10, CXCR3, were also observed throughout naturally infected ganglia during herpes zoster, including immediately adjacent to neurons. This study identifies <span class="blue">VZV-induced</span> CXCL10 as a potential driver of T lymphocyte recruitment into DRG during herpes zoster. 
+<h2>VZV-induced</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20980518</h3>Upregulation of CXCL10 in <span class="annotated ">human</span> dorsal root ganglia during experimental and natural <span class="annotated ">varicella-zoster virus</span> infection. <br><br>Varicella-zoster <span class="unannotated ">virus</span> (<span class="annotated ">VZV</span>) reactivation causes herpes zoster, which is accompanied by an influx of lymphocytes into affected ganglia, but the stimulus for this infiltrate is not known. We report that <span class="annotated ">VZV</span> infection of ganglia leads to increased CXCL10 production in vitro, in an explant ganglion model and in naturally infected dorsal root ganglia (DRG) during herpes zoster. Lymphocytes expressing the receptor for CXCL10, CXCR3, were also observed throughout naturally infected ganglia during herpes zoster, including immediately adjacent to neurons. This study identifies <span class="match annotated ">VZV-induced</span> CXCL10 as a potential driver of T lymphocyte recruitment into DRG during herpes zoster. 
 </body></html>

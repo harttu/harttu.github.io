@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>cow</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21037006</h3>Complete genome sequence of <span class="yellow">Corynebacterium pseudotuberculosis I19</span>, a strain isolated from a <span class="blue">cow</span> in Israel with bovine mastitis. <br><br>This work reports the completion and annotation of the genome sequence of <span class="yellow">Corynebacterium pseudotuberculosis I19</span>, isolated from an Israeli dairy <span class="blue">cow</span> with severe clinical mastitis. To present the whole-genome sequence, a de novo assembly approach using 33 million short (25-bp) mate-paired SOLiD reads only was applied. Furthermore, the automatic, functional, and manual annotations were attained with the use of several algorithms in a multistep process. 
+<h2>cow</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21037006</h3>Complete genome sequence of <span class="annotated ">Corynebacterium pseudotuberculosis I19</span>, a strain isolated from a <span class="match annotated ">cow</span> in Israel with <span class="linneaus_only ">bovine</span> mastitis. <br><br>This work reports the completion and annotation of the genome sequence of <span class="annotated ">Corynebacterium pseudotuberculosis I19</span>, isolated from an Israeli dairy <span class="match annotated ">cow</span> with severe clinical mastitis. To present the whole-genome sequence, a de novo assembly approach using 33 million short (25-bp) mate-paired SOLiD reads only was applied. Furthermore, the automatic, functional, and manual annotations were attained with the use of several algorithms in a multistep process. 
 </body></html>

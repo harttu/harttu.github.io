@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Asian elephants</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21855306</h3>Infraciliature of eight Triplumaria species (Ciliophora, Entodiniomorphida) from <span class="blue">Asian elephants</span> with the description of six new species. <br><br>Intestinal ciliates excreted in the feces of <span class="blue">Asian elephants</span> were surveyed. Fourteen species in the order Entodiniomorphida were detected. Nine Triplumaria species in the family Cycloposthiidae were found. Using the silver impregnation, two known species, T. antis and T. dvoinosi, were redescribed and six new species, T. sukuna n. sp., T. zuze n. sp., T. solea n. sp., T. suwako n. sp., T. fulgora n. sp., and T. harpagonis n. sp., were described. T. sukuna, T. zuze, T. solea, and T. suwako have the perivestibular polybrachykinety along the vestibular opening. The buccal infraciliary bands of T. suwako are similar to those of <span class="yellow">T. selenica</span> found from elephants and the buccal infraciliary bands of T. sukuna, T. zuze, and T. solea are similar to those of T. grypoclunis described from rhinoceroses. T. antis, T. dvoinosi, T. fulgora, and T. harpagonis have the vestibular polybrachykinety extending down inside the vestibulum as found in rumen ciliates in the family Ophryoscolecidae. The caudalial ciliary zones of T. dvoinosi and T. fulgora were retractable as found in rumen ophryoscolecids. <span class="yellow">Raabena bella</span> and Pseudoentodinium elephantis showed high composition values over 30%. Ciliate densities in the three fecal samples were 0.15, 1.09, and 2.07x10(4)/ml. 
+<h2>Asian elephants</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21855306</h3>Infraciliature of eight Triplumaria species (Ciliophora, Entodiniomorphida) from <span class="match annotated ">Asian elephants</span> with the description of six new species. <br><br>Intestinal ciliates excreted in the feces of <span class="match annotated ">Asian elephants</span> were surveyed. Fourteen species in the order Entodiniomorphida were detected. Nine Triplumaria species in the family Cycloposthiidae were found. Using the silver impregnation, two known species, T. antis and T. dvoinosi, were redescribed and six new species, T. sukuna n. sp., T. zuze n. sp., T. solea n. sp., T. suwako n. sp., T. fulgora n. sp., and T. harpagonis n. sp., were described. T. sukuna, T. zuze, T. solea, and T. suwako have the perivestibular polybrachykinety along the vestibular opening. The buccal infraciliary bands of T. suwako are similar to those of <span class="annotated ">T. selenica</span> found from elephants and the buccal infraciliary bands of T. sukuna, T. zuze, and T. solea are similar to those of T. grypoclunis described from rhinoceroses. T. antis, T. dvoinosi, T. fulgora, and T. harpagonis have the vestibular polybrachykinety extending down inside the vestibulum as found in rumen ciliates in the family Ophryoscolecidae. The caudalial ciliary zones of T. dvoinosi and T. fulgora were retractable as found in rumen ophryoscolecids. <span class="annotated ">Raabena bella</span> and Pseudoentodinium elephantis showed high composition values over 30%. Ciliate densities in the three fecal samples were 0.15, 1.09, and 2.07x10(4)/ml. 
 </body></html>

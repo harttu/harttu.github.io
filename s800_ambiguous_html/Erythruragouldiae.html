@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Erythrura gouldiae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20880021</h3>Interference from <span class="yellow">long-tailed finches</span> constrains reproduction in the endangered <span class="yellow">Gouldian finch</span>. <br><br>1. Interspecific interference competition for nest-sites among cavity-nesting birds can have important effects on reproductive fitness and the distribution of competing species. 2. We observed interference at nest-sites in free-living populations of the endangered <span class="yellow">Gouldian finch</span> (<span class="blue">Erythrura gouldiae</span>) and sympatric <span class="yellow">long-tailed finch</span> (<span class="yellow">Poephila acuticauda</span>), and also experimentally tested the relative strength and effect of interference at nest-sites in captive populations. 3. Levels of competitive interference at nest-sites in the wild were high for <span class="yellow">Gouldian</span>, but not <span class="yellow">long-tailed finches</span>, and interference frequency was inversely related to <span class="yellow">Gouldian finch</span> reproductive success. High levels of interference conferred reduced fledging success but did not affect offspring condition. 4. Captive experiments corroborated the field data, also demonstrating fitness costs of interspecific competition, and that <span class="yellow">long-tailed finches</span> dominated resources under standardized conditions. 5. Such asymmetrical competition dynamics are likely to constrain reproduction in <span class="yellow">Gouldian finch</span> populations, potentially affecting recruitment and hindering the recovery of remaining populations of this endangered species. 
+<h2>Erythrura gouldiae</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20880021</h3>Interference from <span class="annotated ">long-tailed finches</span> constrains reproduction in the endangered <span class="annotated ">Gouldian finch</span>. <br><br>1. Interspecific interference competition for nest-sites among cavity-nesting birds can have important effects on reproductive fitness and the distribution of competing species. 2. We observed interference at nest-sites in free-living populations of the endangered <span class="annotated ">Gouldian finch</span> (<span class="match annotated ">Erythrura gouldiae</span>) and sympatric <span class="annotated ">long-tailed finch</span> (<span class="annotated ">Poephila acuticauda</span>), and also experimentally tested the relative strength and effect of interference at nest-sites in captive populations. 3. Levels of competitive interference at nest-sites in the wild were high for <span class="annotated ">Gouldian</span>, but not <span class="annotated ">long-tailed finches</span>, and interference frequency was inversely related to <span class="annotated ">Gouldian finch</span> reproductive success. High levels of interference conferred reduced fledging success but did not affect offspring condition. 4. Captive experiments corroborated the field data, also demonstrating fitness costs of interspecific competition, and that <span class="annotated ">long-tailed finches</span> dominated resources under standardized conditions. 5. Such asymmetrical competition dynamics are likely to constrain reproduction in <span class="annotated ">Gouldian finch</span> populations, potentially affecting recruitment and hindering the recovery of remaining populations of this endangered species. 
 </body></html>

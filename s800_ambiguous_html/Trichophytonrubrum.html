@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Trichophyton rubrum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21145410</h3>Sequenced dermatophyte strains: growth rate, conidiation, drug susceptibilities, and virulence in an invertebrate model. <br><br>Although dermatophytes are the most common cause of <span class="yellow">fungal</span> infections in the world, their basic biology is not well understood. The recent sequencing and annotation of the genomes of five representative dermatophyte species allows for the creation of hypotheses as to how they cause disease and have adapted to their distinct environments. An understanding of the microbiology of these strains will be essential for testing these hypotheses. This study is the first to generally characterize these five sequenced strains of dermatophytes for their microbiological aspects. We measured the growth rate on solid medium and found differences between species, with <span class="yellow">Microsporum gypseum</span> CBS118893 having the fastest growth and <span class="blue">Trichophyton rubrum</span> CBS118892 the slowest. We also compared different media for conidia production and found that the highest numbers of conidia were produced when dermatophytes were grown on MAT agar. We determined the Minimum Inhibitory Concentration (MIC) of nine antifungal agents and confirmed susceptibility to antifungals commonly used as selectable markers. Finally, we tested virulence in the <span class="yellow">Galleria mellonella</span> (<span class="yellow">wax moth</span>) larvae model but found the results variable. These results increase our understanding of the microbiology and molecular biology of these dermatophyte strains and will be of use in advancing hypothesis-driven research about dermatophytes. 
+<h2>Trichophyton rubrum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21145410</h3>Sequenced dermatophyte strains: growth rate, conidiation, drug susceptibilities, and virulence in an invertebrate model. <br><br>Although dermatophytes are the most common cause of <span class="unannotated ">fungal</span> infections in the world, their basic biology is not well understood. The recent sequencing and annotation of the genomes of five representative dermatophyte species allows for the creation of hypotheses as to how they cause disease and have adapted to their distinct environments. An understanding of the microbiology of these strains will be essential for testing these hypotheses. This study is the first to generally characterize these five sequenced strains of dermatophytes for their microbiological aspects. We measured the growth rate on solid medium and found differences between species, with <span class="annotated ">Microsporum gypseum</span> CBS118893 having the fastest growth and <span class="match annotated ">Trichophyton rubrum</span> CBS118892 the slowest. We also compared different media for conidia production and found that the highest numbers of conidia were produced when dermatophytes were grown on MAT agar. We determined the Minimum Inhibitory Concentration (MIC) of nine antifungal agents and confirmed susceptibility to antifungals commonly used as selectable markers. Finally, we tested virulence in the <span class="annotated ">Galleria mellonella</span> (<span class="annotated ">wax moth</span>) larvae model but found the results variable. These results increase our understanding of the microbiology and molecular biology of these dermatophyte strains and will be of use in advancing hypothesis-driven research about dermatophytes. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>pink bollworm</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21815956</h3>Insertion of an intact CR1 retrotransposon in a cadherin gene linked with <span class="yellow">Bt</span> resistance in the <span class="blue">pink bollworm</span>, <span class="yellow">Pectinophora gossypiella</span>. <br><br>Three mutations in the <span class="yellow">Pectinophora gossypiella</span> cadherin gene PgCad1 are linked with resistance to <span class="yellow">Bacillus thuringiensis</span> (<span class="yellow">Bt</span>) toxin Cry1Ac. Here we show that the r3 mutation entails recent insertion into PgCad1 of an active <span class="yellow">chicken</span> repeat (CR1) retrotransposon, designated CR1-1_Pg. Unlike most other CR1 elements, CR1-1_Pg is intact, transcribed by a flanking promoter, contains target site duplications and has a relatively low number of copies. Examination of transcripts from the PgCad1 locus revealed that CR1-1_Pg disrupts both the cadherin protein and a long noncoding RNA of unknown function. Together with previously reported data, these findings show that transposable elements disrupt eight of 12 cadherin alleles linked with resistance to Cry1Ac in three lepidopteran species, indicating that the cadherin locus is a common target for disruption by transposable elements. 
+<h2>pink bollworm</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21815956</h3>Insertion of an intact CR1 retrotransposon in a cadherin gene linked with <span class="unannotated ">Bt</span> resistance in the <span class="match annotated ">pink bollworm</span>, <span class="annotated ">Pectinophora gossypiella</span>. <br><br>Three mutations in the <span class="annotated ">Pectinophora gossypiella</span> cadherin gene PgCad1 are linked with resistance to <span class="annotated ">Bacillus thuringiensis</span> (<span class="annotated ">Bt</span>) toxin Cry1Ac. Here we show that the r3 mutation entails recent insertion into PgCad1 of an active <span class="annotated ">chicken</span> repeat (CR1) retrotransposon, designated CR1-1_Pg. Unlike most other CR1 elements, CR1-1_Pg is intact, transcribed by a flanking promoter, contains target site duplications and has a relatively low number of copies. Examination of transcripts from the PgCad1 locus revealed that CR1-1_Pg disrupts both the cadherin protein and a long noncoding RNA of unknown function. Together with previously reported data, these findings show that transposable elements disrupt eight of 12 cadherin alleles linked with resistance to Cry1Ac in three lepidopteran species, indicating that the cadherin locus is a common target for disruption by transposable elements. 
 </body></html>

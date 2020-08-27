@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>H99</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20719250</h3>Regulation of virulence factors, carbon utilization and virulence by SNF1 in <span class="yellow">Cryptococcus neoformans JEC21</span> and divergent actions of SNF1 between cryptococcal strains. <br><br>We describe here the functions of a Snf1/AMPK homolog in the <span class="yellow">human</span> pathogenic <span class="yellow">yeast</span> <span class="yellow">Cryptococcus neoformans</span>, strain <span class="yellow">JEC21</span>. We found that <span class="yellow">JEC21</span> SNF1 is a key regulator for the biosynthesis of the major virulence factors, stress resistance and alternative carbon source utilization. Disruption of <span class="yellow">JEC21</span> SNF1 results in defects of laccase activity and capsule production, sensitivity to cation stress. Especially, we found that <span class="yellow">JEC21</span> SNF1 is essential for growth at elevated temperature and for thermotolerance. To our knowledge, a role for Snf1 proteins in thermotolerance has not been reported. Furthermore, we observed a functional divergence between <span class="yellow">JEC21</span> SNF1 and its equivalent from <span class="yellow">serotype A</span><span class="yellow">A</span> strain <span class="blue">H99</span>. <span class="yellow">A</span> high temperature is needed for <span class="blue">H99</span> SNF1 to function in stress response and carbon source preference, but not for the <span class="yellow">JEC21</span> SNF1. Our results confirmed a critical role of <span class="yellow">JEC21</span> SNF1 in regulation of stress response and virulence. Revelation of divergent actions of SNF1 may help to understand the evolution of cryptococcal pathogenesis and provides insights into the strain-associated biosynthesis of virulence factors. 
+<h2>H99</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20719250</h3>Regulation of virulence factors, carbon utilization and virulence by SNF1 in <span class="annotated ">Cryptococcus neoformans JEC21</span> and divergent actions of SNF1 between cryptococcal strains. <br><br>We describe here the functions of a Snf1/AMPK homolog in the <span class="unannotated ">human</span> pathogenic <span class="unannotated ">yeast</span> <span class="unannotated ">Cryptococcus neoformans</span>, strain <span class="annotated ">JEC21</span>. We found that <span class="annotated ">JEC21</span> SNF1 is a key regulator for the biosynthesis of the major virulence factors, stress resistance and alternative carbon source utilization. Disruption of <span class="annotated ">JEC21</span> SNF1 results in defects of laccase activity and capsule production, sensitivity to cation stress. Especially, we found that <span class="annotated ">JEC21</span> SNF1 is essential for growth at elevated temperature and for thermotolerance. To our knowledge, a role for Snf1 proteins in thermotolerance has not been reported. Furthermore, we observed a functional divergence between <span class="unannotated ">JEC21</span> SNF1 and its equivalent from <span class="unannotated ">serotype A</span><span class="unannotated ">A</span> strain <span class="match annotated ">H99</span>. <span class="unannotated ">A</span> high temperature is needed for <span class="match annotated ">H99</span> SNF1 to function in stress response and carbon source preference, but not for the <span class="annotated ">JEC21</span> SNF1. Our results confirmed a critical role of <span class="annotated ">JEC21</span> SNF1 in regulation of stress response and virulence. Revelation of divergent actions of SNF1 may help to understand the evolution of cryptococcal pathogenesis and provides insights into the strain-associated biosynthesis of virulence factors. 
 </body></html>

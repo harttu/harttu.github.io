@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Sepia apama</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20880022</h3>Accelerometry estimates field metabolic rate in <span class="yellow">giant Australian cuttlefish</span> <span class="blue">Sepia apama</span> during breeding. <br><br>1. Estimating the metabolic rate of animals in nature is central to understanding the physiological, behavioural and evolutionary ecology of animals. Doubly labelled water and heart-rate methods are the most commonly used approaches, but both have limitations that preclude their application to some systems. 2. Accelerometry has emerged as a powerful tool for estimating energy expenditure in a range of animals, but is yet to be used to estimate field metabolic rate in aquatic taxa. We combined two-dimensional accelerometry and swim-tunnel respirometry to estimate patterns of energy expenditure in <span class="yellow">giant Australian cuttlefish</span> <span class="blue">Sepia apama</span> during breeding. 3. Both oxygen consumption rate (Vo2) and swimming speed showed strong positive associations with body acceleration, with coefficients of determination comparable to those using similar accelerometers on terrestrial vertebrates. Despite increased activity during the day, field metabolic rate rarely approached Vo2, and night-time Vo2 was similar to that at rest. 4. These results are consistent with the life-history strategy of this species, which has a poor capacity to exercise anaerobically, and a mating strategy that is visually based. With the logistical difficulties associated with observation in aquatic environments, accelerometry is likely to prove a valuable tool for estimating energy expenditure in aquatic animals. 
+<h2>Sepia apama</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20880022</h3>Accelerometry estimates field metabolic rate in <span class="annotated ">giant Australian cuttlefish</span> <span class="match annotated ">Sepia apama</span> during breeding. <br><br>1. Estimating the metabolic rate of animals in nature is central to understanding the physiological, behavioural and evolutionary ecology of animals. Doubly labelled water and heart-rate methods are the most commonly used approaches, but both have limitations that preclude their application to some systems. 2. Accelerometry has emerged as a powerful tool for estimating energy expenditure in a range of animals, but is yet to be used to estimate field metabolic rate in aquatic taxa. We combined two-dimensional accelerometry and swim-tunnel respirometry to estimate patterns of energy expenditure in <span class="annotated ">giant Australian cuttlefish</span> <span class="match annotated ">Sepia apama</span> during breeding. 3. Both oxygen consumption rate (Vo2) and swimming speed showed strong positive associations with body acceleration, with coefficients of determination comparable to those using similar accelerometers on terrestrial vertebrates. Despite increased activity during the day, field metabolic rate rarely approached Vo2, and night-time Vo2 was similar to that at rest. 4. These results are consistent with the life-history strategy of this species, which has a poor capacity to exercise anaerobically, and a mating strategy that is visually based. With the logistical difficulties associated with observation in aquatic environments, accelerometry is likely to prove a valuable tool for estimating energy expenditure in aquatic animals. 
 </body></html>

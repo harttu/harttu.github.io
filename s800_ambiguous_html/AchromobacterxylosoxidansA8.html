@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Achromobacter xylosoxidans A8</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097610</h3>Complete genome sequence of the haloaromatic acid-degrading bacterium <span class="blue">Achromobacter xylosoxidans A8</span>. <br><br><span class="yellow">Achromobacter xylosoxidans strain A8</span> was isolated from soil contaminated with polychlorinated biphenyls. It can use 2-chlorobenzoate and 2,5-dichlorobenzoate as sole sources of carbon and energy. This property makes it a good starting microorganism for further development toward a bioremediation tool. The genome of <span class="yellow">A. xylosoxidans</span> consists of a 7-Mb chromosome and two large plasmids (98 kb and 248 kb). Besides genes for the utilization of xenobiotic organic substrates, it contains genes associated with pathogenesis, toxin production, and resistance. Here, we report the complete genome sequence. 
+<h2>Achromobacter xylosoxidans A8</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097610</h3>Complete genome sequence of the haloaromatic acid-degrading bacterium <span class="match annotated ">Achromobacter xylosoxidans A8</span>. <br><br><span class="annotated ">Achromobacter xylosoxidans strain A8</span> was isolated from soil contaminated with polychlorinated biphenyls. It can use 2-chlorobenzoate and 2,5-dichlorobenzoate as sole sources of carbon and energy. This property makes it a good starting microorganism for further development toward a bioremediation tool. The genome of <span class="annotated ">A. xylosoxidans</span> consists of a 7-Mb chromosome and two large plasmids (98 kb and 248 kb). Besides genes for the utilization of xenobiotic organic substrates, it contains genes associated with pathogenesis, toxin production, and resistance. Here, we report the complete genome sequence. 
 </body></html>

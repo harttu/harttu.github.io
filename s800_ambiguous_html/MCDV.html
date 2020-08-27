@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>MCDV</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20850479</h3>Identification of the structural proteins of VP1 and VP2 of a novel <span class="yellow">mud crab dicistrovirus</span>. <br><br><span class="yellow">Mud crab dicistrovirus</span> (<span class="blue">MCDV</span>), a newly identified single-stranded positive RNA <span class="yellow">virus</span>, is an important pathogen that causes serious economic losses to <span class="yellow">mud crab</span> aquaculture. In this study, <span class="blue">MCDV</span> was purified, and three structural proteins of <span class="blue">MCDV</span> were separated by SDS-PAGE. The N-terminal 15 amino acids were sequenced and aligned with the main structural proteins of other dicistrovirus. The three structural proteins were named VP1, VP2 and VP3. Monoclonal antibodies (MAbs) against the two main structural proteins, VP1 and VP2, were prepared, and the two structural proteins were then identified using these MAbs. The results of Western blot analyses demonstrated that five MAbs recognised VP1 and two recognised VP2. The results of immunogold transmission electron microscopy (IEM) revealed that the epitopes of the two structural proteins recognised by the MAbs were located at the outer surface of the virions, which suggested that the two structural proteins are <span class="blue">MCDV</span> capsid proteins. The identification of the two structural proteins of <span class="blue">MCDV</span> is useful for studying their functions, as well as the mechanism of infection and the pathogenesis of <span class="blue">MCDV</span>. 
+<h2>MCDV</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20850479</h3>Identification of the structural proteins of VP1 and VP2 of a novel <span class="annotated ">mud crab dicistrovirus</span>. <br><br><span class="annotated ">Mud crab dicistrovirus</span> (<span class="match annotated ">MCDV</span>), a newly identified single-stranded positive RNA <span class="unannotated ">virus</span>, is an important pathogen that causes serious economic losses to <span class="annotated ">mud crab</span> aquaculture. In this study, <span class="match annotated ">MCDV</span> was purified, and three structural proteins of <span class="match annotated ">MCDV</span> were separated by SDS-PAGE. The N-terminal 15 amino acids were sequenced and aligned with the main structural proteins of other dicistrovirus. The three structural proteins were named VP1, VP2 and VP3. Monoclonal antibodies (MAbs) against the two main structural proteins, VP1 and VP2, were prepared, and the two structural proteins were then identified using these MAbs. The results of Western blot analyses demonstrated that five MAbs recognised VP1 and two recognised VP2. The results of immunogold transmission electron microscopy (IEM) revealed that the epitopes of the two structural proteins recognised by the MAbs were located at the outer surface of the virions, which suggested that the two structural proteins are <span class="match annotated ">MCDV</span> capsid proteins. The identification of the two structural proteins of <span class="match annotated ">MCDV</span> is useful for studying their functions, as well as the mechanism of infection and the pathogenesis of <span class="match annotated ">MCDV</span>. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Pelargonium x hortorum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20955224</h3>The 13C/12C isotopic signal of day-respired CO2 in variegated leaves of <span class="blue">Pelargonium x hortorum</span>. <br><br>In leaves, although it is accepted that CO(2) evolved by dark respiration after illumination is naturally (13) C-enriched compared to organic matter or substrate sucrose, much uncertainty remains on whether day respiration produces (13) C-depleted or (13) C-enriched CO(2). Here, we applied equations described previously for mesocosm CO(2) exchange to investigate the carbon isotope composition of CO(2) respired by autotrophic and heterotrophic tissues of <span class="blue">Pelargonium x hortorum</span> leaves, taking advantage of leaf variegation. Day-respired CO(2) was slightly (13) C-depleted compared to organic matter both under 21% O(2) and 2% O(2). Furthermore, most, if not all CO(2) molecules evolved in the light came from carbon atoms that had been fixed previously before the experiments, in both variegated and green leaves. We conclude that the usual definition of day respiratory fractionation, that assumes carbon fixed by current net photosynthesis is the respiratory substrate, is not valid in Pelargonium leaves under our conditions. In variegated leaves, total organic matter was slightly (13) C-depleted in white areas and so were most primary metabolites. This small isotopic difference between white and green areas probably came from the small contribution of photosynthetic CO(2) refixation and the specific nitrogen metabolism in white leaf areas. 
+<h2>Pelargonium x hortorum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20955224</h3>The 13C/12C isotopic signal of day-respired CO2 in variegated leaves of <span class="match annotated ">Pelargonium x hortorum</span>. <br><br>In leaves, although it is accepted that CO(2) evolved by dark respiration after illumination is naturally (13) C-enriched compared to organic matter or substrate sucrose, much uncertainty remains on whether day respiration produces (13) C-depleted or (13) C-enriched CO(2). Here, we applied equations described previously for mesocosm CO(2) exchange to investigate the carbon isotope composition of CO(2) respired by autotrophic and heterotrophic tissues of <span class="match annotated ">Pelargonium x hortorum</span> leaves, taking advantage of leaf variegation. Day-respired CO(2) was slightly (13) C-depleted compared to organic matter both under 21% O(2) and 2% O(2). Furthermore, most, if not all CO(2) molecules evolved in the light came from carbon atoms that had been fixed previously before the experiments, in both variegated and green leaves. We conclude that the usual definition of day respiratory fractionation, that assumes carbon fixed by current net photosynthesis is the respiratory substrate, is not valid in Pelargonium leaves under our conditions. In variegated leaves, total organic matter was slightly (13) C-depleted in white areas and so were most primary metabolites. This small isotopic difference between white and green areas probably came from the small contribution of photosynthetic CO(2) refixation and the specific nitrogen metabolism in white leaf areas. 
 </body></html>

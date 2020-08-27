@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>WT plants</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21039561</h3>Ecological trade-offs between jasmonic acid-dependent direct and indirect plant defences in tritrophic interactions. <br><br>Recent studies on plants genetically modified in jasmonic acid (JA) signalling support the hypothesis that the jasmonate family of oxylipins plays an important role in mediating direct and indirect plant defences. However, the interaction of two modes of defence in tritrophic systems is largely unknown. In this study, we examined the preference and performance of a herbivorous <span class="yellow">leafminer</span> (<span class="yellow">Liriomyza huidobrensis</span>) and its parasitic <span class="yellow">wasp</span> (<span class="yellow">Opius dissitus</span>) on three <span class="yellow">tomato</span> genotypes: a <span class="yellow">wild-type (WT) plant</span>, a <span class="yellow">JA biosynthesis (spr2) mutant</span>, and a <span class="yellow">JA-overexpression 35S::prosys plant</span>. Their proteinase inhibitor production and volatile emission were used as direct and indirect defence factors to evaluate the responses of <span class="yellow">leafminers</span> and parasitoids. Here, we show that although <span class="yellow">spr2 mutant plants</span> are compromised in direct defence against the larval <span class="yellow">leafminers</span> and in attracting parasitoids, they are less attractive to adult flies compared with <span class="blue">WT plants</span>. Moreover, in comparison to other genotypes, the <span class="yellow">35S::prosys plant</span> displays greater direct and constitutive indirect defences, but reduced success of parasitism by parasitoids. Taken together, these results suggest that there are distinguished ecological trade-offs between JA-dependent direct and indirect defences in genetically modified plants whose fitness should be assessed in tritrophic systems and under natural conditions. 
+<h2>WT plants</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21039561</h3>Ecological trade-offs between jasmonic acid-dependent direct and indirect plant defences in tritrophic interactions. <br><br>Recent studies on plants genetically modified in jasmonic acid (JA) signalling support the hypothesis that the jasmonate family of oxylipins plays an important role in mediating direct and indirect plant defences. However, the interaction of two modes of defence in tritrophic systems is largely unknown. In this study, we examined the preference and performance of a herbivorous <span class="annotated ">leafminer</span> (<span class="annotated ">Liriomyza huidobrensis</span>) and its parasitic <span class="annotated ">wasp</span> (<span class="annotated ">Opius dissitus</span>) on three <span class="annotated ">tomato</span> genotypes: a <span class="annotated ">wild-type (WT) plant</span>, a <span class="annotated ">JA biosynthesis (spr2) mutant</span>, and a <span class="annotated ">JA-overexpression 35S::prosys plant</span>. Their proteinase inhibitor production and volatile emission were used as direct and indirect defence factors to evaluate the responses of <span class="annotated ">leafminers</span> and parasitoids. Here, we show that although <span class="annotated ">spr2 mutant plants</span> are compromised in direct defence against the larval <span class="annotated ">leafminers</span> and in attracting parasitoids, they are less attractive to adult <span class="linneaus_only ">flies</span> compared with <span class="match annotated ">WT plants</span>. Moreover, in comparison to other genotypes, the <span class="annotated ">35S::prosys plant</span> displays greater direct and constitutive indirect defences, but reduced success of parasitism by parasitoids. Taken together, these results suggest that there are distinguished ecological trade-offs between JA-dependent direct and indirect defences in genetically modified plants whose fitness should be assessed in tritrophic systems and under natural conditions. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>methanogenic archaea</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097629</h3>Genome copy numbers and gene conversion in <span class="blue">methanogenic archaea</span>.<br><br>Previous studies revealed that one species of <span class="blue">methanogenic archaea</span>, <span class="yellow">Methanocaldococcus jannaschii</span>, is polyploid, while a second species, <span class="yellow">Methanothermobacter thermoautotrophicus</span>, is diploid. To further investigate the distribution of ploidy in <span class="blue">methanogenic archaea</span>, species of two additional genera-<span class="yellow">Methanosarcina acetivorans</span> and <span class="yellow">Methanococcus maripaludis</span>-were investigated. <span class="yellow">M. acetivorans</span> was found to be polyploid during fast growth (t(D) = 6 h; 17 genome copies) and oligoploid during slow growth (doubling time = 49 h; 3 genome copies). <span class="yellow">M. maripaludis</span> has the highest ploidy level found for any archaeal species, with up to 55 genome copies in exponential phase and ca. 30 in stationary phase. <span class="yellow">A</span> compilation of archaeal species with quantified ploidy levels reveals a clear dichotomy between Euryarchaeota and Crenarchaeota: none of seven euryarchaeal species of six genera is monoploid (haploid), while, in contrast, all six crenarchaeal species of four genera are monoploid, indicating significant genetic differences between these two kingdoms. Polyploidy in asexual species should lead to accumulation of inactivating mutations until the number of intact chromosomes per cell drops to zero (called &quot;Muller's ratchet&quot;). <span class="yellow">A</span> mechanism to equalize the genome copies, such as gene conversion, would counteract this phenomenon. Making use of a previously constructed heterozygous mutant strain of the polyploid <span class="yellow">M. maripaludis</span> we could show that in the absence of selection very fast equalization of genomes in <span class="yellow">M. maripaludis</span> took place probably via a gene conversion mechanism. In addition, it was shown that the velocity of this phenomenon is inversely correlated to the strength of selection. 
+<h2>methanogenic archaea</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097629</h3>Genome copy numbers and gene conversion in <span class="match annotated ">methanogenic archaea</span>.<br><br>Previous studies revealed that one species of <span class="match annotated ">methanogenic archaea</span>, <span class="annotated ">Methanocaldococcus jannaschii</span>, is polyploid, while a second species, <span class="annotated ">Methanothermobacter thermoautotrophicus</span>, is diploid. To further investigate the distribution of ploidy in <span class="match annotated ">methanogenic archaea</span>, species of two additional genera-<span class="annotated ">Methanosarcina acetivorans</span> and <span class="annotated ">Methanococcus maripaludis</span>-were investigated. <span class="annotated ">M. acetivorans</span> was found to be polyploid during fast growth (t(D) = 6 h; 17 genome copies) and oligoploid during slow growth (doubling time = 49 h; 3 genome copies). <span class="annotated ">M. maripaludis</span> has the highest ploidy level found for any archaeal species, with up to 55 genome copies in exponential phase and ca. 30 in stationary phase. <span class="unannotated ">A</span> compilation of archaeal species with quantified ploidy levels reveals a clear dichotomy between Euryarchaeota and Crenarchaeota: none of seven euryarchaeal species of six genera is monoploid (haploid), while, in contrast, all six crenarchaeal species of four genera are monoploid, indicating significant genetic differences between these two kingdoms. Polyploidy in asexual species should lead to accumulation of inactivating mutations until the number of intact chromosomes per cell drops to zero (called &quot;Muller's ratchet&quot;). <span class="unannotated ">A</span> mechanism to equalize the genome copies, such as gene conversion, would counteract this phenomenon. Making use of a previously constructed heterozygous mutant strain of the polyploid <span class="annotated ">M. maripaludis</span> we could show that in the absence of selection very fast equalization of genomes in <span class="annotated ">M. maripaludis</span> took place probably via a gene conversion mechanism. In addition, it was shown that the velocity of this phenomenon is inversely correlated to the strength of selection. 
 </body></html>

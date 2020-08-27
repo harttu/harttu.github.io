@@ -2,14 +2,31 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>T. castaneum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21689183</h3>Identification of predicted seminal fluid proteins in <span class="yellow">Tribolium castaneum</span>.<br><br>In several insect species, seminal fluid proteins (SFPs) have been demonstrated to be key regulators of male and female fitness through their ability to alter female physiology and behaviour. <span class="yellow">Tribolium castaneum</span> is an economically important pest species and a model system for sexual selection research, but little is known about SFPs in this insect. To create a foundation for the study of <span class="blue">T. castaneum</span> SFPs, we used mass spectrometry to identify putative SFPs by comparing proteins detected in the male reproductive glands with those found in the reproductive tracts of virgin and mated females. Fourteen putative SFPs, thirteen with male biased expression, were identified through this approach. We also used reverse transcription PCR (RT-PCR) to examine expression levels across different tissue types. We found strongly male-biased expression in 13 genes, nine of which were expressed only in male accessory gland tissue. This represents the first proteomic-based method of identifying putative SFPs in any coleopteran species, and is the first study in this species to identify putative SFPs that are likely transferred to the female. This work could lead to functional analyses of the role of SFPs in sexual selection, sexual conflict and potential control of a pest species. 
-<h3>22182615</h3>Age and Sex Related Responsiveness of <span class="yellow">Tribolium castaneum</span> (Coleoptera: Tenebrionidae) in Novel Behavioral Bioassays. <br><br>The hardiness and mobile nature of <span class="yellow">Tribolium castaneum (Herbst)</span> make them easy to work with but are the same factors that make their responses to behavior-modifying chemical stimuli difficult to evaluate. To overcome these difficulties two bioassays were developed: a two-choice test with airflow and a diffusion-based test to evaluate responses to chemical stimuli. The two-choice assay is excellent for rapidly comparing two stimuli or examining the response to one stimulus against a control. The diffusion assay determines differences in orientation behavior to multiple simultaneous stimuli and can examine other behaviors during exposure. Preparation of individuals for bioassay is also important, because disturbance increases the activity level of individual beetles beyond the duration of the disturbance. The age and the sex of beetles affect responsiveness to chemical cues. These bioassays and a better understanding of <span class="blue">T. castaneum</span>'s activity have revealed approaches for evaluating its responsiveness to behavior-modifying chemicals. 
+<h2>T. castaneum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21689183</h3>Identification of predicted seminal fluid proteins in <span class="annotated ">Tribolium castaneum</span>.<br><br>In several insect species, seminal fluid proteins (SFPs) have been demonstrated to be key regulators of male and female fitness through their ability to alter female physiology and behaviour. <span class="annotated ">Tribolium castaneum</span> is an economically important pest species and a model system for sexual selection research, but little is known about SFPs in this insect. To create a foundation for the study of <span class="match annotated ">T. castaneum</span> SFPs, we used mass spectrometry to identify putative SFPs by comparing proteins detected in the male reproductive glands with those found in the reproductive tracts of virgin and mated females. Fourteen putative SFPs, thirteen with male biased expression, were identified through this approach. We also used reverse transcription PCR (RT-PCR) to examine expression levels across different tissue types. We found strongly male-biased expression in 13 genes, nine of which were expressed only in male accessory gland tissue. This represents the first proteomic-based method of identifying putative SFPs in any coleopteran species, and is the first study in this species to identify putative SFPs that are likely transferred to the female. This work could lead to functional analyses of the role of SFPs in sexual selection, sexual conflict and potential control of a pest species. 
+<h3>22182615</h3>Age and Sex Related Responsiveness of <span class="annotated ">Tribolium castaneum</span> (Coleoptera: Tenebrionidae) in Novel Behavioral Bioassays. <br><br>The hardiness and mobile nature of <span class="annotated ">Tribolium castaneum (Herbst)</span> make them easy to work with but are the same factors that make their responses to behavior-modifying chemical stimuli difficult to evaluate. To overcome these difficulties two bioassays were developed: a two-choice test with airflow and a diffusion-based test to evaluate responses to chemical stimuli. The two-choice assay is excellent for rapidly comparing two stimuli or examining the response to one stimulus against a control. The diffusion assay determines differences in orientation behavior to multiple simultaneous stimuli and can examine other behaviors during exposure. Preparation of individuals for bioassay is also important, because disturbance increases the activity level of individual beetles beyond the duration of the disturbance. The age and the sex of beetles affect responsiveness to chemical cues. These bioassays and a better understanding of <span class="match annotated ">T. castaneum</span>'s activity have revealed approaches for evaluating its responsiveness to behavior-modifying chemicals. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Bifidobacterium bifidum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21037011</h3>Complete genome sequence of <span class="yellow">Bifidobacterium bifidum S17</span>.<br><br>Here, we report on the first completely annotated genome sequence of a <span class="blue">Bifidobacterium bifidum</span> strain. <span class="yellow">B. bifidum S17</span>, isolated from feces of a breast-fed infant, was shown to strongly adhere to intestinal epithelial cells and has potent anti-inflammatory activity in vitro and in vivo. The genome sequence will provide new insights into the biology of this potential probiotic organism and allow for the characterization of the molecular mechanisms underlying its beneficial properties. 
+<h2>Bifidobacterium bifidum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21037011</h3>Complete genome sequence of <span class="annotated ">Bifidobacterium bifidum S17</span>.<br><br>Here, we report on the first completely annotated genome sequence of a <span class="match annotated ">Bifidobacterium bifidum</span> strain. <span class="annotated ">B. bifidum S17</span>, isolated from feces of a breast-fed <span class="linneaus_only ">infant</span>, was shown to strongly adhere to intestinal epithelial cells and has potent anti-inflammatory activity in vitro and in vivo. The genome sequence will provide new insights into the biology of this potential probiotic organism and allow for the characterization of the molecular mechanisms underlying its beneficial properties. 
 </body></html>

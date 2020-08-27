@@ -2,14 +2,31 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>bacteriophage</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097611</h3>Complete genome sequences of three <span class="yellow">Erwinia amylovora</span> phages isolated in north america and a <span class="red">bacteriophage</span> induced from an <span class="yellow">Erwinia tasmaniensis</span> strain. <br><br>Fire blight, a plant disease of economic importance caused by <span class="yellow">Erwinia amylovora</span>, may be controlled by the application of bacteriophages. Here, we provide the complete genome sequences and the annotation of three <span class="yellow">E. amylovora</span>-specific phages isolated in North America and genomic information about a <span class="red">bacteriophage</span> induced by mitomycin C treatment of an <span class="yellow">Erwinia tasmaniensis</span> strain that is antagonistic for <span class="yellow">E. amylovora</span>. The American phages resemble two already-described <span class="yellow">viral</span> genomes, whereas the <span class="yellow">E. tasmaniensis</span> phage displays a singular genomic sequence in BLAST searches. 
-<h3>21097635</h3>The peptidoglycan-binding protein FimV promotes assembly of the <span class="yellow">Pseudomonas aeruginosa</span> type IV pilus secretin. <br><br>The <span class="yellow">Pseudomonas aeruginosa</span> inner membrane protein FimV is among several proteins of unknown function required for type IV pilus-mediated twitching motility, arising from extension and retraction of pili from their site of assembly in the inner membrane. The pili transit the periplasm and peptidoglycan (PG) layer, ultimately exiting the cell through the PilQ secretin. Although fimV mutants are nonmotile, they are susceptible to killing by pilus-specific <span class="blue">bacteriophage</span>, a hallmark of retractable surface pili. Here we show that levels of recoverable surface pili were markedly decreased in fimV pilT retraction-deficient mutants compared with levels in the pilT control, demonstrating that FimV acts at the level of pilus assembly. Levels of inner membrane assembly subcomplex proteins PilM/N/O/P were decreased in fimV mutants, but supplementation of these components in trans did not restore pilus assembly or motility. Loss of FimV dramatically reduced the levels of the PilQ secretin multimer through which pili exit the cell, in part due to decreased levels of PilQ monomers, while PilF pilotin levels were unchanged. Expression of pilQ in trans in the wild type or fimV mutants increased total PilQ monomer levels but did not alter secretin multimer levels or motility. PG pulldown assays showed that the N terminus of FimV bound PG in a LysM motif-dependent manner, and a mutant with an in-frame chromosomal deletion of the LysM motif had reduced motility, secretin levels, and surface piliation. Together, our data show that FimV's role in pilus assembly is to promote secretin formation and that this function depends upon its PG-binding domain. 
+<h2>bacteriophage</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21097611</h3>Complete genome sequences of three <span class="annotated ">Erwinia amylovora</span> phages isolated in north america and a <span class="match unannotated ">bacteriophage</span> induced from an <span class="annotated ">Erwinia tasmaniensis</span> strain. <br><br>Fire blight, a plant disease of economic importance caused by <span class="annotated ">Erwinia amylovora</span>, may be controlled by the application of bacteriophages. Here, we provide the complete genome sequences and the annotation of three <span class="annotated ">E. amylovora</span>-specific phages isolated in North America and genomic information about a <span class="match unannotated ">bacteriophage</span> induced by mitomycin C treatment of an <span class="annotated ">Erwinia tasmaniensis</span> strain that is antagonistic for <span class="annotated ">E. amylovora</span>. The American phages resemble two already-described <span class="unannotated ">viral</span> genomes, whereas the <span class="annotated ">E. tasmaniensis</span> phage displays a singular genomic sequence in BLAST searches. 
+<h3>21097635</h3>The peptidoglycan-binding protein FimV promotes assembly of the <span class="annotated ">Pseudomonas aeruginosa</span> type IV pilus secretin. <br><br>The <span class="annotated ">Pseudomonas aeruginosa</span> inner membrane protein FimV is among several proteins of unknown function required for type IV pilus-mediated twitching motility, arising from extension and retraction of pili from their site of assembly in the inner membrane. The pili transit the periplasm and peptidoglycan (PG) layer, ultimately exiting the cell through the PilQ secretin. Although fimV mutants are nonmotile, they are susceptible to killing by pilus-specific <span class="match annotated ">bacteriophage</span>, a hallmark of retractable surface pili. Here we show that levels of recoverable surface pili were markedly decreased in fimV pilT retraction-deficient mutants compared with levels in the pilT control, demonstrating that FimV acts at the level of pilus assembly. Levels of inner membrane assembly subcomplex proteins PilM/N/O/P were decreased in fimV mutants, but supplementation of these components in trans did not restore pilus assembly or motility. Loss of FimV dramatically reduced the levels of the PilQ secretin multimer through which pili exit the cell, in part due to decreased levels of PilQ monomers, while PilF pilotin levels were unchanged. Expression of pilQ in trans in the wild type or fimV mutants increased total PilQ monomer levels but did not alter secretin multimer levels or motility. PG pulldown assays showed that the N terminus of FimV bound PG in a LysM motif-dependent manner, and a mutant with an in-frame chromosomal deletion of the LysM motif had reduced motility, secretin levels, and surface piliation. Together, our data show that FimV's role in pilus assembly is to promote secretin formation and that this function depends upon its PG-binding domain. 
 </body></html>

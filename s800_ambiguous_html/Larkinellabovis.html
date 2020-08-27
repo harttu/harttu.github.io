@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Larkinella bovis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20139284</h3><span class="blue">Larkinella bovis</span> sp. nov., isolated from fermented bovine products, and emended descriptions of the genus Larkinella and of <span class="yellow">Larkinella insperata</span> Vancanneyt et al. 2006. <br><br>A novel bacterial strain, designated <span class="yellow">M2T2B15</span>(T), was isolated from fermented bovine products and was characterized by using a polyphasic approach. Colonies were reddish pink and circular with entire margins. Cells were strictly aerobic, Gram-reaction-negative, oxidase- and catalase-positive rods that lacked flagella and were motile by gliding. Flexirubin-type pigments were absent. 16S rRNA gene sequence analysis indicated that strain <span class="yellow">M2T2B15</span>(T) was related most closely to <span class="yellow">Larkinella insperata</span> LMG 22510(T) (94.4 % similarity) but shared &lt;87 % similarity with other members of the phylum Bacteroidetes. The major cellular fatty acids were C(16 : 1)omega5c, iso-C(15 : 0) and iso-C(17 : 0) 3-OH. The polar lipids were phosphatidylethanolamine, phosphatidylserine, two unidentified aminophospholipids and two unidentified polar lipids. Menaquinone 7 (MK-7) was the major respiratory quinone. The G+C content of the DNA of strain <span class="yellow">M2T2B15</span>(T) was 52&amp;emsp14;mol%. The phenotypic, genotypic and phylogenetic data presented clearly indicate that strain <span class="yellow">M2T2B15</span>(T) represents a novel species of the genus Larkinella, for which the name <span class="blue">Larkinella bovis</span> sp. nov. is proposed. The type strain is <span class="yellow">M2T2B15</span>(T) (=KACC 14040(T) =NBRC 106324(T)). Emended descriptions of the genus Larkinella and of <span class="yellow">Larkinella insperata</span> Vancanneyt et al. 2006 are also proposed. 
+<h2>Larkinella bovis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20139284</h3><span class="match annotated ">Larkinella bovis</span> sp. nov., isolated from fermented <span class="linneaus_only ">bovine</span> products, and emended descriptions of the genus Larkinella and of <span class="annotated ">Larkinella insperata</span> Vancanneyt et al. 2006. <br><br>A novel bacterial strain, designated <span class="annotated ">M2T2B15</span>(T), was isolated from fermented <span class="linneaus_only ">bovine</span> products and was characterized by using a polyphasic approach. Colonies were reddish pink and circular with entire margins. Cells were strictly aerobic, Gram-reaction-negative, oxidase- and catalase-positive rods that lacked flagella and were motile by gliding. Flexirubin-type pigments were absent. 16S rRNA gene sequence analysis indicated that strain <span class="annotated ">M2T2B15</span>(T) was related most closely to <span class="annotated ">Larkinella insperata</span> LMG 22510(T) (94.4 % similarity) but shared &lt;87 % similarity with other members of the phylum Bacteroidetes. The major cellular fatty acids were C(16 : 1)omega5c, iso-C(15 : 0) and iso-C(17 : 0) 3-OH. The polar lipids were phosphatidylethanolamine, phosphatidylserine, two unidentified aminophospholipids and two unidentified polar lipids. Menaquinone 7 (MK-7) was the major respiratory quinone. The G+C content of the DNA of strain <span class="annotated ">M2T2B15</span>(T) was 52&amp;emsp14;mol%. The phenotypic, genotypic and phylogenetic data presented clearly indicate that strain <span class="annotated ">M2T2B15</span>(T) represents a novel species of the genus Larkinella, for which the name <span class="match annotated ">Larkinella bovis</span> sp. nov. is proposed. The type strain is <span class="annotated ">M2T2B15</span>(T) (=KACC 14040(T) =NBRC 106324(T)). Emended descriptions of the genus Larkinella and of <span class="annotated ">Larkinella insperata</span> Vancanneyt et al. 2006 are also proposed. 
 </body></html>

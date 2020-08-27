@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Staphylococcus epidermidis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21075926</h3>Type I signal peptidase and protein secretion in <span class="blue">Staphylococcus epidermidis</span>.<br><br>Bacterial protein secretion is a highly orchestrated process that is essential for infection and virulence. Despite extensive efforts to predict or experimentally detect proteins that are secreted, the characterization of the bacterial secretome has remained challenging. <span class="yellow">A</span> central event in protein secretion is the type I signal peptidase (SPase)-mediated cleavage of the N-terminal signal peptide that targets a protein for secretion via the general secretory pathway, and the arylomycins are a class of natural products that inhibit SPase, suggesting that they may be useful chemical biology tools for characterizing the secretome. Here, using an arylomycin derivative, along with two-dimensional gel electrophoresis and liquid chromatography-tandem mass spectrometry (LC-MS/MS), we identify 11 proteins whose secretion from stationary-phase <span class="blue">Staphylococcus epidermidis</span> is dependent on SPase activity, 9 of which are predicted to be translated with canonical N-terminal signal peptides. In addition, we find that the presence of extracellular domains of lipoteichoic acid synthase (LtaS) and the Beta-lactam response sensor BlaR1 in the medium is dependent on SPase activity, suggesting that they are cleaved at noncanonical sites within the protein. In all, the data define the proteins whose stationary-phase secretion depends on SPase and also suggest that the arylomycins should be valuable chemical biology tools for the study of protein secretion in a wide variety of different bacteria. 
+<h2>Staphylococcus epidermidis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21075926</h3>Type I signal peptidase and protein secretion in <span class="match annotated ">Staphylococcus epidermidis</span>.<br><br>Bacterial protein secretion is a highly orchestrated process that is essential for infection and virulence. Despite extensive efforts to predict or experimentally detect proteins that are secreted, the characterization of the bacterial secretome has remained challenging. <span class="unannotated ">A</span> central event in protein secretion is the type I signal peptidase (SPase)-mediated cleavage of the N-terminal signal peptide that targets a protein for secretion via the general secretory pathway, and the arylomycins are a class of natural products that inhibit SPase, suggesting that they may be useful chemical biology tools for characterizing the secretome. Here, using an arylomycin derivative, along with two-dimensional gel electrophoresis and liquid chromatography-tandem mass spectrometry (LC-MS/MS), we identify 11 proteins whose secretion from stationary-phase <span class="match annotated ">Staphylococcus epidermidis</span> is dependent on SPase activity, 9 of which are predicted to be translated with canonical N-terminal signal peptides. In addition, we find that the presence of extracellular domains of lipoteichoic acid synthase (LtaS) and the Beta-lactam response sensor BlaR1 in the medium is dependent on SPase activity, suggesting that they are cleaved at noncanonical sites within the protein. In all, the data define the proteins whose stationary-phase secretion depends on SPase and also suggest that the arylomycins should be valuable chemical biology tools for the study of protein secretion in a wide variety of different bacteria. 
 </body></html>

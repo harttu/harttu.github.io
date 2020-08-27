@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>B.g. hordei</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20955813</h3>Comparative sequence analysis of <span class="yellow">wheat</span> and <span class="yellow">barley</span> powdery mildew fungi reveals gene colinearity, dates divergence and indicates host-pathogen co-evolution. <br><br>The two <span class="yellow">fungal</span> pathogens <span class="yellow">Blumeria graminis f. sp. tritici</span> (<span class="yellow">B.g. tritici</span>) and <span class="yellow">hordei</span> (<span class="blue">B.g. hordei</span>) cause powdery mildew specifically in <span class="yellow">wheat</span> or <span class="yellow">barley</span>. They have the same life cycle, but their growth is restricted to the respective host. Here, we compared the sequences of two loci in both cereal mildews to determine their divergence time and their relationship with the evolution of their hosts. We sequenced a total of 273.3kb derived from <span class="yellow">B.g. tritici</span> BAC sequences and compared them with the orthologous regions in the <span class="blue">B.g. hordei</span> genome. Protein-coding genes were colinear and well conserved. In contrast, the intergenic regions showed very low conservation mostly due to different integration patterns of transposable elements. To estimate the divergence time of <span class="yellow">B.g. tritici</span> and <span class="blue">B.g. hordei</span>, we used conserved intergenic sequences including orthologous transposable elements. This revealed that <span class="yellow">B.g. tritici</span> and <span class="blue">B.g. hordei</span> have diverged about 10 million years ago (MYA), two million years after <span class="yellow">wheat</span> and <span class="yellow">barley</span> (12 MYA). These data suggest that <span class="yellow">B.g. tritici</span> and <span class="blue">B.g. hordei</span> have co-evolved with their hosts during most of their evolutionary history after host divergence, possibly after a short phase of host expansion when the same pathogen could still grow on the two diverged hosts. 
+<h2>B.g. hordei</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20955813</h3>Comparative sequence analysis of <span class="annotated ">wheat</span> and <span class="annotated ">barley</span> powdery mildew fungi reveals gene colinearity, dates divergence and indicates host-pathogen co-evolution. <br><br>The two <span class="unannotated ">fungal</span> pathogens <span class="annotated ">Blumeria graminis f. sp. tritici</span> (<span class="annotated ">B.g. tritici</span>) and <span class="annotated ">hordei</span> (<span class="match annotated ">B.g. hordei</span>) cause powdery mildew specifically in <span class="annotated ">wheat</span> or <span class="annotated ">barley</span>. They have the same life cycle, but their growth is restricted to the respective host. Here, we compared the sequences of two loci in both cereal mildews to determine their divergence time and their relationship with the evolution of their hosts. We sequenced a total of 273.3kb derived from <span class="annotated ">B.g. tritici</span> BAC sequences and compared them with the orthologous regions in the <span class="match annotated ">B.g. hordei</span> genome. Protein-coding genes were colinear and well conserved. In contrast, the intergenic regions showed very low conservation mostly due to different integration patterns of transposable elements. To estimate the divergence time of <span class="annotated ">B.g. tritici</span> and <span class="match annotated ">B.g. hordei</span>, we used conserved intergenic sequences including orthologous transposable elements. This revealed that <span class="annotated ">B.g. tritici</span> and <span class="match annotated ">B.g. hordei</span> have diverged about 10 million years ago (MYA), two million years after <span class="annotated ">wheat</span> and <span class="annotated ">barley</span> (12 MYA). These data suggest that <span class="annotated ">B.g. tritici</span> and <span class="match annotated ">B.g. hordei</span> have co-evolved with their hosts during most of their evolutionary history after host divergence, possibly after a short phase of host expansion when the same pathogen could still grow on the two diverged hosts. 
 </body></html>

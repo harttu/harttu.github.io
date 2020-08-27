@@ -2,14 +2,31 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Salmonella enterica serovar Typhimurium</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21075929</h3>Opposing contributions of polynucleotide phosphorylase and the membrane protein NlpI to biofilm formation by <span class="blue">Salmonella enterica serovar Typhimurium</span>. <br><br>CsgD and cyclic-3',5'-di-guanylate are key regulators of biofilm formation in <span class="blue">Salmonella enterica serovar Typhimurium</span>. Our results show that polynucleotide phosphorylase and NlpI oppositely altered expression of CsgD. Polynucleotide phosphorylase and NlpI also had opposite effects on the expression of yjcC, which codes for a cyclic-3',5'-di-guanylate phosphodiesterase affecting CsgD expression. 
-<h3>21075923</h3>Fur negatively regulates hns and is required for the expression of HilA and virulence in <span class="yellow">Salmonella enterica</span><span class="red">Salmonella enterica serovar Typhimurium</span>. <br><br>Iron is an essential element for the survival of living cells. However, excess iron is toxic, and its uptake is exquisitely regulated by the ferric uptake regulator, Fur. In Salmonella, the Salmonella pathogenicity island 1 (SPI-1) encodes a type three secretion system, which is required for invasion of host epithelial cells in the small intestine. <span class="yellow">A</span> major activator of SPI-1 is HilA, which is encoded within SPI-1. One known regulator of hilA is Fur. The mechanism of hilA regulation by Fur is unknown. We report here that Fur is required for virulence in <span class="yellow">Salmonella enterica</span><span class="red">Salmonella enterica serovar Typhimurium</span> and that Fur is required for the activation of hilA, as well as of other HilA-dependent genes, invF and sipC. The Fur-dependent regulation of hilA was independent of PhoP, a known repressor of hilA. Instead, the expression of the gene coding for the histone-like protein, hns, was significantly derepressed in the fur mutant. Indeed, the activation of hilA by Fur was dependent on 28 nucleotides located upstream of hns. Moreover, we used chromatin immunoprecipitation to show that Fur bound, in vivo, to the upstream region of hns in a metal-dependent fashion. Finally, deletion of fur in an hns mutant resulted in Fur-independent activation of hilA. In conclusion, Fur activates hilA by repressing the expression of hns. 
+<h2>Salmonella enterica serovar Typhimurium</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21075929</h3>Opposing contributions of polynucleotide phosphorylase and the membrane protein NlpI to biofilm formation by <span class="match annotated ">Salmonella enterica serovar Typhimurium</span>. <br><br>CsgD and cyclic-3',5'-di-guanylate are key regulators of biofilm formation in <span class="match annotated ">Salmonella enterica serovar Typhimurium</span>. Our results show that polynucleotide phosphorylase and NlpI oppositely altered expression of CsgD. Polynucleotide phosphorylase and NlpI also had opposite effects on the expression of yjcC, which codes for a cyclic-3',5'-di-guanylate phosphodiesterase affecting CsgD expression. 
+<h3>21075923</h3>Fur negatively regulates hns and is required for the expression of HilA and virulence in <span class="annotated ">Salmonella enterica</span><span class="match unannotated ">Salmonella enterica serovar Typhimurium</span>. <br><br>Iron is an essential element for the survival of living cells. However, excess iron is toxic, and its uptake is exquisitely regulated by the ferric uptake regulator, Fur. In Salmonella, the Salmonella pathogenicity island 1 (SPI-1) encodes a type three secretion system, which is required for invasion of host epithelial cells in the small intestine. <span class="unannotated ">A</span> major activator of SPI-1 is HilA, which is encoded within SPI-1. One known regulator of hilA is Fur. The mechanism of hilA regulation by Fur is unknown. We report here that Fur is required for virulence in <span class="annotated ">Salmonella enterica</span><span class="match unannotated ">Salmonella enterica serovar Typhimurium</span> and that Fur is required for the activation of hilA, as well as of other HilA-dependent genes, invF and sipC. The Fur-dependent regulation of hilA was independent of PhoP, a known repressor of hilA. Instead, the expression of the gene coding for the histone-like protein, hns, was significantly derepressed in the fur mutant. Indeed, the activation of hilA by Fur was dependent on 28 nucleotides located upstream of hns. Moreover, we used chromatin immunoprecipitation to show that Fur bound, in vivo, to the upstream region of hns in a metal-dependent fashion. Finally, deletion of fur in an hns mutant resulted in Fur-independent activation of hilA. In conclusion, Fur activates hilA by repressing the expression of hns. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>P. bursaria</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20884291</h3>Symbiotic <span class="yellow">Chlorella vulgaris</span> of the ciliate <span class="yellow">Paramecium bursaria</span> plays an important role in maintaining perialgal vacuole membrane functions. <br><br>Treatment of symbiotic alga-bearing <span class="yellow">Paramecium bursaria</span> cells with a protein synthesis inhibitor, cycloheximide, induces synchronous swelling of all perialgal vacuoles at about 24h after treatment under a constant light condition. Subsequently, the vacuoles detach from the host cell cortex. The algae in the vacuoles are digested by the host's lysosomal fusion to the vacuoles. To elucidate the timing of algal degeneration, <span class="blue">P. bursaria</span> cells were treated with cycloheximide under a constant light condition. Then the cells were observed using transmission electron microscopy. Results show that algal chloroplasts and nuclei degenerated within 9h after treatment, but before the synchronous swelling of the perialgal vacuole and appearance of acid phosphatase activity in the perialgal vacuole by lysosomal fusion. Treatment with cycloheximide under a constant dark condition and treatment with chloramphenicol under a constant light condition induced neither synchronous swelling of the vacuoles nor digestion of the algae inside the vacuoles. These results demonstrate that algal proteins synthesized during photosynthesis are necessary to maintain chloroplastic and nuclear structures, and that inhibition of protein synthesis induces rapid lysis of these organelles, after which synchronous swelling of the perialgal vacuole and fusion occur with the host lysosomes. 
+<h2>P. bursaria</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20884291</h3>Symbiotic <span class="annotated ">Chlorella vulgaris</span> of the ciliate <span class="annotated ">Paramecium bursaria</span> plays an important role in maintaining perialgal vacuole membrane functions. <br><br>Treatment of symbiotic alga-bearing <span class="annotated ">Paramecium bursaria</span> cells with a protein synthesis inhibitor, cycloheximide, induces synchronous swelling of all perialgal vacuoles at about 24h after treatment under a constant light condition. Subsequently, the vacuoles detach from the host cell cortex. The algae in the vacuoles are digested by the host's lysosomal fusion to the vacuoles. To elucidate the timing of algal degeneration, <span class="match annotated ">P. bursaria</span> cells were treated with cycloheximide under a constant light condition. Then the cells were observed using transmission electron microscopy. Results show that algal chloroplasts and nuclei degenerated within 9h after treatment, but before the synchronous swelling of the perialgal vacuole and appearance of acid phosphatase activity in the perialgal vacuole by lysosomal fusion. Treatment with cycloheximide under a constant dark condition and treatment with chloramphenicol under a constant light condition induced neither synchronous swelling of the vacuoles nor digestion of the algae inside the vacuoles. These results demonstrate that algal proteins synthesized during photosynthesis are necessary to maintain chloroplastic and nuclear structures, and that inhibition of protein synthesis induces rapid lysis of these organelles, after which synchronous swelling of the perialgal vacuole and fusion occur with the host lysosomes. 
 </body></html>

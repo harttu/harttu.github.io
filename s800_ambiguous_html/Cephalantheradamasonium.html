@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Cephalanthera damasonium</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20964694</h3>The degree of mycoheterotrophic carbon gain in green, variegated and vegetative albino individuals of <span class="blue">Cephalanthera damasonium</span> is related to leaf chlorophyll concentrations. <br><br>* Achlorophyllous variants of some forest orchids are known to reach almost the same size as their green forms. These vegetative albino forms cover their entire carbon (C) demand through fungi that simultaneously form ectomycorrhizae with trees, while green variants partially draw on C from photosynthesis and C from <span class="yellow">fungal</span> hosts. Here, we investigate whether the amount of C derived from either source is proportional to leaf chlorophyll concentration. The discovery of two <span class="blue">Cephalanthera damasonium</span> populations with variegated leaves enabled a continuous bridging of leaf chlorophyll concentrations between green and albino forms. * Leaves of 27 green, variegated and albino individuals of <span class="yellow">C. damasonium</span> were compared for chlorophyll concentrations, C sources (as characterized by (13)C abundances) and total C and nitrogen (N) concentrations. * We found a linear relationship between leaf chlorophyll concentrations and the proportional reliance on fungi as a C source. Furthermore, we show that the shift in C gain through mycoheterotrophic means significantly changes leaf total C and N concentrations. * Our results document that partial mycoheterotrophy in <span class="yellow">C. damasonium</span> is not a static nutritional mode but a flexible mechanism related inter alia to leaf chlorophyll concentrations. The change in proportional reliance on fungi as a C source affects leaf chemical composition. 
+<h2>Cephalanthera damasonium</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20964694</h3>The degree of mycoheterotrophic carbon gain in green, variegated and vegetative albino individuals of <span class="match annotated ">Cephalanthera damasonium</span> is related to leaf chlorophyll concentrations. <br><br>* Achlorophyllous variants of some forest orchids are known to reach almost the same size as their green forms. These vegetative albino forms cover their entire carbon (C) demand through fungi that simultaneously form ectomycorrhizae with trees, while green variants partially draw on C from photosynthesis and C from <span class="unannotated ">fungal</span> hosts. Here, we investigate whether the amount of C derived from either source is proportional to leaf chlorophyll concentration. The discovery of two <span class="match annotated ">Cephalanthera damasonium</span> populations with variegated leaves enabled a continuous bridging of leaf chlorophyll concentrations between green and albino forms. * Leaves of 27 green, variegated and albino individuals of <span class="annotated ">C. damasonium</span> were compared for chlorophyll concentrations, C sources (as characterized by (13)C abundances) and total C and nitrogen (N) concentrations. * We found a linear relationship between leaf chlorophyll concentrations and the proportional reliance on fungi as a C source. Furthermore, we show that the shift in C gain through mycoheterotrophic means significantly changes leaf total C and N concentrations. * Our results document that partial mycoheterotrophy in <span class="annotated ">C. damasonium</span> is not a static nutritional mode but a flexible mechanism related inter alia to leaf chlorophyll concentrations. The change in proportional reliance on fungi as a C source affects leaf chemical composition. 
 </body></html>

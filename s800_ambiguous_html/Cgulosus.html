@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>C. gulosus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20796205</h3>Analysis of spatial niche structure in coexisting tidepool fishes: null models based on multi-scale experiments. <br><br>1. Fundamental and realized spatial niches were investigated through a combination of laboratory and mesocosm experiments, field observations and null model analysis in three intertidal gobiid species (<span class="yellow">Bathygobius fuscus</span>, <span class="yellow">Chaenogobius annularis</span> and <span class="blue">C. gulosus</span>). Null models based on the results of single-species experiments were used to assess interspecific spatial use and coexistence on two different scales: (i) microhabitats within a tidepool ('microhabitat' scale); and (ii) distribution among a set of tidepools ('habitat-wide' scale). 2. Patterns of microhabitat use varied from single to paired treatments, depending on paired species. Realized overlap of microhabitat use was smaller than would be expected from single-individual situations for intraspecific combinations, but not for interspecific ones. 3. Patterns of tidepool occupancy (a measure of spatial niche breadth) in the mesocosm were influenced by interspecific interactions. Two Chaenogobius species, but not <span class="yellow">B. fuscus</span>, decreased tidepool occupancy in the hetero-specific treatments compared with the mono-specific ones. For all interspecific combinations, spatial overlap (habitat-wide scale) was significantly lower than the values expected from mono-specific situations. The results also indicated a possible trade-off between competitiveness and growth efficiency in these fishes. 4. Interspecific spatial overlap in the field was similar to that in the mesocosm experiment and the pattern of coexistence of gobiids can be explained by the results of our experiments. 5. This study demonstrates that niches of intertidal fishes may experience modifications under the influence of species interactions and that null models based on controlled experiments can greatly facilitate the deciphering of such changes in niche structure. 
+<h2>C. gulosus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20796205</h3>Analysis of spatial niche structure in coexisting tidepool fishes: null models based on multi-scale experiments. <br><br>1. Fundamental and realized spatial niches were investigated through a combination of laboratory and mesocosm experiments, field observations and null model analysis in three intertidal gobiid species (<span class="annotated ">Bathygobius fuscus</span>, <span class="annotated ">Chaenogobius annularis</span> and <span class="match annotated ">C. gulosus</span>). Null models based on the results of single-species experiments were used to assess interspecific spatial use and coexistence on two different scales: (i) microhabitats within a tidepool ('microhabitat' scale); and (ii) distribution among a set of tidepools ('habitat-wide' scale). 2. Patterns of microhabitat use varied from single to paired treatments, depending on paired species. Realized overlap of microhabitat use was smaller than would be expected from single-individual situations for intraspecific combinations, but not for interspecific ones. 3. Patterns of tidepool occupancy (a measure of spatial niche breadth) in the mesocosm were influenced by interspecific interactions. Two Chaenogobius species, but not <span class="annotated ">B. fuscus</span>, decreased tidepool occupancy in the hetero-specific treatments compared with the mono-specific ones. For all interspecific combinations, spatial overlap (habitat-wide scale) was significantly lower than the values expected from mono-specific situations. The results also indicated a possible trade-off between competitiveness and growth efficiency in these fishes. 4. Interspecific spatial overlap in the field was similar to that in the mesocosm experiment and the pattern of coexistence of gobiids can be explained by the results of our experiments. 5. This study demonstrates that niches of intertidal fishes may experience modifications under the influence of species interactions and that null models based on controlled experiments can greatly facilitate the deciphering of such changes in niche structure. 
 </body></html>

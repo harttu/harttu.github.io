@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>house flies</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>22182611</h3>Laboratory and Field Evaluation of Formulated <span class="yellow">Bacillus thuringiensis var. israelensis</span> as a Feed Additive and Using Topical Applications for Control of <span class="yellow">Musca domestica</span> (Diptera: Muscidae) Larvae in Caged-Poultry Manure. <br><br>Infestations of <span class="blue">house flies</span>, <span class="yellow">Musca domestica</span> L., are a continual problem around <span class="yellow">poultry</span> establishments. Acute toxicity of two commercial <span class="yellow">Bacillus thuringiensis variety israelensis</span> (<span class="yellow">Bti</span>) formulations (water-dispersible granules and bran formulation) was evaluated against larvae in the laboratory and against natural populations of <span class="yellow">M. domestica</span> larvae in the field applied in feed to <span class="yellow">chickens</span> and as topical applications in the <span class="yellow">poultry</span> houses. Bioassay data showed that susceptibility of <span class="yellow">M. domestica</span> larvae increased to a given concentration of <span class="yellow">Bti</span> as the duration of exposure increased. In the laboratory studies, the LC(50) values of <span class="yellow">Bti</span> for the larvae ranged between 65 and 77.4 mug/ml. In the field, a concentration of 10 g <span class="yellow">Bti</span>/kg of feed resulted in 90% reduction of larvae at 4 wk after treatment. <span class="yellow">A</span> higher concentration (2 g/liter) of <span class="yellow">Bti</span> in spray applications was not significantly more effective than the lower concentration of 1 g/liter. Adding <span class="yellow">Bti</span> to <span class="yellow">chicken</span> feed is potentially an efficient measure for the management and control of <span class="blue">house flies</span> in caged-poultry facilities. 
+<h2>house flies</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>22182611</h3>Laboratory and Field Evaluation of Formulated <span class="annotated ">Bacillus thuringiensis var. israelensis</span> as a Feed Additive and Using Topical Applications for Control of <span class="annotated ">Musca domestica</span> (Diptera: Muscidae) Larvae in Caged-Poultry Manure. <br><br>Infestations of <span class="match annotated ">house flies</span>, <span class="annotated ">Musca domestica</span> L., are a continual problem around <span class="unannotated ">poultry</span> establishments. Acute toxicity of two commercial <span class="annotated ">Bacillus thuringiensis variety israelensis</span> (<span class="annotated ">Bti</span>) formulations (water-dispersible granules and bran formulation) was evaluated against larvae in the laboratory and against natural populations of <span class="annotated ">M. domestica</span> larvae in the field applied in feed to <span class="annotated ">chickens</span> and as topical applications in the <span class="unannotated ">poultry</span> houses. Bioassay data showed that susceptibility of <span class="annotated ">M. domestica</span> larvae increased to a given concentration of <span class="annotated ">Bti</span> as the duration of exposure increased. In the laboratory studies, the LC(50) values of <span class="annotated ">Bti</span> for the larvae ranged between 65 and 77.4 mug/ml. In the field, a concentration of 10 g <span class="annotated ">Bti</span>/kg of feed resulted in 90% reduction of larvae at 4 wk after treatment. <span class="unannotated ">A</span> higher concentration (2 g/liter) of <span class="annotated ">Bti</span> in spray applications was not significantly more effective than the lower concentration of 1 g/liter. Adding <span class="annotated ">Bti</span> to <span class="annotated ">chicken</span> feed is potentially an efficient measure for the management and control of <span class="match annotated ">house flies</span> in caged-poultry facilities. 
 </body></html>

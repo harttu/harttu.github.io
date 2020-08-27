@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>black morels</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20888422</h3>Phylogeny and historical biogeography of true <span class="yellow">morels</span> (Morchella) reveals an early Cretaceous origin and high continental endemism and provincialism in the Holarctic. <br><br>True <span class="yellow">morels</span> (Morchella, Ascomycota) are arguably the most highly-prized of the estimated 1.5 million fungi that inhabit our planet. Field guides treat these epicurean macrofungi as belonging to a few species with cosmopolitan distributions, but this hypothesis has not been tested. Prompted by the results of a growing number of molecular studies, which have shown many microbes exhibit strong biogeographic structure and cryptic speciation, we constructed a 4-gene dataset for 177 members of the Morchellaceae to elucidate their origin, evolutionary diversification and historical biogeography. Diversification time estimates place the origin of the Morchellaceae in the middle Triassic 243.63 (95% highest posterior density [HPD] interval: 169.35-319.89) million years ago (Mya) and the divergence of Morchella from its closest relatives in the early Cretaceous 129.61 (95% HPD interval: 90.26-173.16) Mya, both within western North America. Phylogenetic analyses identified three lineages within Morchella: a basal monotypic lineage represented by <span class="yellow">Morchella rufobrunnea</span>, and two sister clades comprising the <span class="blue">black morels</span> (Elata Clade, 26 species) and <span class="yellow">yellow morels</span> (Esculenta Clade, 16 species). Morchella possesses a Laurasian distribution with 37/41 species restricted to the Holarctic. All 33 Holarctic species represented by multiple collections exhibited continental endemism. Moreover, 16/18 North American and 13/15 Eurasian species appeared to exhibit provincialism. Although morel fruit bodies produce thousands of explosively discharged spores that are well suited to aerial dispersal, our results suggest that they are poorly adapted at invading novel niches. <span class="yellow">Morels</span> also appear to have retained the ancestral fruit body plan, which has remained remarkably static since the Cretaceous. 
+<h2>black morels</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20888422</h3>Phylogeny and historical biogeography of true <span class="annotated ">morels</span> (Morchella) reveals an early Cretaceous origin and high continental endemism and provincialism in the Holarctic. <br><br>True <span class="annotated ">morels</span> (Morchella, Ascomycota) are arguably the most highly-prized of the estimated 1.5 million fungi that inhabit our planet. Field guides treat these epicurean macrofungi as belonging to a few species with cosmopolitan distributions, but this hypothesis has not been tested. Prompted by the results of a growing number of molecular studies, which have shown many microbes exhibit strong biogeographic structure and cryptic speciation, we constructed a 4-gene dataset for 177 members of the Morchellaceae to elucidate their origin, evolutionary diversification and historical biogeography. Diversification time estimates place the origin of the Morchellaceae in the middle Triassic 243.63 (95% highest posterior density [HPD] interval: 169.35-319.89) million years ago (Mya) and the divergence of Morchella from its closest relatives in the early Cretaceous 129.61 (95% HPD interval: 90.26-173.16) Mya, both within western North America. Phylogenetic analyses identified three lineages within Morchella: a basal monotypic lineage represented by <span class="annotated ">Morchella rufobrunnea</span>, and two sister clades comprising the <span class="match annotated ">black morels</span> (Elata Clade, 26 species) and <span class="annotated ">yellow morels</span> (Esculenta Clade, 16 species). Morchella possesses a Laurasian distribution with 37/41 species restricted to the Holarctic. All 33 Holarctic species represented by multiple collections exhibited continental endemism. Moreover, 16/18 North American and 13/15 Eurasian species appeared to exhibit provincialism. Although morel fruit bodies produce thousands of explosively discharged spores that are well suited to aerial dispersal, our results suggest that they are poorly adapted at invading novel niches. <span class="annotated ">Morels</span> also appear to have retained the ancestral fruit body plan, which has remained remarkably static since the Cretaceous. 
 </body></html>

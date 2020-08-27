@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>Trichoderma brevicompactum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21145409</h3>Overexpression of the trichodiene synthase gene tri5 increases trichodermin production and antimicrobial activity in <span class="blue">Trichoderma brevicompactum</span>. <br><br><span class="blue">Trichoderma brevicompactum</span> produces trichodermin, a simple trichothecene-type toxin that shares the first steps of the sesquiterpene biosynthetic pathway with other phytotoxic trichothecenes from <span class="yellow">Fusarium spp</span>. Trichodiene synthase catalyses the conversion of farnesyl pyrophosphate to trichodiene and it is encoded by the tri5 gene that was cloned and analysed functionally by homologous overexpression in <span class="yellow">T. brevicompactum</span>. tri5 expression was up-regulated in media with glucose, H(2)O(2) or glycerol. tri5 repression was observed in cultures supplemented with the antioxidants ferulic acid and tyrosol. Acetone extracts of tri5-overexpressing transformants displayed higher antifungal activity than those from the wild-type. Chromatographic and spectroscopic analyses revealed that tri5 overexpression led to an increased production of trichodermin and tyrosol. Agar diffusion assays with these two purified metabolites from the tri5-overexpressing transformant <span class="yellow">T. brevicompactum</span> Tb41tri5 showed that only trichodermin had antifungal activity against <span class="yellow">Saccharomyces cerevisiae</span>, <span class="yellow">Kluyveromyces marxianus</span>, <span class="yellow">Candida albicans</span>, <span class="yellow">Candida glabrata</span>, <span class="yellow">Candida tropicalis</span> and <span class="yellow">Aspergillus fumigatus</span>, in most cases such activity being higher than that observed for amphotericin B and hygromycin. Our results point to the significant role of tri5 in the production of trichodermin and in the antifungal activity of <span class="yellow">T. brevicompactum</span>. 
+<h2>Trichoderma brevicompactum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21145409</h3>Overexpression of the trichodiene synthase gene tri5 increases trichodermin production and antimicrobial activity in <span class="match annotated ">Trichoderma brevicompactum</span>. <br><br><span class="match annotated ">Trichoderma brevicompactum</span> produces trichodermin, a simple trichothecene-type toxin that shares the first steps of the sesquiterpene biosynthetic pathway with other phytotoxic trichothecenes from <span class="annotated ">Fusarium spp</span>. Trichodiene synthase catalyses the conversion of farnesyl pyrophosphate to trichodiene and it is encoded by the tri5 gene that was cloned and analysed functionally by homologous overexpression in <span class="annotated ">T. brevicompactum</span>. tri5 expression was up-regulated in media with glucose, H(2)O(2) or glycerol. tri5 repression was observed in cultures supplemented with the antioxidants ferulic acid and tyrosol. Acetone extracts of tri5-overexpressing transformants displayed higher antifungal activity than those from the wild-type. Chromatographic and spectroscopic analyses revealed that tri5 overexpression led to an increased production of trichodermin and tyrosol. Agar diffusion assays with these two purified metabolites from the tri5-overexpressing transformant <span class="annotated ">T. brevicompactum</span> Tb41tri5 showed that only trichodermin had antifungal activity against <span class="annotated ">Saccharomyces cerevisiae</span>, <span class="annotated ">Kluyveromyces marxianus</span>, <span class="annotated ">Candida albicans</span>, <span class="annotated ">Candida glabrata</span>, <span class="annotated ">Candida tropicalis</span> and <span class="annotated ">Aspergillus fumigatus</span>, in most cases such activity being higher than that observed for amphotericin B and hygromycin. Our results point to the significant role of tri5 in the production of trichodermin and in the antifungal activity of <span class="annotated ">T. brevicompactum</span>. 
 </body></html>

@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>S. negevensis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20971898</h3>Nucleotide parasitism by <span class="yellow">Simkania negevensis</span> (Chlamydiae).<br><br>Intracellular bacteria live in an environment rich in most essential metabolites but need special mechanisms to access these substrates. Nucleotide transport proteins (NTTs) catalyze the import of ATP and other nucleotides from the eukaryotic host into the bacterial cell and render de novo synthesis of these compounds dispensable. The draft genome sequence of <span class="yellow">Simkania negevensis strain Z</span>, a chlamydial organism considered a newly emerging pathogen, revealed four genes encoding putative nucleotide transport proteins (SnNTT1 to SnNTT4), all of which are transcribed during growth of <span class="blue">S. negevensis</span> in Acanthamoeba host cells, as confirmed by reverse transcription-PCR. Using heterologous expression in <span class="yellow">Escherichia coli</span>, we could show that SnNTT1 functions as an ATP/ADP antiporter, SnNTT2 as a guanine nucleotide/ATP/H(+) symporter driven by the membrane potential, and SnNTT3 as a nucleotide triphosphate antiporter. In addition, SnNTT3 is able to transport dCTP, which has not been shown for a prokaryotic transport protein before. No substrate could be identified for SnNTT4. Taking these data together, <span class="blue">S. negevensis</span> employs a set of nucleotide transport proteins to efficiently tap its host's energy and nucleotide pools. Although similar to other chlamydiae, these transporters show distinct and unique adaptations with respect to substrate specificities and mode of transport. 
+<h2>S. negevensis</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20971898</h3>Nucleotide parasitism by <span class="annotated ">Simkania negevensis</span> (Chlamydiae).<br><br>Intracellular bacteria live in an environment rich in most essential metabolites but need special mechanisms to access these substrates. Nucleotide transport proteins (NTTs) catalyze the import of ATP and other nucleotides from the eukaryotic host into the bacterial cell and render de novo synthesis of these compounds dispensable. The draft genome sequence of <span class="annotated ">Simkania negevensis strain Z</span>, a chlamydial organism considered a newly emerging pathogen, revealed four genes encoding putative nucleotide transport proteins (SnNTT1 to SnNTT4), all of which are transcribed during growth of <span class="match annotated ">S. negevensis</span> in Acanthamoeba host cells, as confirmed by reverse transcription-PCR. Using heterologous expression in <span class="annotated ">Escherichia coli</span>, we could show that SnNTT1 functions as an ATP/ADP antiporter, SnNTT2 as a guanine nucleotide/ATP/H(+) symporter driven by the membrane potential, and SnNTT3 as a nucleotide triphosphate antiporter. In addition, SnNTT3 is able to transport dCTP, which has not been shown for a prokaryotic transport protein before. No substrate could be identified for SnNTT4. Taking these data together, <span class="match annotated ">S. negevensis</span> employs a set of nucleotide transport proteins to efficiently tap its host's energy and nucleotide pools. Although similar to other chlamydiae, these transporters show distinct and unique adaptations with respect to substrate specificities and mode of transport. 
 </body></html>

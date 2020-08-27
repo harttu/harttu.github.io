@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>C. desouzai</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21420905</h3>Phylogenetic validation of the genera Angomonas and Strigomonas of trypanosomatids harboring bacterial endosymbionts with the description of new species of trypanosomatids and of proteobacterial symbionts. <br><br>We comparatively examined the nutritional, molecular and optical and electron microscopical characteristics of reference species and new isolates of trypanosomatids harboring bacterial endosymbionts. Sequencing of the V7V8 region of the small subunit of the ribosomal RNA (SSU rRNA) gene distinguished six major genotypes among the 13 isolates examined. The entire sequences of the SSU rRNA and glycosomal glyceraldehyde phosphate dehydrogenase (gGAPDH) genes were obtained for phylogenetic analyses. In the resulting phylogenetic trees, the symbiont-harboring species clustered as a major clade comprising two subclades that corresponded to the proposed genera Angomonas and Strigomonas. The genus Angomonas comprised 10 flagellates including former <span class="yellow">Crithidia deanei</span> and <span class="blue">C. desouzai</span> plus a new species. The genus Strigomonas included former <span class="yellow">Crithidia oncopelti</span> and <span class="yellow">Blastocrithidia culicis</span> plus a new species. Sequences from the internal transcribed spacer of ribosomal DNA (ITS rDNA) and size polymorphism of kinetoplast DNA (kDNA) minicircles revealed considerable genetic heterogeneity within the genera Angomonas and Strigomonas. Phylogenetic analyses based on 16S rDNA and ITS rDNA sequences demonstrated that all of the endosymbionts belonged to the <span class="yellow">Betaproteobacteria</span> and revealed three new species. The congruence of the phylogenetic trees of trypanosomatids and their symbionts support a co-divergent host-symbiont evolutionary history. 
+<h2>C. desouzai</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21420905</h3>Phylogenetic validation of the genera Angomonas and Strigomonas of trypanosomatids harboring bacterial endosymbionts with the description of new species of trypanosomatids and of proteobacterial symbionts. <br><br>We comparatively examined the nutritional, molecular and optical and electron microscopical characteristics of reference species and new isolates of trypanosomatids harboring bacterial endosymbionts. Sequencing of the V7V8 region of the small subunit of the ribosomal RNA (SSU rRNA) gene distinguished six major genotypes among the 13 isolates examined. The entire sequences of the SSU rRNA and glycosomal glyceraldehyde phosphate dehydrogenase (gGAPDH) genes were obtained for phylogenetic analyses. In the resulting phylogenetic trees, the symbiont-harboring species clustered as a major clade comprising two subclades that corresponded to the proposed genera Angomonas and Strigomonas. The genus Angomonas comprised 10 flagellates including former <span class="annotated ">Crithidia deanei</span> and <span class="match annotated ">C. desouzai</span> plus a new species. The genus Strigomonas included former <span class="annotated ">Crithidia oncopelti</span> and <span class="annotated ">Blastocrithidia culicis</span> plus a new species. Sequences from the internal transcribed spacer of ribosomal DNA (ITS rDNA) and size polymorphism of kinetoplast DNA (kDNA) minicircles revealed considerable genetic heterogeneity within the genera Angomonas and Strigomonas. Phylogenetic analyses based on 16S rDNA and ITS rDNA sequences demonstrated that all of the endosymbionts belonged to the <span class="unannotated ">Betaproteobacteria</span> and revealed three new species. The congruence of the phylogenetic trees of trypanosomatids and their symbionts support a co-divergent host-symbiont evolutionary history. 
 </body></html>

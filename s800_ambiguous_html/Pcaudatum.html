@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>P. caudatum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21497073</h3>Dynamic behaviour of stationary pronuclei during their positioning in <span class="yellow">Paramecium caudatum</span>. <br><br>During conjugation of <span class="yellow">Paramecium caudatum</span>, there are two well-known stages when nuclear migration occurs. What happens to the nuclei is closely related to their localisations in cells. The first of these stages is the entrance of one meiotic product into the paroral region. This nucleus survives, while the remaining three outside this area degenerate. The second stage is the antero-posterior localisation of eight synkaryon division products. Four posterior nuclei are differentiated into macronuclear anlagen, whereas four anterior nuclei remain as the presumptive micronuclei. In this experiment, the process of the third prezygotic division of <span class="blue">P. caudatum</span> was studied with the help of protargol staining. Here, a third nuclear migration was discovered. By two spindle turnings and two spindle elongations, stationary pronuclei were positioned near migratory pronuclei. This positioning of stationary pronuclei could shorten the distance for transferred migratory pronuclei to recognise and reach the stationary pronuclei. This fosters the synkaryon formation of <span class="blue">P. caudatum</span>. 
+<h2>P. caudatum</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21497073</h3>Dynamic behaviour of stationary pronuclei during their positioning in <span class="annotated ">Paramecium caudatum</span>. <br><br>During conjugation of <span class="annotated ">Paramecium caudatum</span>, there are two well-known stages when nuclear migration occurs. What happens to the nuclei is closely related to their localisations in cells. The first of these stages is the entrance of one meiotic product into the paroral region. This nucleus survives, while the remaining three outside this area degenerate. The second stage is the antero-posterior localisation of eight synkaryon division products. Four posterior nuclei are differentiated into macronuclear anlagen, whereas four anterior nuclei remain as the presumptive micronuclei. In this experiment, the process of the third prezygotic division of <span class="match annotated ">P. caudatum</span> was studied with the help of protargol staining. Here, a third nuclear migration was discovered. By two spindle turnings and two spindle elongations, stationary pronuclei were positioned near migratory pronuclei. This positioning of stationary pronuclei could shorten the distance for transferred migratory pronuclei to recognise and reach the stationary pronuclei. This fosters the synkaryon formation of <span class="match annotated ">P. caudatum</span>. 
 </body></html>

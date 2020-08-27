@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>yellow fever mosquito</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21699592</h3>Characterization of the oxysterol-binding protein gene family in the <span class="blue">yellow fever mosquito</span>, <span class="yellow">Aedes aegypti</span>. <br><br>The oxysterol-binding protein (OSBP) and OSBP-related proteins (ORPs) are sterol-binding proteins that may be involved in cellular sterol transportation, sterol metabolism and signal transduction pathways. Four ORP genes were cloned from <span class="yellow">Aedes aegypti</span>. Based on amino acid sequence homology to <span class="yellow">human</span> proteins, they are AeOSBP, AeORP1, AeORP8 and AeORP9. Splicing variants of AeOSBP and AeORP8 were identified. The temporal and spatial transcription patterns of members of the AeOSBP gene family through developmental stages and the gonotrophic cycle were profiled. AeORP1 transcription seemed to be head tissue-specific, whereas AeOSBP and AeORP9 expression was induced by a bloodmeal. Furthermore, over-expression of AeORPs facilitated [(3)H]-cholesterol uptake in <span class="yellow">Ae. aegypti</span> cultured Aag -2 cells. 
+<h2>yellow fever mosquito</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21699592</h3>Characterization of the oxysterol-binding protein gene family in the <span class="match annotated ">yellow fever mosquito</span>, <span class="annotated ">Aedes aegypti</span>. <br><br>The oxysterol-binding protein (OSBP) and OSBP-related proteins (ORPs) are sterol-binding proteins that may be involved in cellular sterol transportation, sterol metabolism and signal transduction pathways. Four ORP genes were cloned from <span class="annotated ">Aedes aegypti</span>. Based on amino acid sequence homology to <span class="annotated ">human</span> proteins, they are AeOSBP, AeORP1, AeORP8 and AeORP9. Splicing variants of AeOSBP and AeORP8 were identified. The temporal and spatial transcription patterns of members of the AeOSBP gene family through developmental stages and the gonotrophic cycle were profiled. AeORP1 transcription seemed to be head tissue-specific, whereas AeOSBP and AeORP9 expression was induced by a bloodmeal. Furthermore, over-expression of AeORPs facilitated [(3)H]-cholesterol uptake in <span class="annotated ">Ae. aegypti</span> cultured Aag -2 cells. 
 </body></html>

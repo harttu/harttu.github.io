@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>foot-and-mouth disease virus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20951743</h3>Development and validation of a lateral flow immunoassay using colloidal gold for the identification of serotype-specific <span class="yellow">foot-and-mouth disease virus O</span>, <span class="yellow">A</span> and <span class="yellow">Asia 1</span>. <br><br>A lateral flow immunoassay (LFI) was developed to identify and diagnose <span class="blue">foot-and-mouth disease virus</span> (<span class="yellow">FMDV</span>) serotypes <span class="yellow">O</span>, <span class="yellow">A</span> and <span class="yellow">Asia 1</span>. Antibodies obtained from <span class="yellow">rabbits</span> and guinea <span class="yellow">pigs</span> immunized with cell-culture-adapted <span class="yellow">virus</span> strains (<span class="yellow">O/CHA/99</span>, <span class="yellow">A/GS/LX/66</span>, <span class="yellow">Asia 1/CHN/05</span>) and suckling-<span class="yellow">mouse</span> adapted <span class="yellow">virus</span> strains (<span class="yellow">O/AV99(L)</span>, <span class="yellow">A/AV88(L)</span>, <span class="yellow">Asia 1/YNBS/58</span>) were used as capture antibodies. The diagnostic kit included three immunochromatographic strips of types <span class="yellow">O</span>, <span class="yellow">A</span> and <span class="yellow">Asia 1</span>, and the type-specific results were confirmed by color on the test lines of the three strips. The LFI was evaluated using epithelial and vesicular samples (n=396) prepared from current and historical field samples (provide by the National Foot-and-Mouth Disease Reference Laboratory of China at Lanzhou Veterinary Research Institute). Negative samples (n=95) were collected from healthy animals. The diagnostic sensitivity of the LFI for <span class="yellow">FMDV</span> serotypes <span class="yellow">O</span>, <span class="yellow">A</span> and <span class="yellow">Asia 1</span> was 88.3% compared to 89.7% obtained by the reference method of indirect-sandwich ELISA. The sensitivity of the LFI for <span class="yellow">FMDV type Asia 1</span> was higher at 92.1% compared to 90.5% for the ELISA. The specificity of the LFI was 97.1% compared with 97.4%. 
+<h2>foot-and-mouth disease virus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>20951743</h3>Development and validation of a lateral flow immunoassay using colloidal gold for the identification of serotype-specific <span class="annotated ">foot-and-mouth disease virus O</span>, <span class="annotated ">A</span> and <span class="annotated ">Asia 1</span>. <br><br>A lateral flow immunoassay (LFI) was developed to identify and diagnose <span class="match annotated ">foot-and-mouth disease virus</span> (<span class="annotated ">FMDV</span>) serotypes <span class="annotated ">O</span>, <span class="annotated ">A</span> and <span class="annotated ">Asia 1</span>. Antibodies obtained from <span class="annotated ">rabbits</span> and <span class="linneaus_only ">guinea pigs</span><span class="unannotated ">pigs</span> immunized with cell-culture-adapted <span class="unannotated ">virus</span> strains (<span class="annotated ">O/CHA/99</span>, <span class="annotated ">A/GS/LX/66</span>, <span class="annotated ">Asia 1/CHN/05</span>) and suckling-<span class="annotated ">mouse</span> adapted <span class="unannotated ">virus</span> strains (<span class="annotated ">O/AV99(L)</span>, <span class="annotated ">A/AV88(L)</span>, <span class="annotated ">Asia 1/YNBS/58</span>) were used as capture antibodies. The diagnostic kit included three immunochromatographic strips of types <span class="annotated ">O</span>, <span class="annotated ">A</span> and <span class="annotated ">Asia 1</span>, and the type-specific results were confirmed by color on the test lines of the three strips. The LFI was evaluated using epithelial and vesicular samples (n=396) prepared from current and historical field samples (provide by the National Foot-and-Mouth Disease Reference Laboratory of China at Lanzhou Veterinary Research Institute). Negative samples (n=95) were collected from healthy animals. The diagnostic sensitivity of the LFI for <span class="annotated ">FMDV</span> serotypes <span class="annotated ">O</span>, <span class="annotated ">A</span> and <span class="annotated ">Asia 1</span> was 88.3% compared to 89.7% obtained by the reference method of indirect-sandwich ELISA. The sensitivity of the LFI for <span class="annotated ">FMDV type Asia 1</span> was higher at 92.1% compared to 90.5% for the ELISA. The specificity of the LFI was 97.1% compared with 97.4%. 
 </body></html>

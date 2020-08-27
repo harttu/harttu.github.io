@@ -2,13 +2,30 @@
 <!doctype html><html lang="en"> <head><meta charset="utf-8"> 
 <title>s800 inconsistencies</title> 
 <style>  
-.yellow { background-color:rgba(50, 180, 180, 0.5); } 
-.red { background-color:rgba(214, 75, 79, 0.5); } 
-.blue { background-color:rgba(75, 75, 214, 0.5); } 
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+
 table { border-collapse: collapse; } 
 th, td { border: 1px solid black; padding: 4px; } 
 th {  cursor: pointer; } 
 th:hover { background: yellow; }
 </style></head><body>
-<h2>serotype A foot-and-mouth disease virus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21029752</h3>Multiplex PCR for rapid detection of <span class="blue">serotype A foot-and-mouth disease virus</span> variants with amino acid deletion at position 59 of the capsid protein VP3. <br><br>In India, there has been co-circulation, extinction and emergence of genotypes/lineages within <span class="yellow">serotype A</span><span class="yellow">A</span> foot-and-mouth disease (<span class="yellow">FMD</span>) <span class="yellow">virus</span>. At present an antigenically heterogeneous, unique lineage within genotype VII dominates the field outbreaks. This genetic cluster has amino acid deletion at position 59 of VP3 (VP3(59)-deletion group), considered to be critical antigenically. The emergence of this group warrants rapid and accurate detection to facilitate early planning and implementation of an effective control policy. <span class="yellow">A</span> rapid multiplex PCR assay was developed for detection of the dominating VP3(59)-deletion group with 100% sensitivity and specificity, even before generating sequence data and confirmatory phylogenetic analysis. This development is important for surveillance of <span class="yellow">FMD</span> in India. 
+<h2>serotype A foot-and-mouth disease virus</h2><span class="red">Not tagged name</span> - <span class="blue">Tagged name</span> - <span class="yellow">Other name</span><br><hr><h3>21029752</h3>Multiplex PCR for rapid detection of <span class="match annotated ">serotype A foot-and-mouth disease virus</span> variants with amino acid deletion at position 59 of the capsid protein VP3. <br><br>In India, there has been co-circulation, extinction and emergence of genotypes/lineages within <span class="unannotated ">serotype A</span><span class="unannotated ">A</span> foot-and-mouth disease (<span class="annotated ">FMD</span>) <span class="unannotated ">virus</span>. At present an antigenically heterogeneous, unique lineage within genotype VII dominates the field outbreaks. This genetic cluster has amino acid deletion at position 59 of VP3 (VP3(59)-deletion group), considered to be critical antigenically. The emergence of this group warrants rapid and accurate detection to facilitate early planning and implementation of an effective control policy. <span class="unannotated ">A</span> rapid multiplex PCR assay was developed for detection of the dominating VP3(59)-deletion group with 100% sensitivity and specificity, even before generating sequence data and confirmatory phylogenetic analysis. This development is important for surveillance of <span class="annotated ">FMD</span> in India. 
 </body></html>
