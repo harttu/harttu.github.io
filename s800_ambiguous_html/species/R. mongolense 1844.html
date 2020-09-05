@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>R. mongolense 1844</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20971905</h3>The nodulation of <span class="unannotated ">alfalfa</span> by the acid-tolerant <span class="annotated ">Rhizobium sp. strain LPU83</span> does not require sulfated forms of lipochitooligosaccharide nodulation signals. <br><br>The induction of root nodules by the majority of rhizobia has a strict requirement for the secretion of symbiosis-specific lipochitooligosaccharides (nodulation factors [NFs]). The nature of the chemical substitution on the NFs depends on the particular rhizobium and contributes to the host specificity imparted by the NFs. We present here a description of the genetic organization of the nod gene cluster and the characterization of the chemical structure of the NFs associated with the broad-host-range <span class="annotated ">Rhizobium sp. strain LPU83</span>, a bacterium capable of nodulating at least <span class="annotated ">alfalfa</span>, bean, and <span class="annotated ">Leucena leucocephala</span>. The nod gene cluster was located on the plasmid pLPU83b. The organization of the cluster showed synteny with those of the <span class="annotated ">alfalfa</span>-nodulating rhizobia, <span class="annotated ">Sinorhizobium meliloti</span> and <span class="annotated ">Sinorhizobium medicae</span>. Interestingly, the strongest sequence similarity observed was between the partial nod sequences of <span class="annotated ">Rhizobium mongolense USDA 1844</span> and the corresponding <span class="annotated ">LPU83</span> nod genes sequences. The phylogenetic analysis of the intergenic region nodEG positions strain <span class="annotated ">LPU83</span> and the type strain <span class="match annotated ">R. mongolense 1844</span> in the same branch, which indicates that <span class="annotated ">Rhizobium sp. strain LPU83</span> might represent an early <span class="annotated ">alfalfa</span>-nodulating genotype. The NF chemical structures obtained for the wild-type strain consist of a trimeric, tetrameric, and pentameric chitin backbone that shares some substitutions with both alfalfa- and bean-nodulating rhizobia. Remarkably, while in strain <span class="annotated ">LPU83</span> most of the NFs were sulfated in their reducing terminal residue, none of the NFs isolated from the nodH mutant <span class="annotated ">LPU83-H</span> were sulfated. The evidence obtained supports the notion that the sulfate decoration of NFs in <span class="annotated ">LPU83</span> is not necessary for <span class="annotated ">alfalfa</span> nodulation. 
+</body></html>

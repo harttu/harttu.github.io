@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20950650</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Rapid detection of drug-resistant mutations in <span class="annotated ">hepatitis B virus</span> by the PCR-Invader assay. <br><br>Early detection of resistant mutations of <span class="annotated ">hepatitis B virus</span> (<span class="annotated ">HBV</span>) is important for <span class="linneaus_only ">patients</span> on nucleos(t)ide analog therapy. An assay based on the PCR-Invader technology was developed to detect resistant mutations with high sensitivity. The assay specifically detects mutations at codons 180, 181, 184, 202, 204, and 250 of the <span class="annotated ">HBV</span> polymerase reverse transcriptase domain. These mutations result in resistance to lamivudine and entecavir. In mixtures of plasmids containing wild-type and resistant mutants, fold-over-zero values for resistant mutations were detected in 2% of the total. Seventy-five serum samples from <span class="linneaus_only ">patients</span>, whose treatment had been switched from lamivudine to entecavir, were examined by the PCR-Invader assay and direct sequencing. The PCR-Invader assay detected all resistant mutations that were detected by direct sequencing and even detected the presence of mutants that direct sequencing could not. Cloning sequencing confirmed those mutations found by the PCR-Invader assay and not by direct sequencing. The PCR-Invader assay is a useful tool for the early detection of drug-resistant mutations. 
+</body></html>

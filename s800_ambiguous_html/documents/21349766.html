@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21349766</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Treatment implications of the emerging molecular classification system for melanoma. <br><br>Melanoma is an aggressive disease with few standard treatment options. The conventional classification system for this disease is based on histological growth patterns, with division into four subtypes: superficial spreading, lentigo maligna, nodular, and acral lentiginous. Major limitations of this classification system are absence of prognostic importance and little correlation with treatment outcomes. Recent preclinical and clinical findings support the notion that melanoma is not one malignant disorder but rather a family of distinct molecular diseases. Incorporation of genetic signatures into the conventional histopathological classification of melanoma has great implications for development of new and effective treatments. Genes of the mitogen-associated protein kinase (MAPK) pathway harbour alterations sometimes identified in <span class="linneaus_only ">people</span> with melanoma. The mutation Val600Glu in the BRAF oncogene (designated BRAF(V600E)) has been associated with sensitivity in vitro and in vivo to agents that inhibit BRAF(V600E) or MEK (a kinase in the MAPK pathway). Melanomas arising from mucosal, acral, chronically sun-damaged surfaces sometimes have oncogenic mutations in KIT, against which several inhibitors have shown clinical efficacy. Some uveal melanomas have activating mutations in GNAQ and GNA11, rendering them potentially susceptible to MEK inhibition. These findings suggest that prospective genotyping of <span class="linneaus_only ">patients</span> with melanoma should be used increasingly as we work to develop new and effective treatments for this disease. 
+</body></html>

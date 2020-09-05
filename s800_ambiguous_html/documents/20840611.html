@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20840611</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Do quantitative vessel and pit characters account for ion-mediated changes in the hydraulic conductance of angiosperm xylem? <br><br>* The hydraulic conductance of angiosperm xylem has been suggested to vary with changes in sap solute concentrations because of intervessel pit properties. * The magnitude of the 'ionic effect' was linked with vessel and pit dimensions in 20 angiosperm species covering 13 families including six Lauraceae species. * <span class="unannotated ">A</span> positive correlation was found between ionic effect and vessel grouping parameters, especially the portion of vessel walls in contact with neighbouring vessels. Species with intervessel contact fraction (F(C)) values &lt; 0.1 showed an ionic effect between 2% and 17%, while species with F(C) values > 0.1 exhibited a response between 10% and 32%. The ionic effect increased linearly with the mean fraction of the total vessel wall area occupied by intervessel pits as well as with the intervessel contact length. However, no significant correlation occurred between the ionic effect and total intervessel pit membrane area per vessel, vessel diameter, vessel length, vessel wall area, and intervessel pit membrane thickness. * Quantitative vessel and pit characters are suggested to contribute to interspecific variation of the ionic effect, whereas chemical properties of intervessel pit membranes are likely to play an additional role. 
+</body></html>

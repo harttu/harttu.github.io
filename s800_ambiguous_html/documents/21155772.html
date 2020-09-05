@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21155772</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>The Serengeti food web: empirical quantification and analysis of topological changes under increasing <span class="annotated ">human</span> impact. <br><br>1. To address effects of land use and <span class="annotated ">human</span> overexploitation on wildlife populations, it is essential to better understand how <span class="annotated ">human</span> activities have changed species composition, diversity and functioning. Theoretical studies modelled how network properties change under <span class="annotated ">human</span>-induced, non-random species loss. However, we lack data on realistic species-loss sequences in threatened, real-world food webs to parameterize these models. 2. Here, we present a first size-structured topological food web of one of the most pristine terrestrial ecosystems in the world, the Serengeti ecosystem (Tanzania). The food web consists of 95 grouped nodes and includes both invertebrates and vertebrates ranging from body masses between 10(-7) and 10(4) kg. 3. We study the topological changes in this food web that result from the simulated IUCN-based species-loss sequence representing current species vulnerability to <span class="annotated ">human</span> disturbances in and around this savanna ecosystem. We then compare this realistic extinction scenario with other extinction sequences based on body size and connectance and perform an analysis of robustness of this savanna food web. 4. We demonstrate that real-world species loss in this case starts with the biggest (mega) herbivores and top predators, causing higher predator-prey mass ratios. However, unlike theoretically modelled linear species deletion sequences, this causes poor-connected species to be lost first, while more highly connected species become lost as <span class="annotated ">human</span> impact progresses. This food web shows high robustness to decreasing body size and increasing connectance deletion sequences compared with a high sensitivity to the decreasing connectance deletion scenario. 5. Furthermore, based on the current knowledge of the Serengeti ecosystem, we discuss how the focus on food web topology alone, disregarding nontrophic interactions, may lead to an underestimation of <span class="annotated ">human</span> impacts on wildlife communities, with the number of trophic links affected by a factor of two. 6. This study underlines the importance of integrative efforts between the development of food web theory and basic field work approaches in the quantification of the structure of interaction networks to sustain natural ecosystems in a changing world. 
+</body></html>

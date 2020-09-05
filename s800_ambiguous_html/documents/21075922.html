@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21075922</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Translation efficiency of antiterminator proteins is a determinant for the difference in glucose repression of two Beta-glucoside phosphotransferase system gene clusters in <span class="annotated ">Corynebacterium glutamicum R</span>. <br><br><span class="annotated ">Corynebacterium glutamicum R</span> has two Beta-glucoside phosphoenolpyruvate, carbohydrate phosphotransferase systems (PTS) encoded by bglF and bglF2 located in the respective clusters, bglF-bglA-bglG and bglF2-bglA2-bglG2. Previously, we reported that whereas Beta-glucoside-dependent induction of bglF is strongly repressed by glucose, glucose repression of bglF2 is very weak. Here, we reveal the mechanism behind the different effects of glucose on the two bgl genes. Deletion of the ribonucleic antiterminator sequence and transcriptional terminator located upstream of the translation initiation codon of bglF markedly relieved the glucose repression of a bglF-lacZ fusion, indicating that glucose affects the antitermination mechanism that is responsible for the Beta-glucoside-dependent induction of the bglF cluster. The glucose repression of bglF mRNA was also relieved by introducing a multicopy plasmid carrying the bglG gene encoding an antiterminator of the bglF cluster. Moreover, replacement of the GUG translation initiation codon of bglG with AUG was effective in relieving the glucose repression of bglF and bglG. Inversely, expression of bglF2 and bglG2 was subject to strict glucose repression in a mutant strain in which the AUG translation initiation codon of bglG2 encoding antiterminator of the bglF2 cluster was replaced with GUG. These results suggest that the translation initiation efficiency of the antiterminator proteins, at least in part, determines whether the target genes are subject to glucose repression. We also found that bglF expression was induced by glucose in the BglG-overexpressing strains, which may be explained by the ability of BglF to transport glucose. 
+</body></html>

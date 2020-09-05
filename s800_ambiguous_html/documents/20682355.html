@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20682355</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>PRP8 intein in Ajellomycetaceae family pathogens: sequence analysis, splicing evaluation and homing endonuclease activity. <br><br>Inteins are intervening sequences that are transcribed and translated with flanking host protein sequences and then self-excised by protein splicing. Bi-functional inteins also contain a homing endonuclease responsible for their genetic mobility. The PRP8 intein, the most widespread among fungi, occurs in important pathogens such as <span class="annotated ">Histoplasma capsulatum</span> and <span class="annotated ">Paracoccidioides brasiliensis</span>, from the Ajellomycetaceae family. Herein, we describe the bi-functional PRP8 intein in two other Ajellomycetacean pathogens, <span class="annotated ">Blastomyces dermatitidis</span> and <span class="annotated ">Emmonsia parva</span>. Sequence analysis and experimental evidence suggest that the homing endonuclease from PbrPRP8 is inactive. The splicing activity of the PRP8 intein from the <span class="annotated ">B. dermatitidis</span>, <span class="annotated ">E. parva</span> and <span class="annotated ">P. brasiliensis species complex</span> was demonstrated in a non-native protein context in <span class="annotated ">Escherichia coli</span>. Since the PRP8 intein is located in a functionally essential nuclear protein, it can be considered a promising therapeutic target for anti-fungal drugs, because inhibition of intein splicing should inhibit proliferation of intein-containing pathogens. 
+</body></html>

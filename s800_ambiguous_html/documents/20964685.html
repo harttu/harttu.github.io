@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20964685</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Contrasting covariation of above- and belowground invertebrate species across plant genotypes. <br><br>1. Invertebrate species generally do not respond independently to genotypic variation in plants, giving rise to clusters of species that naturally associate with or avoid certain genotypes. This covariation causes coevolution to be diffuse rather than pairwise. Studies on this topic, however, have never considered the belowground invertebrate community, leaving a critical gap in our understanding. 2. We investigated the covariation among naturally colonising above- and belowground invertebrate species across six genetically distinct populations of the dune grass <span class="annotated ">Ammophila arenaria</span>. After having grown from seed in a common garden, plants were randomised in a single field site to exclude all but broad-sense genetic variation. 3. Strong positive covariation across genotypes among both above- and belowground invertebrates was detected, while correlations between these two groups were negative. This clustering of above- and belowground species matched well with order level taxonomy. Host range, trophic level and food type on the other hand did not correspond well with the clusters. Within the cluster of aboveground fauna, subsequent groupings were not related to any phylogenetic or ecological characteristic, although correlations within these subgroups were very high. We furthermore demonstrated significant differences in multiple invertebrate species occurrence between plant genotypes, in general as well as at the above- and belowground level. 4. The observed strong covariation suggests diffuse coevolution between <span class="annotated ">A. arenaria</span> and its associated invertebrate species. The trade-off between root and shoot invertebrates could however hamper directional selection on resistance to either group. 5. Our results clearly demonstrate the need for studies of plant-animal interactions to include the belowground fauna, as this might drastically alter our general conception of how plants and their associated animal communities interact and how these interactions shape the process of evolution. 
+</body></html>

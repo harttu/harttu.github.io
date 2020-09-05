@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20946589</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Cryptogein, a <span class="unannotated ">fungal</span> elicitor, remodels the phenylpropanoid metabolism of <span class="annotated ">tobacco</span> cell suspension cultures in a calcium-dependent manner. <br><br>Plant cells use calcium-based signalling pathways to transduce biotic and/or abiotic stimuli into adaptive responses. However, little is known about the coupling between calcium signalling, transcriptional regulation and the downstream biochemical processes. To understand these relationships better, we challenged <span class="annotated ">tobacco</span> BY-2 cells with cryptogein and evaluated how calcium transients (monitored through the calcium sensor aequorin) impact (1) transcript levels of phenylpropanoid genes (assessed by RT-qPCR); and (2) derived-phenolic compounds (analysed by mass spectrometry). Most genes of the phenylpropanoid pathway were up-regulated by cryptogein and cell wall-bound phenolic compounds accumulated (mainly 5-hydroxyferulic acid). The accumulation of both transcripts and phenolics was calcium-dependent. The transcriptional regulation of phenylpropanoid genes was correlated in a non-linear manner with stimulus intensity and with components of the cryptogein-induced calcium signature. In addition, calmodulin inhibitors increased the sensitivity of cells to low concentrations of cryptogein. These results led us to propose a model of coupling between the cryptogein signal, calcium signalling and the transcriptional response, exerting control of transcription through the coordinated action of two decoding modules exerting opposite effects. 
+</body></html>

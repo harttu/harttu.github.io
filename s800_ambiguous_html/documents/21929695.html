@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21929695</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Overexpression of a cytochrome P450 monooxygenase, CYP6ER1, is associated with resistance to imidacloprid in the <span class="annotated ">brown planthopper</span>, <span class="annotated ">Nilaparvata lugens</span>. <br><br>The <span class="annotated ">brown planthopper</span>, <span class="annotated ">Nilaparvata lugens</span>, is an economically significant pest of <span class="annotated ">rice</span> throughout Asia and has evolved resistance to many insecticides including the neonicotinoid imidacloprid. The resistance of field populations of <span class="annotated ">N. lugens</span> to imidacloprid has been attributed to enhanced detoxification by cytochrome P450 monooxygenases (P450s), although, to date, the causative P450(s) has (have) not been identified. In the present study, biochemical assays using the model substrate 7-ethoxycoumarin showed enhanced P450 activity in several resistant <span class="annotated ">N. lugens</span> field strains when compared with a susceptible reference strain. Thirty three cDNA sequences encoding tentative unique P450s were identified from two recent sequencing projects and by degenerate PCR. The mRNA expression level of 32 of these was examined in susceptible, moderately resistant and highly resistant <span class="annotated ">N. lugens</span> strains using quantitative real-time PCR. <span class="unannotated ">A</span> single P450 gene (CYP6ER1) was highly overexpressed in all resistant strains (up to 40-fold) and the level of expression observed in the different <span class="annotated ">N. lugens</span> strains was significantly correlated with the resistance phenotype. These results provide strong evidence for a role of CYP6ER1 in the resistance of <span class="annotated ">N. lugens</span> to imidacloprid. 
+</body></html>

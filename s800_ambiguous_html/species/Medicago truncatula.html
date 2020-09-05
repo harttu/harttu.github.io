@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Medicago truncatula</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20964693</h3>Jasmonate biosynthesis in legume and actinorhizal nodules.<br><br>Jasmonic acid (JA) is a plant signalling compound that has been implicated in the regulation of mutualistic symbioses. In order to understand the spatial distribution of JA biosynthetic capacity in nodules of two actinorhizal species, <span class="annotated ">Casaurina glauca</span> and <span class="annotated ">Datisca glomerata</span>, and one legume, <span class="match annotated ">Medicago truncatula</span>, we determined the localization of allene oxide cyclase (AOC) which catalyses a committed step in JA biosynthesis. In all nodule types analysed, AOC was detected exclusively in uninfected cells. The levels of JA were compared in the roots and nodules of the three plant species. The nodules and noninoculated roots of the two actinorhizal species, and the root systems of <span class="annotated ">M. truncatula</span>, noninoculated or nodulated with wild-type <span class="annotated ">Sinorhizobium meliloti</span> or with mutants unable to fix nitrogen, did not show significant differences in JA levels. However, JA levels in all plant organs examined increased significantly on mechanical disturbance. To study whether JA played a regulatory role in the nodules of <span class="annotated ">M. truncatula</span>, composite plants containing roots expressing an MtAOC1-sense or MtAOC1-RNAi construct were inoculated with <span class="annotated ">S. meliloti</span>. Neither an increase nor reduction in AOC levels resulted in altered nodule formation. These data suggest that jasmonates are not involved in the development and function of root nodules. 
+<h3>20880223</h3>Arbuscular mycorrhizal hyphopodia and germinated spore exudates trigger Ca2+ spiking in the legume and nonlegume root epidermis. <br><br>* The aim of this study was to investigate Ca(2+) responses to endosymbiotic arbuscular mycorrhizal (AM) fungi in the host root epidermis following pre-infection hyphopodium formation in both legumes and nonlegumes, and to determine to what extent these responses could be mimicked by germinated <span class="annotated ">fungal</span> spore exudate. * Root organ cultures of both <span class="match annotated ">Medicago truncatula</span> and <span class="annotated ">Daucus carota</span>, expressing the nuclear-localized cameleon reporter NupYC2.1, were used to monitor AM-elicited Ca(2+) responses in host root tissues. * Ca(2+) spiking was observed in cells contacted by AM hyphopodia for both hosts, with highest frequencies correlating with the epidermal nucleus positioned facing the <span class="unannotated ">fungal</span> contact site. Treatment with AM spore exudate also elicited Ca(2+) spiking within the AM-responsive zone of the root and, in both cases, spiking was dependent on the <span class="annotated ">M. truncatula</span> common SYM genes DMI1/2, but not on the rhizobial Nod factor perception gene NFP. * These findings support the conclusion that AM <span class="unannotated ">fungal</span> root penetration is preceded by a SYM pathway-dependent oscillatory Ca(2+) response, whose evolutionary origin predates the divergence between asterid and rosid clades. Our results further show that <span class="unannotated ">fungal</span> symbiotic signals are already generated during spore germination, and that cameleon-expressing root organ cultures represent a novel AM-specific bio-assay for such signals. 
+</body></html>

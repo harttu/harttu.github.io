@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20615753</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Isocitrate dehydrogenase-1 mutations: a fundamentally new understanding of diffuse glioma? <br><br>The discovery of somatic mutations in the gene encoding isocitrate dehydrogenase-1 (IDH1) in glioblastomas was remarkable because the enzyme was not previously identified with any known oncogenic pathway. IDH1 is mutated in up to 75% of grade II and grade III diffuse gliomas. Apart from acute myeloid leukaemia, other tumour types do not carry IDH1 mutations. Mutations in a homologous gene, IDH2, have also been identified, although they are much rarer. Although TP53 mutations and 1p/19q codeletions are mutually exclusive in gliomas, in both of these genotypes IDH1 mutations are common. IDH1 and IDH2 mutations are early events in the development of gliomas. Moreover, IDH1 and IDH2 mutations are a major prognostic marker for overall and progression-free survival in grade II-IV gliomas. Mutated IDH1 has an altered catalytic activity that results in the accumulation of 2-hydroxyglutarate. Molecularly, IDH1 and IDH2 mutations are heterozygous, affect only a single codon, and rarely occur together. Because IDH1 does not belong to a traditional oncogenic pathway and is specifically and commonly mutated in gliomas, the altered enzymatic activity of IDH1 may provide a fundamentally new understanding of diffuse glioma. 
+</body></html>

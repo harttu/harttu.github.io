@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21037000</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Adhesive activity of the haemophilus cryptic genospecies cha autotransporter is modulated by variation in tandem Peptide repeats. <br><br>The Haemophilus cryptic genospecies is an important cause of maternal genital tract and neonatal systemic infections and initiates infection by colonizing the genital or respiratory epithelium. In recent work, we identified a unique Haemophilus cryptic genospecies protein called Cha, which mediates efficient adherence to genital and respiratory epithelia. The Cha adhesin belongs to the trimeric autotransporter family and contains an N-terminal signal peptide, an internal passenger domain that harbors adhesive activity, and a C-terminal membrane anchor domain. The passenger domain in Cha contains clusters of YadA-like head domains and neck motifs as well as a series of tandem 28-amino-acid peptide repeats. In the current study, we report that variation in peptide repeat number gradually modulates Cha adhesive activity, associated with a direct effect on the length of Cha fibers on the bacterial cell surface. The N-terminal 404 residues of the Cha passenger domain mediate binding to host cells and also facilitate bacterial aggregation through intermolecular Cha-Cha binding. As the tandem peptide repeats expand, the Cha fiber becomes longer and Cha adherence activity decreases. The expansion and contraction of peptide repeats represent a novel mechanism for modulating adhesive capacity, potentially balancing the need of the organism to colonize the genital and respiratory tracts with the ability to attach to alternative substrates, disperse within the host, or evade the host immune system. 
+</body></html>

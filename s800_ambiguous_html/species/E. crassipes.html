@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>E. crassipes</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21353502</h3>Ciliate community associated with aquatic macrophyte roots: effects of nutrient enrichment on the community composition and species richness. <br><br>The objective of this study was to identify the impact of nutrient enrichment on the diversity of the ciliate community associated with the roots of the aquatic macrophyte <span class="annotated ">Eichhornia crassipes</span>. The experiment was performed in the Garsigmaas Lake, located in the Upper Parana River floodplain, Brazil. We conducted two treatments (fertilized and control) with three replicates each. To increase the initial nutrient concentrations in each mesocosm of the fertilized treatment, we added 1000 mugL(-1) of KNO(3) and 200 mugL(-1) of KH(2)PO(4) during each sampling date. We found a relative high number of ciliate species (85 species) and a predominance of hypotrichs. Among the recorded species, about 25% occurred exclusively in the fertilized treatment. Moreover, detrended correspondence analysis demonstrated that the ciliate community associated with <span class="match annotated ">E. crassipes</span> roots changed significantly in response to the nutrient input in such a way that the species composition of the fertilized treatment was remarkably different from that of the control. In contrast to our expectations, species richness in the fertilized treatment was significantly higher than that in the control, refuting our hypothesis that species richness decreases under eutrophic conditions. 
+</body></html>

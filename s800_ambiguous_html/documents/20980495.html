@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20980495</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>The B cell response is redundant and highly focused on V1V2 during early subtype C infection in a Zambian seroconverter. <br><br>High-titer autologous neutralizing antibody responses have been demonstrated during early subtype C <span class="annotated ">human immunodeficiency virus type 1</span> (<span class="annotated ">HIV-1</span>) infection. However, characterization of this response against autologous <span class="unannotated ">virus</span> at the monoclonal antibody (MAb) level has only recently begun to be elucidated. Here we describe five monoclonal antibodies derived from a subtype C-infected seroconverter and their neutralizing activities against pseudoviruses that carry envelope glycoproteins from 48 days (0 month), 2 months, and 8 months after the estimated time of infection. Sequence analysis indicated that the MAbs arose from three distinct B cell clones, and their pattern of neutralization compared to that in <span class="linneaus_only ">patient</span> plasma suggested that they circulated between 2 and 8 months after infection. Neutralization by MAbs representative of each B cell clone was mapped to two residues: position 134 in V1 and position 189 in V2. Mutational analysis revealed cooperative effects between glycans and residues at these two positions, arguing that they contribute to a single epitope. Analysis of the cognate gp120 sequence through homology modeling places this potential epitope near the interface between the V1 and V2 loops. Additionally, the escape mutation R189S in V2, which conferred resistance against all three MAbs, had no detrimental effect on <span class="unannotated ">virus</span> replication in vitro. Taken together, our data demonstrate that independent B cells repeatedly targeted a single structure in V1V2 during early infection. Despite this assault, a single amino acid change was sufficient to confer complete escape with minimal impact on replication fitness. 
+</body></html>

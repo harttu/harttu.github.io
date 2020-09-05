@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21067947</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Characterizing the role of RNA silencing components in <span class="annotated ">Cryptococcus neoformans</span>. <br><br>The RNA interference (RNAi) mediated by homology-dependent degradation of the target mRNA with small RNA molecules plays a key role in controlling transcription and translation processes in a number of eukaryotic organisms. The RNAi machinery is also evolutionarily conserved in a wide variety of <span class="unannotated ">fungal</span> species, including pathogenic fungi. To elucidate the physiological functions of the RNAi pathway in <span class="annotated ">Cryptococcus neoformans</span> that causes <span class="unannotated ">fungal</span> meningitis, here we performed genetic analyses for genes encoding Argonaute (AGO1 and AGO2), RNA-dependent RNA polymerase (RDP1), and Dicers (DCR1 and DCR2) in both serotype <span class="unannotated ">A</span> and D <span class="annotated ">C. neoformans</span>. The present study shows that Ago1, Rdp1, and Dcr2 are the major components of the RNAi process occurring in <span class="annotated ">C. neoformans</span>. However, the RNAi machinery is not involved in regulation of production of two virulence factors (capsule and melanin), sexual differentiation, and diverse stress response. Comparative transcriptome analysis of the serotype <span class="unannotated ">A</span> and D RNAi mutants revealed that only modest changes occur in the genome-wide transcriptome profiles when the RNAi process was perturbed. Notably, the serotype D rdp1Delta mutants showed an increase in transcript abundance of active retrotransposons and transposons, such as T2 and T3, the latter of which is a novel serotype D-specific transposon of <span class="annotated ">C. neoformans</span>. In a wild type background both T2 and T3 were found to be weakly active mobile elements, although we found no evidence of Cnl1 retrotransposon mobility. In contrast, all three transposable elements exhibited enhanced mobility in the rdp1Delta mutant strain. In conclusion, the RNAi pathway plays an important role in controlling transposon activity and genome integrity of <span class="annotated ">C. neoformans</span>. 
+</body></html>

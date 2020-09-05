@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Scrippsiella trochoidea</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21349764</h3>Interplay between the parasite <span class="annotated ">Amoebophrya sp.</span> (Alveolata) and the cyst formation of the red tide dinoflagellate <span class="match annotated ">Scrippsiella trochoidea</span>. <br><br>Syndiniales (Alveolata) are marine parasites of a wide range of hosts, from unicellular organisms to Metazoa. Many Syndiniales obligatorily kill their hosts to accomplish their life cycle. This is the case for <span class="annotated ">Amoebophrya spp.</span> infecting dinoflagellates. However, several dinoflagellate species known to be infected by these parasites produce diploid resting cysts as part of their life history. These resting cysts may survive several seasons in the sediment before germinating. How these parasites survive during the dormancy of their host remained an open question. We successfully established infections by <span class="annotated ">Amoebophrya sp.</span> in the red tide dinoflagellate <span class="match annotated ">Scrippsiella trochoidea</span>. This host strain was homothallic and able to continuously produce typical calcified cysts covered by calcareous spines. Presence of the parasite significantly speeded up the host cyst production, and cysts produced were the only cells to resist infections. However, some of them were clearly infected, probably earlier in their formation. After 10 months, cysts produced in presence of the parasite were able to germinate and new infective cycles of the parasite were rapidly observed. Thus, a very novel relationship for protists is demonstrated, one in which parasite and host simultaneously enter dormancy, emerging months later to propagate both species. 
+</body></html>

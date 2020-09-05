@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20962093</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><span class="annotated ">Human</span> pluripotent stem cells produce natural killer cells that mediate anti-<span class="annotated ">HIV-1</span> activity by utilizing diverse cellular mechanisms. <br><br>Cell-based therapies against HIV/AIDS have been gaining increased interest. Natural killer (NK) cells are a key component of the innate immune system with the ability to kill diverse tumor cells and virus-infected cells. While NK cells have been shown to play an important role in the control of <span class="annotated ">HIV-1</span> replication, their functional activities are often compromised in <span class="annotated ">HIV-1</span>-infected individuals. We have previously demonstrated the derivation of NK cells from <span class="annotated ">human</span> embryonic stem cells (hESCs) with the ability to potently kill multiple types of tumor cells both in vitro and in vivo. We now demonstrate the derivation of functional NK cells from <span class="unannotated ">human</span> induced pluripotent stem cells (iPSCs). More importantly, both hESC- and iPSC-derived NK cells are able to inhibit <span class="annotated ">HIV-1</span> NL4-3 infection of CEM-GFP cells. Additional studies using <span class="annotated ">HIV-1</span>-infected <span class="unannotated ">human</span> primary CD4(+) T cells illustrated that hESC- and iPSC-derived NK cells suppress <span class="annotated ">HIV-1</span> infection by at least three distinct cellular mechanisms: killing of infected targets through direct lysis, antibody-dependent cellular cytotoxicity, and production of chemokines and cytokines. Our results establish the potential to utilize hESC- and iPSC-derived NK cells to better understand anti-<span class="annotated ">HIV-1</span> immunity and provide a novel cellular immunotherapeutic approach to treat HIV/AIDS. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21601645</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Phr1p, a glycosylphosphatidylinsitol-anchored Beta(1,3)-glucanosyltransferase critical for hyphal wall formation, localizes to the apical growth sites and septa in <span class="annotated ">Candida albicans</span>. <br><br>Cell wall biogenesis is a dynamic process relying on the coordinated activity of several extracellular enzymes. PHR1 is a pH-regulated gene of <span class="annotated ">Candida albicans</span> encoding a glycosylphosphatidylinositol-anchored Beta(1,3)-glucanosyltransferase of family GH72 which acts as a cell wall remodelling enzyme and is crucial for morphogenesis and virulence. In order to explore the function of Phr1p, we obtained a green fluorescent protein (GFP) fusion to determine its localization. During induction of vegetative growth, Phr1p-GFP was concentrated in the plasma membrane of the growing bud, in the mother-bud neck, and in the septum. Phr1p-GFP was recovered in the detergent-resistant membranes indicating its association with the lipid rafts as the wild type Phr1p. Upon induction of hyphal growth, Phr1p-GFP highly concentrated at the apex of the germ tubes and progressively distributed along the lateral sides of the hyphae. Phr1p-GFP also labelled the hyphal septa, where it colocalized with chitin. Localization to the hyphal septa was perturbed in nocodazole-treated cells, whereas inhibition of actin polymerization hindered the apical localization. Electron Microscopy analysis of the hyphal wall ultrastructure of a PHR1 null mutant showed loss of compactness and irregular organization of the surface layer. These observations indicate that Phr1p plays a crucial role in hyphal wall formation, a highly regulated process on which morphogenesis and virulence rely. 
+</body></html>

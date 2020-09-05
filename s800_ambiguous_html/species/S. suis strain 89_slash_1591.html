@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>S. suis strain 89/1591</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21148736</h3>The minor pilin subunit Sgp2 is necessary for assembly of the pilus encoded by the srtG cluster of <span class="annotated ">Streptococcus suis</span>. <br><br>Gram-positive pili are composed of covalently bound pilin subunits whose assembly is mediated via a pilus-specific sortase(s). Major subunits constitute the pilus backbone and are therefore essential for pilus formation. Minor subunits are also incorporated into the pilus, but they are considered to be dispensable for backbone formation. The srtG cluster is one of the putative pilus gene clusters identified in the major <span class="annotated ">swine</span> pathogen <span class="annotated ">Streptococcus suis</span>. It consists of one sortase gene (srtG) and two putative pilin subunit genes (sgp1 and sgp2). In this study, by constructing mutants for each of the genes in the cluster and by both immunoblotting and immunogold electron microscopic analysis with antibodies against Sgp1 and Sgp2, we found that the srtG cluster mediates the expression of pilus-like structures in <span class="match annotated ">S. suis strain 89/1591</span>. In this pilus, Sgp1 forms the backbone, whereas Sgp2 is incorporated as the minor subunit. In accordance with the current model of pilus assembly by Gram-positive organisms, the major subunit Sgp1 was indispensable for backbone formation and the cognate sortase SrtG mediated the polymerization of both subunits. However, unlike other well-characterized Gram-positive bacterial pili, the minor subunit Sgp2 was required for polymerization of the major subunit Sgp1. Because Sgp2 homologues are encoded in several other Gram-positive bacterial pilus gene clusters, in some types of pili, minor pilin subunits may contribute to backbone formation by a novel mechanism. 
+</body></html>

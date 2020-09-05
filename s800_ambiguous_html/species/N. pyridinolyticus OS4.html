@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>N. pyridinolyticus OS4</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20173009</h3><span class="annotated ">Nocardioides caricicola sp. nov.</span>, an endophytic bacterium isolated from a halophyte, <span class="annotated ">Carex scabrifolia</span> Steud. <br><br>A Gram-staining-positive, coccoid to rod-shaped bacterium, designated strain <span class="annotated ">YC6903</span>(T), was isolated from a halophytic plant (<span class="annotated ">Carex scabrifolia</span> Steud.) collected from sand dunes at Namhae Island, Korea, and its taxonomic position was investigated by using a polyphasic approach. Strain <span class="annotated ">YC6903</span>(T) grew optimally at 30 ^0C and at pH 8.0. Phylogenetic analysis based on 16S rRNA gene sequences indicated that strain <span class="annotated ">YC6903</span>(T) belongs to the genus Nocardioides in the family Nocardioidaceae. Strain <span class="annotated ">YC6903</span>(T) was related most closely to <span class="annotated ">Nocardioides pyridinolyticus OS4</span>(T) (97.0 % 16S rRNA gene sequence similarity), <span class="annotated ">Nocardioides dokdonensis FR1436</span>(T) (96.6 %), <span class="annotated ">Nocardioides aquiterrae GW-9</span>(T) (96.6 %) and <span class="annotated ">Nocardioides hankookensis DS-30</span>(T) (96.6 %). The cell-wall peptidoglycan contained LL-diaminopimelic acid and MK-8(H(4)) was the major respiratory quinone. The mean (+/-SD) level of DNA-DNA relatedness between strain <span class="annotated ">YC6903</span>(T) and <span class="match annotated ">N. pyridinolyticus OS4</span>(T) was 53.5+/-5.5 %. The predominant cellular fatty acid of strain <span class="annotated ">YC6903</span>(T) was iso-C(16 : 0) (28.9 %). The DNA G+C content was 71.7 mol%. Phenotypic, phylogenetic and chemotaxonomic data indicated that strain <span class="annotated ">YC6903</span>(T) represents a novel species of the genus Nocardioides, for which the name <span class="annotated ">Nocardioides caricicola sp. nov.</span> is proposed. The type strain is <span class="annotated ">YC6903</span>(T) (=KACC 13778(T) =DSM 22177(T)). 
+</body></html>

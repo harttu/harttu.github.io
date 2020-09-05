@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Patients</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21163445</h3>Clinical experience and laboratory investigations in <span class="linneaus_only ">patients</span> with anti-NMDAR encephalitis. <br><br>Since its discovery in 2007, the encephalitis associated with antibodies against the N-methyl-D-aspartate receptor (NMDAR) has entered the mainstream of neurology and other disciplines. Most <span class="linneaus_only ">patients</span> with anti-NMDAR encephalitis develop a multistage illness that progresses from psychosis, memory deficits, seizures, and language disintegration into a state of unresponsiveness with catatonic features often associated with abnormal movements, and autonomic and breathing instability. The disorder predominantly affects <span class="linneaus_only ">children</span> and young adults, occurs with or without tumour association, and responds to treatment but can relapse. The presence of a tumour (usually an ovarian teratoma) is dependent on age, sex, and ethnicity, being more frequent in <span class="linneaus_only ">women</span> older than 18 years, and slightly more predominant in <span class="unannotated ">black</span> <span class="linneaus_only ">women</span> than it is in white <span class="linneaus_only ">women</span>. <span class="match linneaus_only ">Patients</span> treated with tumour resection and immunotherapy (corticosteroids, intravenous immunoglobulin, or plasma exchange) respond faster to treatment and less frequently need second-line immunotherapy (cyclophosphamide or rituximab, or both) than do <span class="linneaus_only ">patients</span> without a tumour who receive similar initial immunotherapy. More than 75% of all <span class="linneaus_only ">patients</span> have substantial recovery that occurs in inverse order of symptom development and is associated with a decline of antibody titres. Patients' antibodies cause a titre-dependent, reversible decrease of synaptic NMDAR by a mechanism of crosslinking and internalisation. On the basis of models of pharmacological or genetic disruption of NMDAR, these antibody effects reveal a probable pathogenic relation between the depletion of receptors and the clinical features of anti-NMDAR encephalitis. 
+<h3>21036392</h3>Aerosol drug delivery: developments in device design and clinical use.<br><br>Aerosolised drugs are prescribed for use in a range of inhaler devices and systems. Delivering drugs by inhalation requires a formulation that can be successfully aerosolised and a delivery system that produces a useful aerosol of the drug; the particles or droplets need to be of sufficient size and mass to be carried to the distal lung or deposited on proximal airways to give rise to a therapeutic effect. <span class="match linneaus_only ">Patients</span> and caregivers must use and maintain these aerosol drug delivery devices correctly. In recent years, several technical innovations have led to aerosol drug delivery devices with efficient drug delivery and with novel features that take into account factors such as dose tracking, portability, materials of manufacture, breath actuation, the interface with the <span class="linneaus_only ">patient</span>, combination therapies, and systemic delivery. These changes have improved performance in all four categories of devices: metered dose inhalers, spacers and holding chambers, dry powder inhalers, and nebulisers. Additionally, several therapies usually given by injection are now prescribed as aerosols for use in a range of drug delivery devices. In this Review, we discuss recent developments in the design and clinical use of aerosol devices over the past 10-15 years with an emphasis on the treatment of respiratory disorders. 
+</body></html>

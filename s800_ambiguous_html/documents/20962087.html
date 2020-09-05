@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20962087</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>The magnitude of local immunity in the lungs of <span class="annotated ">mice</span> induced by live attenuated <span class="unannotated ">influenza</span> vaccines is determined by local <span class="unannotated ">viral</span> replication and induction of cytokines. <br><br>While live attenuated <span class="unannotated ">influenza</span> vaccines (LAIVs) have been shown to be efficacious and have been licensed for <span class="annotated ">human</span> use, the surface glycoproteins hemagglutinin (HA) and neuraminidase (NA) have to be updated for optimal protective efficacy. Little is known about the effect of different HA and NA proteins on the immunogenicity of LAIVs developed using the same backbone. <span class="unannotated ">A</span> panel of LAIVs that share the internal protein genes, with unique HA and NA gene segments from different <span class="unannotated ">influenza</span> subtypes, was rescued by reverse genetics, and a comparative study of immune responses induced by these vaccines was conducted in <span class="annotated ">mice</span>. The results suggest that the magnitude of lung immunity, including pulmonary IgA antibody and memory CD8(+) T lymphocytes, induced by the vaccines depends on the replication efficiency of the LAIVs, as well as the induction of cytokines/chemokines in the lungs. However, these factors are not important in determining systemic immunity such as serum antibody titers and memory CD8(+) T cells in the spleen. <span class="unannotated ">A</span> qualitative analysis of immune responses induced by a single dose of an <span class="annotated ">H5N1</span> LAIV revealed that the vaccine induced robust systemic and mucosal immunity in <span class="annotated ">mice</span>. In addition, antibodies and memory lymphocytes established in the lungs following vaccination were required for protection against lethal challenge with homologous and heterologous <span class="annotated ">H5N1 viruses</span>. Our results highlight the different requirements for inducing systemic and lung immunity that can be explored for the development of pulmonary immunity for protection against respiratory pathogens. 
+</body></html>

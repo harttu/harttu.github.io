@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Coprinopsis cinerea</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21281729</h3>A mutation in the Cc.ubc2 gene affects clamp cell morphogenesis as well as nuclear migration for dikaryosis in <span class="match annotated ">Coprinopsis cinerea</span>. <br><br>The formation and proliferation of the dikaryon in the agaricomycete <span class="match annotated ">Coprinopsis cinerea</span> is controlled by the mating type genes, <span class="unannotated ">A</span> and B. The B genes, which encode pheromones and pheromone receptors, control nuclear migration for dikaryosis as well as the fusion of the clamp cell with the subterminal cell while the <span class="unannotated ">A</span> genes, which encode two classes of homeodomain proteins, control conjugate nuclear division associated with clamp connection development. We characterized the mutant, B28, which was newly isolated as a strain that fails to form a primary hyphal knot, the first visible sign toward fruiting, from a homokaryotic fruiting strain after REMI mutagenesis. Detailed phenotypic analysis revealed that strain B28 exhibits, in addition to the fruiting defect, a defect in A-regulated clamp cell morphogenesis as well as a defect in B-regulated nuclear migration for dikaryosis. The mutant clamp cells are unique in that they continue growing like branches without fusing with the subterminal cells, in contrast to the unfused pseudoclamp which are normally formed in A-on B-off strains, providing evidence for the existence of an as yet unidentified mechanism for the growth suppression of the clamp cell. Molecular analysis revealed that the gene responsible for the phenotypes, designated Cc.ubc2, encodes a protein similar to Ubc2, an adaptor protein for filamentous growth, pheromone response and virulence in the smut fungus <span class="annotated ">Ustilago maydis</span>. In addition, western blot analysis demonstrated that the Cc.ubc2-1 mutation blocks phosphorylation of a presumptive MAP kinase. 
+</body></html>

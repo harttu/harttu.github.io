@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Geobacter sulfurreducens</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21169487</h3>Identification of an extracellular polysaccharide network essential for cytochrome anchoring and biofilm formation in <span class="match annotated ">Geobacter sulfurreducens</span>. <br><br>Transposon insertions in <span class="match annotated ">Geobacter sulfurreducens</span> GSU1501, part of an ATP-dependent exporter within an operon of polysaccharide biosynthesis genes, were previously shown to eliminate insoluble Fe(III) reduction and use of an electrode as an electron acceptor. Replacement of GSU1501 with a kanamycin resistance cassette produced a similarly defective mutant, which could be partially complemented by expression of GSU1500 to GSU1505 in trans. The Delta1501 mutant demonstrated limited cell-cell agglutination, enhanced attachment to negatively charged surfaces, and poor attachment to positively charged poly-d-lysine- or Fe(III)-coated surfaces. Wild-type and mutant cells attached to graphite electrodes, but when electrodes were poised at an oxidizing potential inducing a positive surface charge (+0.24 V versus the standard hydrogen electrode [SHE]), Delta1501 mutant cells detached. Scanning electron microscopy revealed fibrils surrounding wild-type <span class="annotated ">G. sulfurreducens</span> which were absent from the Delta1501 mutant. Similar amounts of type IV pili and pilus-associated cytochromes were detected on both cell types, but shearing released a stable matrix of c-type cytochromes and other proteins bound to polysaccharides. The matrix from the mutant contained 60% less sugar and was nearly devoid of c-type cytochromes such as OmcZ. The addition of wild-type extracellular matrix to Delta1501 cultures restored agglutination and Fe(III) reduction. The polysaccharide binding dye Congo red preferentially bound wild-type cells and extracellular matrix material over mutant cells, and Congo red inhibited agglutination and Fe(III) reduction by wild-type cells. These results demonstrate a crucial role for the xap (extracellular anchoring polysaccharide) locus in metal oxide attachment, cell-cell agglutination, and localization of essential cytochromes beyond the Geobacter outer membrane. 
+</body></html>

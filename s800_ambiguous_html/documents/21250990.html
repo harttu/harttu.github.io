@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21250990</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Food chain length and omnivory determine the stability of a marine subtidal food web. <br><br>1. Using a subtidal marine food web as a model system, we examined how food chain length (predators present or absent) and the prevalence of omnivory influenced temporal stability (and its components) of herbivores and plants. We held the density of top predators constant but manipulated their identity to generate a gradient in omnivory prevalence. 2. We measured temporal stability as the inverse of the coefficient of variation of abundance over time. Predators and omnivory could influence temporal stability through effects on abundance (the 'abundance' effect), summed variance across taxa (the 'portfolio effect') or summed covariances among taxa (the 'covariance effect'). 3. We found that increasing food chain length by predator addition destabilized aggregate herbivore abundance through their cascading effects on abundances. Thus, predators destabilized herbivores through the overyielding effect. We also found that the stability of herbivore abundance and microalgae declined with increasing prevalence of omnivory among top predators. Aggregate macroalgae was not affected, but the stability of one algal taxon increased with the prevalence of omnivory. 4. Our results suggest that herbivores are more sensitive than plants to changes in food web structure because of predator additions by invasion or deletions such as might occur via harvesting and habitat loss. 
+</body></html>

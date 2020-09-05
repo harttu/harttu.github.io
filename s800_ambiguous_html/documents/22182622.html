@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>22182622</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Rapid Cold Hardening and Expression of Heat Shock Protein Genes in the B-Biotype <span class="annotated ">Bemisia tabaci</span>. <br><br>This paper describes the rapid cold hardening processes of the <span class="annotated ">sweetpotato whitefly</span>, <span class="annotated ">Bemisia tabaci</span> (Gennadius). It was found that all developmental stages of <span class="annotated ">B. tabaci</span> have the capacity of rapid cold hardening and the length of time required to induce maximal cold hardiness at 0^0C varies with stage. There was only 18.3% survival when adult whiteflies were transferred directly from 26^0C to -8.5^0C for 2 h. However, exposure to 0^0C for 1 h before transfer to -8.5^0C increased the survival to 81.2%. The whiteflies show "prefreeze" mortality when they were exposed to temperatures above the supercooling point (SCP), although the range of SCP of whiteflies is -26^0C to -29^0C. The rapid cold hardening had no effect on SCP and reduced the lower lethal temperature of adults from -9^0C to -11^0C. Rapid cold-hardened adults had a similar lifespan as the control group but deposited fewer eggs than nonhardened individuals. The expression profiles during cold hardening and recovery from this process revealed that HSP90 did not respond to cold stress. However, HSP70 and HSP20 were significantly induced by cold with different temporal expression patterns. These results suggest that the rapid cold hardening response is possibly advantageous to whiteflies that are often exposed to drastic temperature fluctuations in spring or autumn in northern China, and the expression of HSP70 and HSP20 may be associated with the cold tolerance of <span class="annotated ">B. tabaci</span>. 
+</body></html>

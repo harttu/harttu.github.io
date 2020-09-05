@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20980522</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>RNA aptamers directed to <span class="annotated ">human immunodeficiency virus type 1</span> Gag polyprotein bind to the matrix and nucleocapsid domains and inhibit <span class="unannotated ">virus</span> production. <br><br>Gag orchestrates the assembly and release of <span class="annotated ">human immunodeficiency virus type 1</span> (<span class="annotated ">HIV-1</span>) particles. We explored here the potential of anti-Gag RNA aptamers to inhibit <span class="annotated ">HIV-1</span> replication. In vitro, RNA aptamers raised against an <span class="annotated ">HIV-1</span> Gag protein, lacking the N-terminal myristate and the C-terminal p6 (DP6-Gag), could bind to matrix protein (MA), nucleocapsid protein (NC), or entire DP6-Gag protein. Upon cotransfection with pNL4-3.Luc molecular clone into 293T cells, six of the aptamers caused mild inhibition (2- to 3-fold) in the extracellular capsid levels, and one aptamer displayed 20-fold inhibition. The reduction was not due to a release defect but reflected Gag mRNA levels. We hypothesized that the aptamers influence genomic RNA levels via perturbation of specific Gag-genomic RNA interactions. Binding studies revealed that the &quot;NC-binders&quot; specifically compete with the packaging signal (psi) of <span class="annotated ">HIV-1</span> for binding to DP6-Gag. Therefore, we tested the ability of two NC-binders to inhibit viruses containing psi-region deletions (DeltaSL1 or DeltaSL3) and found that the NC-binders were no longer able to inhibit Gag synthesis. The inability of these aptamers to inhibit psi-deleted viruses correlated with the absence of competition with the corresponding psi transcripts lacking SL1 or SL3 for binding DP6-Gag in vitro. These results indicate that the NC-binding aptamers disrupt Gag-genomic RNA interaction and negatively affect genomic RNA transcription, processing, or stability. Our results reveal an essential interaction between <span class="annotated ">HIV-1</span> Gag and the psi-region that may be distinct from that which occurs during the encapsidation of genomic RNA. Thus, anti-Gag aptamers can be an effective tool to perturb Gag-genomic RNA interactions. 
+</body></html>

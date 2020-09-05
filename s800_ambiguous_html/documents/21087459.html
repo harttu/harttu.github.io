@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21087459</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Primate communities are structured more by dispersal limitation than by niches.<br><br>1. <span class="unannotated ">A</span> major goal in community ecology is to identify mechanisms that govern the assembly and maintenance of ecological communities. Current models of metacommunity dynamics differ chiefly in the relative emphasis placed on dispersal limitation and niche differentiation as causal mechanisms structuring ecological communities. Herein we investigate the relative roles of these two mechanisms in structuring primate communities in Africa, South America, Madagascar and Borneo. 2. We hypothesized that if dispersal limitation is important in structuring communities, then community similarity should depend on geographical proximity even after controlling for ecological similarity. Conversely, if communities are assembled primarily through niche processes, then community similarity should be determined by ecological similarity regardless of geographical proximity. 3. We performed Mantel and partial Mantel tests to investigate correlations among primate community similarity, ecological distance and geographical distance. Results showed significant and strongly negative relationships between diurnal primate community similarity and both ecological similarity and geographical distance in Madagascar, but significant and stronger negative relationships between community similarity and geographical distance in African, South American and Bornean metacommunities. 4. We conclude that dispersal limitation is an important determinant of primate community structure and may play a stronger role in shaping the structure of some terrestrial vertebrate communities than niche differentiation. These patterns are consistent with neutral theory. We recommend tests of functional equivalence to determine the extent to which neutral theory may explain primate community composition. 
+</body></html>

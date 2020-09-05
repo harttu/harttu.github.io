@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21269682</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Health-financing reforms in southeast Asia: challenges in achieving universal coverage. <br><br>In this sixth paper of the Series, we review health-financing reforms in seven countries in southeast Asia that have sought to reduce dependence on out-of-pocket payments, increase pooled health finance, and expand service use as steps towards universal coverage. Laos and Cambodia, both resource-poor countries, have mostly relied on donor-supported health equity funds to reach the poor, and reliable funding and appropriate identification of the eligible poor are two major challenges for nationwide expansion. For Thailand, the Philippines, Indonesia, and Vietnam, social health insurance financed by payroll tax is commonly used for formal sector employees (excluding Malaysia), with varying outcomes in terms of financial protection. Alternative payment methods have different implications for provider behaviour and financial protection. Two alternative approaches for financial protection of the non-poor outside the formal sector have emerged-contributory arrangements and tax-financed schemes-with different abilities to achieve high population coverage rapidly. Fiscal space and mobilisation of payroll contributions are both important in accelerating financial protection. Expanding coverage of good-quality services and ensuring adequate <span class="annotated ">human</span> resources are also important to achieve universal coverage. As health-financing reform is complex, institutional capacity to generate evidence and inform policy is essential and should be strengthened. 
+</body></html>

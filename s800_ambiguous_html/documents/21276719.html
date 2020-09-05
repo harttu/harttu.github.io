@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21276719</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Protist-like inclusions in amber, as evidenced by Charentes amber.<br><br>The mid-Cretaceous amber of France contains thousands of protist-like inclusions similar in shape to some ciliates, flagellates and amoebae. The sheer abundance of these inclusions and their size variation within a single amber piece are not concordant with true fossil protists. French amber is coniferous in origin, which generally does not preserve well protists without cell walls. Thus, it would be surprising if French Cretaceous amber had preserved millions of protists. Here, we present a survey of the protist-like inclusions from French amber and attempt to elucidate their origins. Diverse Cretaceous ambers (from Spain, Germany and Lebanon), also derived from conifer resins, contain thousands of protist-like inclusions. In contrast, Tertiary ambers and modern resins are poor in protist-like fossils. This suggests these inclusions originated from early Cretaceous plant resins, probably secreted with the resin by trees that did not survive after the Cretaceous (such as the Cheirolepidiaceae). <span class="unannotated ">A</span> review of the recent literature on amber microfossils indicates several protist-like inclusions that are unlikely to have a biological origin have already been described as real fossil protists. This is problematic in that it will bias our understanding of protist evolution. 
+</body></html>

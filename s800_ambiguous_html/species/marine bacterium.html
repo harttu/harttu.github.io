@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>marine bacterium</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21036994</h3>Cadherin domains in the polysaccharide-degrading <span class="match unannotated ">marine bacterium</span> <span class="annotated ">Saccharophagus degradans 2-40</span> are carbohydrate-binding modules. <br><br>The complex polysaccharide-degrading <span class="match unannotated ">marine bacterium</span> Saccharophagus degradans strain 2-40 produces putative proteins that contain numerous cadherin and cadherin-like domains involved in intercellular contact interactions. The current study reveals that both domain types exhibit reversible calcium-dependent binding to different complex polysaccharides which serve as growth substrates for the bacterium. 
+<h3>21037013</h3>Complete genome sequence of strain <span class="annotated ">HTCC2170</span>, a novel member of the genus Maribacter in the family Flavobacteriaceae. <br><br>Strain <span class="annotated ">HTCC2170</span> was isolated from surface waters off the Oregon coast using dilution-to-extinction culturing. Here, we present the finished genome sequence of a <span class="match annotated ">marine bacterium</span>, <span class="annotated ">Maribacter sp. strain HTCC2170</span>. Strain sp. <span class="annotated ">HTCC2170</span> is predicted to be a facultatively aerobic chemoorganotroph that, based on genomic sequence analysis, is capable of macromolecule degradation and anaerobic respiration. 
+</body></html>

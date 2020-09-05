@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>SINV</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21496127</h3>A role for endosomal proteins in alphavirus dissemination in mosquitoes.<br><br>Little is known about endosomal pathway proteins involved in arthropod-borne <span class="unannotated ">virus</span> (arbovirus) assembly and cell-to-cell spread in vector mosquitoes. UNC93A and synaptic vesicle-2 (SV2) proteins are involved in intracellular transport in mammals. They show amino acid sequence conservation from mosquitoes to <span class="annotated ">humans</span>, and their transcripts are highly enriched in <span class="annotated ">Aedes aegypti</span> during arbovirus infection. Transient gene silencing of SV2 or UNC93A in mosquitoes infected with the recombinant alphavirus <span class="annotated ">Sindbis</span> MRE16-enhanced green fluorescent protein (<span class="match annotated ">SINV</span>; family Togaviridae) resulted in the accumulation of <span class="unannotated ">viral</span> positive- and negative-strand RNA, congregation of <span class="unannotated ">virus</span> envelope antigen in intracellular networks, and reduced <span class="unannotated ">virus</span> dissemination outside of the midgut. Further, UNC93A silencing, but not SV2 silencing, resulted in a 10-fold reduction in <span class="unannotated ">viral</span> titres at 4 days post-infection. Together, these data support a role for UNC93A and SV2 in <span class="unannotated ">virus</span> assembly or budding. Cis-regulatory elements (CREs) were identified at the 5'-ends of genes from the original data set in which SV2 and UNC93A were identified. Common CREs at the 5'-end genomic regions of a subset of enriched transcripts support the hypothesis that UNC93A transcription may be co-regulated with that of other ion transport and endosomal trafficking proteins. 
+</body></html>

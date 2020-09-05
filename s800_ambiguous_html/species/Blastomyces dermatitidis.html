@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Blastomyces dermatitidis</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20682355</h3>PRP8 intein in Ajellomycetaceae family pathogens: sequence analysis, splicing evaluation and homing endonuclease activity. <br><br>Inteins are intervening sequences that are transcribed and translated with flanking host protein sequences and then self-excised by protein splicing. Bi-functional inteins also contain a homing endonuclease responsible for their genetic mobility. The PRP8 intein, the most widespread among fungi, occurs in important pathogens such as <span class="annotated ">Histoplasma capsulatum</span> and <span class="annotated ">Paracoccidioides brasiliensis</span>, from the Ajellomycetaceae family. Herein, we describe the bi-functional PRP8 intein in two other Ajellomycetacean pathogens, <span class="match annotated ">Blastomyces dermatitidis</span> and <span class="annotated ">Emmonsia parva</span>. Sequence analysis and experimental evidence suggest that the homing endonuclease from PbrPRP8 is inactive. The splicing activity of the PRP8 intein from the <span class="annotated ">B. dermatitidis</span>, <span class="annotated ">E. parva</span> and <span class="annotated ">P. brasiliensis species complex</span> was demonstrated in a non-native protein context in <span class="annotated ">Escherichia coli</span>. Since the PRP8 intein is located in a functionally essential nuclear protein, it can be considered a promising therapeutic target for anti-fungal drugs, because inhibition of intein splicing should inhibit proliferation of intein-containing pathogens. 
+<h3>20854921</h3>Genomic evidence of repeat-induced point mutation (RIP) in filamentous ascomycetes. <br><br>The genomes of 49 filamentous ascomycetes (subphylum Pezizomycotina) were examined by two independent methods for evidence of multiple C->T transitions typical of RIP. At least one transposable element or other repeat family was identified in each genome, and members were assessed for transition and transversion mutations relative to a model of their intact progenitor. Occurrence of RIP was indicated where family members differed by excess of directional transitions over transversions. Transition mutations were quantified by an algorithm taking double mutations in CpG and CpC dinucleotides into account. <span class="unannotated ">A</span> second method assessed dinucleotide frequency distribution anomalies in whole genomes, a procedure that allowed quantification of fractions of the non-coding genome that had been subject to extensive directional mutation. The results of both methods revealed that RIP-like activity varied greatly, both in extent of mutation and in dinucleotide context for C->T transitions. In the most extreme case, 75% of a <span class="match annotated ">Blastomyces dermatitidis</span> genome had suffered conspicuous GC-depletion, all of it in the non-coding fraction. Many genomes carried both intact repeats as well as others that had suffered heavily from transitions. Only one species, <span class="annotated ">Chaetomium globosum</span>, showed no evidence of directional mutation. 
+</body></html>

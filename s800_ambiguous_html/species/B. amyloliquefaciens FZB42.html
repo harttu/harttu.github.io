@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>B. amyloliquefaciens FZB42</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20971906</h3>Plantazolicin, a novel microcin B17/streptolysin S-like natural product from <span class="annotated ">Bacillus amyloliquefaciens FZB42</span>. <br><br>Here we report on a novel thiazole/oxazole-modified microcin (TOMM) from <span class="annotated ">Bacillus amyloliquefaciens FZB42</span>, a Gram-positive soil bacterium. This organism is well known for stimulating plant growth and biosynthesizing complex small molecules that suppress the growth of bacterial and <span class="unannotated ">fungal</span> plant pathogens. Like microcin B17 and streptolysin S, the TOMM from <span class="match annotated ">B. amyloliquefaciens FZB42</span> undergoes extensive posttranslational modification to become a bioactive natural product. Our data show that the modified peptide bears a molecular mass of 1,335 Da and displays antibacterial activity toward closely related Gram-positive bacteria. <span class="unannotated ">A</span> cluster of 12 genes that covers -10 kb is essential for the production, modification, export, and self-immunity of this natural product. We have named this compound plantazolicin (PZN), based on the association of several producing organisms with plants and the incorporation of azole heterocycles, which derive from Cys, Ser, and Thr residues of the precursor peptide. 
+</body></html>

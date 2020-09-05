@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>diamondback moth</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21029103</h3>Phylloplane location of glucosinolates in Barbarea spp. (Brassicaceae) and misleading assessment of host suitability by a specialist herbivore. <br><br>Glucosinolates are plant secondary metabolites used in host plant recognition by insects specialized on Brassicaceae, such as the <span class="match annotated ">diamondback moth</span> (<span class="annotated ">DBM</span>), <span class="annotated ">Plutella xylostella</span>. Their perception as oviposition cues by females would seem to require their occurrence on the leaf surface, yet previous studies have reached opposite conclusions about whether glucosinolates are actually present on the surface of crucifer leaves. <span class="annotated ">DBM</span> oviposits extensively on <span class="annotated ">Barbarea vulgaris</span>, despite its larvae not being able to survive on this plant because of its content of feeding-deterrent saponins. Glucosinolates and saponins in plant tissue and mechanically removed surface waxes from leaves of Barbarea spp. were analyzed with high-performance liquid chromatography (HPLC) and liquid chromatography-mass spectrometry (LC-MS). Surface waxes from leaves of Barbarea spp. contained glucosinolates, but not feeding-deterrent saponins. Our research is the first to show that glucosinolates are present on the leaf surface of Barbarea spp., but not in other crucifers investigated, resolving some conflicting results from previous studies. Our research is also the first to quantify glucosinolates on the leaf surface of a crucifer, and to show that the concentrations of glucosinolates found on the leaf surface of Barbarea spp. are sufficient to be perceived by ovipositing <span class="annotated ">DBM</span>. 
+</body></html>

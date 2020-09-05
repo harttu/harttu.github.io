@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21323923</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Shrinking by numbers: landscape context affects the species composition but not the quantitative structure of local food webs. <br><br>1. With habitat fragmentation spreading around the world, there is a pressing need to understand its impacts on local food webs. To date, few studies have examined the effects of landscape context on multiple local communities in a quantitative, spatially realistic setting. 2. To examine how the isolation of a food web affects its structure, we construct local food webs of specialist herbivores and their natural enemies on 82 individual <span class="annotated ">oaks</span> (<span class="annotated ">Quercus robur</span>) growing in different landscape contexts. 3. Across this set of webs, we find that communities in isolated habitat patches not only contained fewer species than did well-connected ones, but also differed in species composition. 4. Surprisingly, the effects observed in terms of species composition were not reflected in the quantitative interaction structure of local food webs: landscape context had no detectable effect on either the interaction evenness, linkage density, connectance, generality or vulnerability of local webs. 5. We conclude that the quantitative structure of food webs may be stable in the face of habitat fragmentation, despite clear-cut impacts on individual species. This finding offers hope-inspiring news for conservation, but should clearly be verified by empirical studies across both naturally and more recently fragmented systems. 
+</body></html>

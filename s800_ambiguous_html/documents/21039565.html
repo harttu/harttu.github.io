@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21039565</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Aerenchyma formation in the <span class="annotated ">rice</span> stem and its promotion by H2O2.<br><br>* Gas spaces (aerenchyma) form as an adaptation to submergence to facilitate gas exchange. In <span class="annotated ">rice</span> (<span class="annotated ">Oryza sativa</span>), aerenchyma develop by cell death and lysis, which are poorly understood at the cellular level. * Aerenchyma formation was studied in <span class="annotated ">rice</span> stems by light microscopy. It was analyzed in response to submergence, ethylene and hydrogen peroxide (H(2)O(2)) treatment, and in the MT2b::Tos17 mutant. O(2)*(-) was detected with nitroblue tetrazolium and an epinephrine assay. H(2)O(2) was detected with 3,3'-diaminobenzidine. * Aerenchyma develop constitutively in all internodes of the deep-water <span class="annotated ">rice</span> variety Pin Gaew 56, but are absent from the nodes. Constitutive aerenchyma formation was also observed in two lowland <span class="annotated ">rice</span> varieties, albeit to a lesser degree. <span class="unannotated ">A</span> larger number of aerenchyma are present in older internodes, and at the top of each internode, revealing developmental gradients. Submergence or treatment with the ethylene-releasing compound ethephon promoted aerenchyma formation in all genotypes analyzed. Pre-aerenchymal cells contain less starch, no chloroplasts, thinner cell walls and produce elevated levels of O(2)*(-) and H(2)O(2) compared with other parenchymal cells. Ethephon promotes O(2)*(-) formation and H(2)O(2) promotes aerenchyma formation in a dose-dependent manner. Further-more, genetic downregulation of the H(2)O(2) scavenger MT2b enhances aerenchyma formation. * Aerenchyma formation is mediated by reactive oxygen species. 
+</body></html>

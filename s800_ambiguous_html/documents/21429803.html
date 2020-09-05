@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21429803</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>European guidelines on the clinical management of <span class="annotated ">HIV-1</span> tropism testing.<br><br>Viral tropism is the ability of viruses to enter and infect specific host cells and is based on the ability of viruses to bind to receptors on those cells. Testing for <span class="annotated ">HIV</span> tropism is recommended before prescribing a chemokine receptor blocker. In most European countries, <span class="annotated ">HIV</span> tropism is identified with tropism phenotype testing. New data support genotype analysis of the <span class="annotated ">HIV</span> third hypervariable loop (V3) for the identification of tropism. The European Consensus Group on clinical management of tropism testing was established to make recommendations to clinicians and clinical virologists. The panel recommends <span class="annotated ">HIV</span>-tropism testing for the following groups: drug-naive <span class="linneaus_only ">patients</span> in whom toxic effects are anticipated or for whom few treatment options are available; <span class="linneaus_only ">patients</span> who have poor tolerability to or toxic effects from current treatment or who have CNS pathology; and <span class="linneaus_only ">patients</span> for whom therapy has failed and a change in treatment is considered. In general, an enhanced sensitivity Trofile assay and V3 population genotyping are the recommended methods. Genotypic methods are anticipated to be used more frequently in the clinical setting because of their greater accessibility, lower cost, and faster turnaround time than other methods. For the interpretation of V3 loop genotyping, clinically validated systems should be used when possible. Laboratories doing <span class="annotated ">HIV</span> tropism tests should have adequate quality assurance measures. Similarly, close collaboration between <span class="annotated ">HIV</span> clinicians and virologists is needed to ensure adequate diagnostic and treatment decisions. 
+</body></html>

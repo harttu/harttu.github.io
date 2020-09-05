@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>swine-origin influenza A virus (S-OIV) (H1N1)</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21047957</h3>Modification of nonstructural protein 1 of <span class="annotated ">influenza A virus</span> by SUMO1.<br><br>Nonstructural protein 1 (NS1) is one of the major factors resulting in the efficient infection rate and high level of virulence of <span class="annotated ">influenza A virus</span>. Although consisting of only approximately 230 amino acids, NS1 has the ability to interfere with several systems of the host <span class="unannotated ">viral</span> defense. In the present study, we demonstrate that NS1 of the highly pathogenic avian <span class="annotated ">influenza</span> <span class="annotated ">A/Duck/Hubei/L-1/2004 (H5N1) virus</span> interacts with <span class="annotated ">human</span> Ubc9, which is the E2 conjugating enzyme for sumoylation, and we show that SUMO1 is conjugated to <span class="annotated ">H5N1</span> NS1 in both transfected and infected cells. Furthermore, two lysine residues in the C terminus of NS1 were identified as SUMO1 acceptor sites. When the SUMO1 acceptor sites were removed by mutation, NS1 underwent rapid degradation. Studies of different <span class="annotated ">influenza A virus</span> strains of <span class="annotated ">human</span> and avian origin showed that the majority of viruses possess an NS1 protein that is modified by SUMO1, except for the recently emerged <span class="match annotated ">swine-origin influenza A virus (S-OIV) (H1N1)</span>. Interestingly, growth of a sumoylation-deficient WSN <span class="unannotated ">virus</span> mutant was retarded compared to that of wild-type <span class="unannotated ">virus</span>. Together, these results indicate that sumoylation enhances NS1 stability and thus promotes rapid growth of <span class="annotated ">influenza A virus</span>. 
+</body></html>

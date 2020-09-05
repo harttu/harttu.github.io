@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Lassa virus AV</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20980514</h3>Domain structure of <span class="annotated ">Lassa virus</span> L protein.<br><br>The 200-kDa L protein of arenaviruses plays a central role in <span class="unannotated ">viral</span> genome replication and transcription. This study aimed at providing evidence for the domain structure of L protein by combining bioinformatics with a stepwise mutagenesis approach using the <span class="annotated ">Lassa virus</span> minireplicon system. Potential interdomain linkers were predicted using various algorithms. The prediction was challenged by insertion of flexible sequences into the predicted linkers. Insertion of 5 or 10 amino acid residues was tolerated at seven sites (S407, G446, G467, G774, G939, S1952, and V2074 in <span class="match annotated ">Lassa virus AV</span>). At two of these sites, G467 and G939, L protein could be split into an N-terminal and a C-terminal part, which were able to trans-complement each other and reconstitute a functional complex upon coexpression. Coimmunoprecipitation studies revealed physical interaction between the N- and C-terminal domains, irrespective of whether L protein was split at G467 or G939. In confocal immunofluorescence microscopy, the N-terminal domains showed a dot-like, sometimes perinuclear, cytoplasmic distribution similar to that of full-length L protein, while the C-terminal domains were homogenously distributed in cytoplasm. The latter were redistributed into the dot-like structures upon coexpression with the corresponding N-terminal domain. In conclusion, this study demonstrates two interdomain linkers in <span class="annotated ">Lassa virus</span> L protein, at G467 and G939, suggesting that L protein is composed of at least three structural domains spanning residues 1 to 467, 467 to 939, and 939 to 2220. The first domain seems to mediate accumulation of L protein into cytoplasmic dot-like structures. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>H. vitripennis</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>22182607</h3>Culture Independent Survey of the Microbiota of the <span class="annotated ">Glassy-Winged Sharpshooter</span> (<span class="annotated ">Homalodisca vitripennis</span>) Using 454 Pyrosequencing. <br><br>The <span class="annotated ">glassy-winged sharpshooter</span>, <span class="annotated ">Homalodisca vitripennis (Germar)</span>, is an invasive pest that has spread across the southern and western United States. <span class="match annotated ">H. vitripennis</span> is highly polyphagous and voracious, feeding on at least 100 plant species and consuming up to 100 times its weight in xylem fluid daily. The insect is a vector of the phytopathogen <span class="annotated ">Xylella fastidiosa (Wells)</span>, which is the causative agent of Pierce's disease in grapevines. To evaluate the microbial flora associated with <span class="match annotated ">H. vitripennis</span>, total DNA extracts from hemolymph, alimentary canal excretions, and whole insect bodies were subjected to 16S rDNA pyrosequencing using the bTEFAP methodology and the resulting sequences (370-520 bp in length) were compared with a curated high quality 16S database derived from GenBank http://www.ncbi.nlm.nih.gov. Species from the genera Wolbachia, Delftia (formerly Pseudomonas), Pectobacterium, Moraxella, Serratia, Bacillus, and many others were detected and a comprehensive picture of the microbiome associated with <span class="match annotated ">H. vitripennis</span> was established. Some of the bacteria identified in this report are initial discoveries; providing a breadth of knowledge to the microbial flora of this insect pest can serve as a reservoir of information for developing biological control strategies. 
+</body></html>

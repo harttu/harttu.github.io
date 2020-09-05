@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21497133</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Taxonomy and phylogeny of a new kleptoplastidal dinoflagellate, <span class="annotated ">Gymnodinium myriopyrenoides</span> sp. nov. (Gymnodiniales, Dinophyceae), and its cryptophyte symbiont. <br><br>A new kleptoplastidal dinoflagellate, <span class="annotated ">Gymnodinium myriopyrenoides</span> sp. nov., was described using light microscopy, electron microscopy and phylogengetic analysis based on partial LSU rDNA sequences. Cells were dorsiventrally flattened, elongate-elliptical in ventral view. There was no displacement of the cingulum encircling the anterior part of the cell. The cingulum was curved posteriorly at the terminal junction with the sulcus. The sulcus was generally narrow but expanded in the posterior end. The epicone possessed an apical groove made of one and one-half counterclockwise revolutions. Phylogenetic analysis based on LSU rDNA showed that the sequence of <span class="annotated ">G. myriopyrenoides</span> was included in the Gymnodiniales sensu stricto clade and had special affinities with the species <span class="annotated ">Amphidinium poecilochroum</span> and <span class="annotated ">Gymnodinium acidotum</span>, which also harbor kleptochloroplasts. Phylogenetic analysis based on plastid-encoded SSU rDNA and ultrastructural observations suggested that the symbionts of <span class="annotated ">G. myriopyrenoides</span> were cryptophytes of the genus Chroomonas or Hemiselmis. Organelles including the nucleus, the nucleomorph, mitochondria, Golgi bodies and large chloroplasts remained in the cytoplasm of the symbionts, but not the periplast, ejectosomes or flagellar apparatus. The symbiotic level of <span class="annotated ">G. myriopyrenoides</span> was estimated to be a relatively early stage in the unarmored kleptoplastidal dinoflagellates. 
+</body></html>

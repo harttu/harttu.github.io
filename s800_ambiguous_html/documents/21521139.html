@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21521139</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>A review of the implications of heterozygosity and inbreeding on germplasm biodiversity and its conservation in the <span class="annotated ">silkworm</span>, <span class="annotated ">Bombyx mori</span>. <br><br>Abstract <span class="annotated ">Silkworm</span> genebanks assume paramount importance as the reservoirs of biodiversity and source of alleles that can be easily retrieved for genetic enhancement of popular breeds. More than 4000 <span class="annotated ">Bombyx mori L</span> (Lepidoptera: Bombycidae) strains are currently available and these strains are maintained through continuous sibling mating. This repeated sibling mating makes the populations of each strain more homozygous, but leads to loss of unique and valuable genes through the process of inbreeding depression. Hence, it is essential to maintain a minimal degree of heterozygosity within the population of each <span class="annotated ">silkworm</span> strain, especially in the traditional geographic strains, to avoid such loss. As a result, accurate estimation of genetic diversity is becoming more important in <span class="annotated ">silkworm</span> genetic resources conservation. Application of molecular markers help estimate genetic diversity much more accurately than that of morphological traits. Since a minimal amount of heterozygosity in each <span class="annotated ">silkworm</span> strain is essential for better conservation by avoiding inbreeding depression, this article overviews both theoretical and practical importance of heterozygosity together with impacts of inbreeding depression and the merits and demerits of neutral molecular markers for measurements of both heterozygosity and inbreeding depression in the <span class="annotated ">silkworm</span> <span class="annotated ">Bombyx mori</span>. 
+</body></html>

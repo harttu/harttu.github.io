@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Baculovirus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21477200</h3><span class="match annotated ">Baculovirus</span> cyclobutane pyrimidine dimer photolyases show a close relationship with lepidopteran host homologues. <br><br>Cyclobutane pyrimidine dimer (CPD) photolyases repair ultraviolet (UV)-induced DNA damage using blue light. To get insight in the origin of <span class="annotated ">baculovirus</span> CPD photolyase (phr) genes, homologues in the lepidopteran insects <span class="annotated ">Chrysodeixis chalcites</span>, <span class="annotated ">Spodoptera exigua</span> and <span class="annotated ">Trichoplusia ni</span> were identified and characterized. Lepidopteran and <span class="annotated ">baculovirus</span> phr genes each form a monophyletic group, and together form a well-supported clade within the insect photolyases. This suggests that <span class="annotated ">baculoviruses</span> obtained their phr genes from an ancestral lepidopteran insect host. <span class="unannotated ">A</span> likely evolutionary scenario is that a granulovirus, <span class="annotated ">Spodoptera litura GV</span> or a direct ancestor, obtained a phr gene. Subsequently, it was horizontally transferred from this granulovirus to several group II nucleopolyhedroviruses (NPVs), including those that infect noctuids of the Plusiinae subfamily. 
+<h3>20970458</h3>Evaluation of the Virus Counter(R) for rapid <span class="unannotated ">baculovirus</span> quantitation.<br><br>The utility of a new instrument for rapid <span class="unannotated ">virus</span> quantitation, the Virus Counter, was evaluated in a blind study conducted at three sites. This instrument is a substantially improved version of the original academic research instrument described previously by Stoffel and Rowlen (2005a). The addition of hydrodynamic focusing, a self-contained fluidics system and customized software for system control and data analysis has resulted in a commercially viable and available design. <span class="match unannotated ">Baculovirus</span> samples were provided by Protein Sciences Corporation and blinded to InDevR and Baylor College of Medicine. Protein Sciences Corporation and Baylor College of Medicine analyzed the samples by plaque assay and InDevR analyzed the samples using the Virus Counter. Serial dilution of stock viruses into growth media and buffer allowed for comparison of measured versus intended concentrations. Direct log-scale comparison between pooled Virus Counter results and pooled plaque assay results indicated a linear relationship (slope=1.1+/-0.2, R(2)=0.86) with statistically significant Pearson correlation (r=0.93, p&lt;0.001). 
+</body></html>

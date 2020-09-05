@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20971910</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>In vitro studies of peptidoglycan binding and hydrolysis by the <span class="annotated ">Bacillus anthracis</span> germination-specific lytic enzyme SleB. <br><br>The <span class="annotated ">Bacillus anthracis</span> endospore loses resistance properties during germination when its cortex peptidoglycan is degraded by germination-specific lytic enzymes (GSLEs). Although this event normally employs several GSLEs for complete cortex removal, the SleB protein alone can facilitate enough cortex hydrolysis to produce vulnerable spores. As a means to better understand its enzymatic function, SleB was overexpressed, purified, and tested in vitro for depolymerization of cortex by measurement of optical density loss and the solubilization of substrate. Its ability to bind peptidoglycan was also investigated. SleB functions independently as a lytic transglycosylase on both intact and fragmented cortex. Most of the muropeptide products that SleB generates are large and are potential substrates for other GSLEs present in the spore. Study of a truncated protein revealed that SleB has two domains. The N-terminal domain is required for stable peptidoglycan binding, while the C-terminal domain is the region of peptidoglycan hydrolytic activity. The C-terminal domain also exhibits dependence on cortex containing muramic-delta-lactam in order to carry out hydrolysis. As the conditions and limitations for SleB activity are further elucidated, they will enable the development of treatments that stimulate premature germination of <span class="annotated ">B. anthracis</span> spores, greatly simplifying decontamination measures. 
+</body></html>

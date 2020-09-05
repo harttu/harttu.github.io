@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20702136</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Comparing potential COI and SSU rDNA barcodes for assessing the diversity and phylogenetic relationships of cyphoderiid testate amoebae (Rhizaria: Euglyphida). <br><br>The mitochondrial Cytochrome Oxidase Subunit 1 gene (COI) has been promoted as an ideal &quot;DNA barcode&quot; for animal species and other groups of eukaryotes. However, the utility of the COI marker for species level discrimination and for phylogenetic analyses has yet to be tested within the Rhizaria. Accordingly, we analysed mitochondrial COI gene sequences and nuclear small subunit rDNA (SSU) sequences from several morphospecies of euglyphid testate amoebae (Cercozoa, Rhizaria) in order to evaluate the utility of these DNA markers for species discrimination and phylogenetic reconstructions. Sequences were obtained from eleven populations belonging to six Cyphoderia morphospecies that were isolated from field samples in North America and Europe. Mean inter-population COI sequence dissimilarities were on average 2.9 times greater than in the SSU, while the intra-population sequence dissimilarities were higher in the SSU (0-0.95%) than in the COI (0%); this suggests that the COI fragment is valuable for discriminating Cyphoderiidae isolates. Our study also demonstrated that COI sequences are useful for inferring phylogenetic relationships among Cyphoderiidae isolates. COI and SSU tree topologies were very similar even though the COI fragment used in these analyses (500bp) was much shorter than the SSU sequences (1600bp). Altogether, these results demonstrate the utility of the COI as a potential taxonomic DNA barcode for assessing cyphoderiid species diversity and for inferring phylogenetic relationships within the group. 
+</body></html>

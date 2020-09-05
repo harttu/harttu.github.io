@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20809921</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>A multispecies perspective on ecological impacts of climatic forcing.<br><br>1. In the prevailing context of concerns over climate change and its potential impacts on ecosystems, evaluating ecological consequences of climatic forcing has become a critical issue. 2. Historical data on the abundance of organisms have been extensively used to characterize the ecological effects of climatic forcing through specific weather and/or climatic variables, with most of the studies confined to single population models. 3. However, population responses to environmental fluctuations typically depend upon positive and negative feedbacks induced by interactions with other species. It is therefore important to integrate the insights gained from single population approaches into a multispecies perspective. 4. Here we combine the hierarchical Bayesian modelling approach with the state-space formulation to extend the scope of previously proposed models of population dynamics under climatic forcing to multi-species systems. 5. We use our model to analyse long-term macro-moth (Lepidoptera) community data from the Rothamsted Insect Survey network in the UK, using winter rainfall and winter temperature as environmental covariates. 6. The effects of the two weather variables were consistent across species, being negative for winter rainfall and positive for winter temperature. The two weather variables jointly explained 15-40% of the total environmental variation affecting the dynamics of individual species, and could explain up to 90% of covariances in species dynamics. 7. The contribution of interspecific interactions to community-level variation was found to be weak compared to the contributions of environmental forcing and intraspecific interactions. 
+</body></html>

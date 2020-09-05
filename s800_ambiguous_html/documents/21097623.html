@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21097623</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Contributions of multiple binding sites and effector-independent binding to CodY-mediated regulation in <span class="annotated ">Bacillus subtilis</span>. <br><br>CodY is a branched-chain amino acid-responsive transcriptional regulator that controls, directly or indirectly, the expression of more than 100 genes and operons in <span class="annotated ">Bacillus subtilis</span>. Using DNase I footprinting and gel-shift experiments, we identified two CodY-binding regions upstream of a <span class="annotated ">B. subtilis</span> gene (bcaP, previously known as yhdG) that encodes a transporter of branched-chain amino acids. Mutational analysis revealed that both CodY-binding regions contribute to repression in vivo and do so independently of each other. Thus, a single CodY-binding site is apparently sufficient for substantial CodY-dependent regulation. By analyzing affinities of wild-type and mutant CodY-binding sites for CodY and their regulation by wild-type CodY and forms of CodY with various levels of activation by branched-chain amino acids, we concluded that unliganded CodY cannot repress transcription in vivo and that the level of endogenously produced effectors is sufficient for CodY-mediated regulation of promoters with stronger sites. Because the sites with higher affinity apparently respond to lower concentrations of CodY effectors and saturate faster as the concentrations of effectors increase, having two sites of binding with different affinities for CodY permits a promoter to respond to a wider range of intracellular concentrations of effectors. 
+</body></html>

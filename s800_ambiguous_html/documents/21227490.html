@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21227490</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Financing health care for all: challenges and opportunities.<br><br>India's health financing system is a cause of and an exacerbating factor in the challenges of health inequity, inadequate availability and reach, unequal access, and poor-quality and costly health-care services. Low per <span class="linneaus_only ">person</span> spending on health and insufficient public expenditure result in one of the highest proportions of private out-of-pocket expenses in the world. Citizens receive low value for money in the public and the private sectors. Financial protection against medical expenditures is far from universal with only 10% of the population having medical insurance. The Government of India has made a commitment to increase public spending on health from less than 1% to 3% of the gross domestic product during the next few years. Increased public funding combined with flexibility of financial transfers from centre to state can greatly improve the performance of state-operated public systems. Enhanced public spending can be used to introduce universal medical insurance that can help to substantially reduce the burden of private out-of-pocket expenditures on health. Increased public spending can also contribute to quality assurance in the public and private sectors through effective regulation and oversight. In addition to an increase in public expenditures on health, the Government of India will, however, need to introduce specific methods to contain costs, improve the efficiency of spending, increase accountability, and monitor the effect of expenditures on health. 
+</body></html>

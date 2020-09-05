@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21672063</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Transcript analysis and comparative evaluation of shaker and slowmo gene homologues from the <span class="annotated ">European corn borer</span>, <span class="annotated ">Ostrinia nubilalis</span>. <br><br>The movement and dispersal of larval Lepidoptera impact their survival and distribution within the natural landscape. Homologues of the <span class="unannotated ">Drosophila</span> behaviour-linked genes shaker (shkr) and slowmo (slmo) were identified from <span class="annotated ">Ostrinia nubilalis</span> (Lepidoptera: Crambidae). Onshkr was isolated as a 1610-nucleotide (nt) constitutively expressed transcript encoding a membrane-localized 469-amino-acid (aa) protein with a conserved tetramerization domain and the six-domain architecture necessary for the molecule to fold into an active K(+) channel. Three expressed splice variants of 682, 970 and 1604 nt were identified for the Onslmo gene, and encode predicted 141 and 228 aa proteins with a conserved protein of relevant evolutionary and lymphoid interest (PRELI) domain that may function in mitochondrial protein sorting and perinuclear protein localization. Onshkr and Onslmo protein sequences aligned within monophyletic lepidopteran groups. 
+</body></html>

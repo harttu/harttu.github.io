@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>human metapneumovirus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21435708</h3>Viral pneumonia.<br><br>About 200 million cases of <span class="unannotated ">viral</span> community-acquired pneumonia occur every year-100 million in <span class="linneaus_only ">children</span> and 100 million in adults. Molecular diagnostic tests have greatly increased our understanding of the role of viruses in pneumonia, and findings indicate that the incidence of <span class="unannotated ">viral</span> pneumonia has been underestimated. In <span class="linneaus_only ">children</span>, <span class="annotated ">respiratory syncytial virus</span>, rhinovirus, <span class="match annotated ">human metapneumovirus</span>, <span class="annotated ">human bocavirus</span>, and parainfluenza viruses are the agents identified most frequently in both developed and developing countries. Dual <span class="unannotated ">viral</span> infections are common, and a third of <span class="linneaus_only ">children</span> have evidence of viral-bacterial co-infection. In adults, viruses are the putative causative agents in a third of cases of community-acquired pneumonia, in particular <span class="unannotated ">influenza viruses</span>, rhinoviruses, and coronaviruses. Bacteria continue to have a predominant role in adults with pneumonia. Presence of <span class="unannotated ">viral</span> epidemics in the community, patient's age, speed of onset of illness, symptoms, biomarkers, radiographic changes, and response to treatment can help differentiate <span class="unannotated ">viral</span> from bacterial pneumonia. However, no clinical algorithm exists that will distinguish clearly the cause of pneumonia. No clear consensus has been reached about whether <span class="linneaus_only ">patients</span> with obvious <span class="unannotated ">viral</span> community-acquired pneumonia need to be treated with antibiotics. Apart from neuraminidase inhibitors for pneumonia caused by <span class="unannotated ">influenza viruses</span>, there is no clear role for use of specific antivirals to treat <span class="unannotated ">viral</span> community-acquired pneumonia. Influenza vaccines are the only available specific preventive measures. Further studies are needed to better understand the cause and pathogenesis of community-acquired pneumonia. Furthermore, regional differences in cause of pneumonia should be investigated, in particular to obtain more data from developing countries. 
+</body></html>

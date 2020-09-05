@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21034775</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Cross-genotypic polyclonal anti-<span class="annotated ">HCV</span> antibodies from <span class="annotated ">human</span> ascitic fluid.<br><br>Many anti-<span class="annotated ">HCV</span> antibodies are available, but more are needed for research and clinical applications. This study examines whether ascitic fluid from cirrhotic <span class="linneaus_only ">patients</span> could be a source of reagent-grade antibodies. Ascitic fluid from 29 <span class="annotated ">HCV</span> <span class="linneaus_only ">patients</span> was screened by ELISA for anti-<span class="annotated ">HCV</span> antibodies against three <span class="unannotated ">viral</span> proteins: core, NS4B, and NS5A. Significant patient-to-patient variability in anti-<span class="annotated ">HCV</span> antibody titers was observed. Total ascitic fluid IgG purified by Protein-A chromatography reacted with <span class="annotated ">HCV</span> proteins in immunoblots, cell extracts, and replicon-expressing cells. Affinity-purification using synthetic peptides as bait allowed the preparation of cross-genotypic antibodies directed against pre-selected regions of <span class="unannotated ">HCV</span> core, NS4B, and NS5A proteins. The performance of the polyclonal antibodies was comparable to that of monoclonal antibodies. Anti-NS4B antibody preparations reacted with genotype 1a, 1b, and 2a NS4B proteins in immunoblots and allowed NS4B to be localized in replicon-expressing cells. Ascitic fluid is an abundant source of <span class="annotated ">human</span> polyclonal cross-genotypic antibodies that can be used as an alternative to blood. This study shows the utility of selectively purifying <span class="annotated ">human</span> polyclonal antibodies from ascitic fluid. Affinity purification allows antibodies to be selected that are comparable to monoclonal antibodies in their ability to react with targeted regions of <span class="unannotated ">viral</span> proteins. 
+</body></html>

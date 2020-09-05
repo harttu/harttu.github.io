@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>22182605</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Cannibalism and intraguild predation of eggs within a diverse predator assemblage. <br><br>Greater biodiversity among aphid predators sometimes leads to greater predator reproductive success. This could occur if cannibalism of predator eggs is consistently stronger than intraguild predation, such that diversity dilutes cannibalism risk when total predator densities remain constant across diversity levels. We compared the frequency of cannibalism versus intraguild predation by adult predators of four species [the lady beetles <span class="annotated ">Coccinella septempunctata L.</span> and <span class="annotated ">Hippodamia convergens Guerin-Meneville</span>, and the predatory bugs <span class="annotated ">Geocoris bullatus (Say)</span> and Nabis alternatus Parshley] on the eggs of three predator species (all of these predators but Nabis). For both coccinellid species, egg predation averaged across all intraguild predators was less frequent than cannibalism. In contrast, <span class="annotated ">Geocoris</span> eggs were generally more likely to be consumed by intraguild predators than by conspecifics. Closer inspection of the data revealed that <span class="annotated ">Geocoris</span> consistently consumed fewer eggs than the other species, regardless of egg species. Indeed, for lady beetle eggs it was relatively infrequent egg predation by <span class="annotated ">Geocoris</span> that brought down the average across all heterospecific predators, masking the fact that adults of the two lady beetles were no more likely to act as egg cannibals than as intraguild predators. Nabis ate eggs of the two beetles at approximately equal rates, but rarely ate <span class="annotated ">Geocoris</span> eggs. Female predators generally consumed more eggs than did males, but this did not alter any of the patterns described above. Altogether, our results suggest that species-specific differences in egg predation rates determined the relative intensity of egg intraguild-predation versus cannibalism, rather than any more general trend for egg cannibalism to always exceed intraguild predation. 
+</body></html>

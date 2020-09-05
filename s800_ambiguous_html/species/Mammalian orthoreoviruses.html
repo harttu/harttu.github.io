@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Mammalian orthoreoviruses</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20980509</h3>Reovirus infection or ectopic expression of outer capsid protein micro1 induces apoptosis independently of the cellular proapoptotic proteins Bax and Bak. <br><br><span class="match annotated ">Mammalian orthoreoviruses</span> induce apoptosis in vivo and in vitro; however, the specific mechanism by which apoptosis is induced is not fully understood. Recent studies have indicated that the reovirus outer capsid protein mu1 is the primary determinant of reovirus-induced apoptosis. Ectopically expressed mu1 induces apoptosis and localizes to intracellular membranes. Here we report that ectopic expression of mu1 activated both the extrinsic and intrinsic apoptotic pathways with activation of initiator caspases-8 and -9 and downstream effector caspase-3. Activation of both pathways was required for mu1-induced apoptosis, as specific inhibition of either caspase-8 or caspase-9 abolished downstream effector caspase-3 activation. Similar to reovirus infection, ectopic expression of mu1 caused release into the cytosol of cytochrome c and smac/DIABLO from the mitochondrial intermembrane space. Pancaspase inhibitors did not prevent cytochrome c release from cells expressing mu1, indicating that caspases were not required. Additionally, mu1- or reovirus-induced release of cytochrome c occurred efficiently in Bax(-/-)Bak(-/-) <span class="annotated ">mouse</span> embryonic fibroblasts (MEFs). Finally, we found that reovirus-induced apoptosis occurred in Bax(-/-)Bak(-/-) MEFs, indicating that reovirus-induced apoptosis occurs independently of the proapoptotic Bcl-2 family members Bax and Bak. 
+</body></html>

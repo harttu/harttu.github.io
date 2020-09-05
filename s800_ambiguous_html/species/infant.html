@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>infant</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21037011</h3>Complete genome sequence of <span class="annotated ">Bifidobacterium bifidum S17</span>.<br><br>Here, we report on the first completely annotated genome sequence of a <span class="annotated ">Bifidobacterium bifidum</span> strain. <span class="annotated ">B. bifidum S17</span>, isolated from feces of a breast-fed <span class="match linneaus_only ">infant</span>, was shown to strongly adhere to intestinal epithelial cells and has potent anti-inflammatory activity in vitro and in vivo. The genome sequence will provide new insights into the biology of this potential probiotic organism and allow for the characterization of the molecular mechanisms underlying its beneficial properties. 
+<h3>21227494</h3>Reproductive health, and <span class="linneaus_only ">child</span> health and nutrition in India: meeting the challenge. <br><br>India, with a population of more than 1 billion <span class="linneaus_only ">people</span>, has many challenges in improving the health and nutrition of its citizens. Steady declines have been noted in fertility, maternal, <span class="match linneaus_only ">infant</span> and <span class="linneaus_only ">child</span> mortalities, and the prevalence of severe manifestations of nutritional deficiencies, but the pace has been slow and falls short of national and Millennium Development Goal targets. The likely explanations include social inequities, disparities in health systems between and within states, and consequences of urbanisation and demographic transition. In 2005, India embarked on the National Rural Health Mission, an extraordinary effort to strengthen the health systems. However, coverage of priority interventions remains insufficient, and the content and quality of existing interventions are suboptimum. Substantial unmet need for contraception remains, adolescent pregnancies are common, and access to safe abortion is inadequate. Increases in the numbers of deliveries in institutions have not been matched by improvements in the quality of intrapartum and neonatal care. Infants and young <span class="linneaus_only ">children</span> do not get the health care they need; access to effective treatment for neonatal illness, diarrhoea, and pneumonia shows little improvement; and the coverage of nutrition programmes is inadequate. Absence of well functioning health systems is indicated by the inadequacies related to planning, financing, <span class="annotated ">human</span> resources, infrastructure, supply systems, governance, information, and monitoring. We provide a case for transformation of health systems through effective stewardship, decentralised planning in districts, a reasoned approach to financing that affects demand for health care, a campaign to create awareness and change health and nutrition behaviour, and revision of programmes for <span class="linneaus_only ">child</span> nutrition on the basis of evidence. This agenda needs political commitment of the highest order and the development of a people's movement. 
+</body></html>

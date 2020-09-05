@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21349439</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Apolipoprotein E in Alzheimer's disease and other neurological disorders.<br><br>Apolipoprotein E (APOE) is a 299-aminoacid protein encoded by the APOE gene. Three common polymorphisms in the APOE gene, epsilo2, epsilo3, and epsilo4, result in a single aminoacid change in the APOE protein. APOE epsilo2, epsilo3, and epsilo4 alleles strongly alter, in a dose-dependent manner, the likelihood of developing Alzheimer's disease and cerebral amyloid angiopathy. In particular, APOE epsilo4 is associated with increased risk for Alzheimer's disease whereas APOE epsilo2 is associated with decreased risk. The effects of APOE genotype on risk of these diseases are likely to be mediated by differential effects of APOE on amyloid-Beta accumulation in the brain and its vasculature. Response to treatment for Alzheimer's disease might differ according to APOE genotype. Because convincing evidence ties the APOE genotype to risk of Alzheimer's disease and cerebral amyloid angiopathy, APOE has been studied in other neurological diseases. APOE epsilo4 is associated with poor outcome after traumatic brain injury and brain haemorrhage, although the mechanisms underlying these associations are unclear. The possibility that APOE has a role in these and other neurological diseases has been of great interest, but convincing associations have not yet emerged. 
+</body></html>

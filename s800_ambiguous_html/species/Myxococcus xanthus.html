@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Myxococcus xanthus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21131490</h3>DifA, a methyl-accepting chemoreceptor protein-like sensory protein, uses a novel signaling mechanism to regulate exopolysaccharide production in <span class="match annotated ">Myxococcus xanthus</span>. <br><br>DifA is a methyl-accepting chemotaxis protein (MCP)-like sensory transducer that regulates exopolysaccharide (EPS) production in <span class="match annotated ">Myxococcus xanthus</span>. Here mutational analysis and molecular biology were used to probe the signaling mechanisms of DifA in EPS regulation. We first identified the start codon of DifA experimentally; this identification extended the N terminus of DifA for 45 amino acids (aa) from the previous bioinformatics prediction. This extension helped to address the outstanding question of how DifA receives input signals from type 4 pili without a prominent periplasmic domain. The results suggest that DifA uses its N-terminus extension to sense an upstream signal in EPS regulation. We suggest that the perception of the input signal by DifA is mediated by protein-protein interactions with upstream components. Subsequent signal transmission likely involves transmembrane signaling instead of direct intramolecular interactions between the input and the output modules in the cytoplasm. The basic functional unit of DifA for signal transduction is likely dimeric as mutational alteration of the predicted dimeric interface of DifA significantly affected EPS production. Deletions of 14-aa segments in the C terminus suggest that the newly defined flexible bundle subdomain in MCPs is likely critical for DifA function because shortening of this bundle can lead to constitutively active mutations. 
+</body></html>

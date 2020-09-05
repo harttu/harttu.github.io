@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21220038</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>acon-3, the <span class="annotated ">Neurospora crassa</span> ortholog of the developmental modifier, medA, complements the conidiation defect of the <span class="annotated ">Aspergillus nidulans</span> mutant. <br><br><span class="annotated ">Aspergillus nidulans</span> and <span class="annotated ">Neurospora crassa</span> are ascomycetes that produce asexual spores through morphologically distinct processes. MedA, a protein with unknown function, is required for normal asexual and sexual development in <span class="annotated ">A. nidulans</span>. We determined that the <span class="annotated ">N. crassa</span> ortholog of medA is acon-3, a gene required for early conidiophore development and female fertility. To test hypotheses about the evolutionary origins of asexual development in distinct <span class="unannotated ">fungal</span> lineages it is important to understand the degree of conservation of developmental regulators. The amino acid sequences of <span class="annotated ">A. nidulans</span> MedA and <span class="annotated ">N. crassa</span> ACON-3 shared 37% identity and 51% similarity. acon-3 is induced at late time points of conidiation. In contrast, medA is constitutively expressed and MedA protein localizes to nuclei in all tissue types. Nonetheless, expression of acon-3 using its native promoter complemented the conidiation defects of the <span class="annotated ">A. nidulans</span> DeltamedA and medA15 mutants. We conclude that the biochemical activity of the medA orthologs is conserved for conidiation. 
+</body></html>
