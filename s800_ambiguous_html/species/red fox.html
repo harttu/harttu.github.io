@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>red fox</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21477201</h3>The importance of marine vs. <span class="annotated ">human</span>-induced subsidies in the maintenance of an expanding mesocarnivore in the arctic tundra. <br><br>1. Most studies addressing the causes of the recent increases and expansions of mesopredators in many ecosystems have focused on the top-down, releasing effect of extinctions of large apex predators. However, in the case of the northward expansion of the <span class="match annotated ">red fox</span> into the arctic tundra, a bottom-up effect of increased resource availability has been proposed, an effect that can counteract prey shortage in the low phase of the multi-annual <span class="linneaus_only ">rodent</span> cycle. Resource subsidies both with marine and with terrestrial origins could potentially be involved. 2. During different phases of a multi-annual <span class="linneaus_only ">rodent</span> cycle, we investigated the seasonal dynamics and spatial pattern of resource use by <span class="annotated ">red foxes</span> across a coast to inland low arctic tundra gradient, Varanger Peninsula, Norway. We employed two complementary methods of diet analyses: stomach contents and stable isotope analysis. 3. We found that inland <span class="annotated ">red foxes</span> primarily subsisted on <span class="annotated ">reindeer</span> carrions during the low phase of a small <span class="linneaus_only ">rodent</span> population cycle. Lemmings became the most important food item towards the peak phase of the <span class="linneaus_only ">rodent</span> cycle, despite being less abundant than sympatric <span class="annotated ">voles</span>. Isotopic signatures of tissue from both predator and prey also revealed that <span class="annotated ">red foxes</span> near the coast used marine-derived subsidies in the winter, but these allochthonous resources did not spillover to adult foxes living beyond 20-25 km from the coast. 4. Although more needs to be learned about the link between increasing primary productivity due to climatic warming and trophic dynamics in tundra ecosystems, we suggest that changes in <span class="annotated ">reindeer</span> management through a bottom-up effect, at least regionally, may have paved the way towards the establishment of a new mesopredator in the tundra biome. 
+</body></html>

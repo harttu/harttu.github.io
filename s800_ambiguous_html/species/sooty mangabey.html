@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>sooty mangabey</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20962077</h3><span class="annotated ">Simian immunodeficiency virus</span> from the <span class="match annotated ">sooty mangabey</span> and <span class="annotated ">rhesus macaque</span> is modified with O-linked carbohydrate. <br><br>Although stretches of serine and threonine are sometimes sites for O-linked carbohydrate attachment, specific sequence and structural determinants for O-linked attachment remain ill defined. The gp120 envelope protein of <span class="annotated ">SIVmac239</span> contains a serine-threonine-rich stretch of amino acids at positions 128 to 139. Here we show that lectin protein from <span class="annotated ">jackfruit</span> seed (jacalin), which binds to non- and monosialylated core 1 O-linked carbohydrate, potently inhibited the replication of <span class="annotated ">SIVmac239</span>. Selection of a jacalin-resistant <span class="annotated ">SIVmac239</span> variant population resulted in <span class="unannotated ">virus</span> with specific substitutions within amino acids 128 to 139. Cloned <span class="annotated ">simian immunodeficiency virus</span> (<span class="annotated ">SIV</span>) variants with substitutions in the 128-to-139 region had infectivities equivalent to, or within 1 log unit of, that of <span class="annotated ">SIVmac239</span> and were resistant to the inhibitory effects of jacalin. Characterization of the <span class="annotated ">SIVmac239</span> gp120 O-linked glycome showed the presence of core 1 and core 2 O-linked carbohydrate; a 128-to-139-substituted variant gp120 from jacalin-resistant <span class="annotated ">SIV</span> lacked O-linked carbohydrate. Unlike that of <span class="annotated ">SIVmac239</span>, the replication of <span class="annotated ">HIV-1 strain NL4-3</span> was resistant to inhibition by jacalin. Purified gp120s from four <span class="annotated ">SIVmac</span> and <span class="annotated ">SIVsm</span> strains bound jacalin strongly in an enzyme-linked immunosorbent assay, while nine different <span class="annotated ">HIV-1</span> gp120s, two <span class="annotated ">SIVcpz</span> gp120s, and 128-to-139-substituted <span class="annotated ">SIVmac239</span> gp120 did not bind jacalin. The ability or inability to bind jacalin thus correlated with the presence of the serine-threonine-rich stretch in the <span class="annotated ">SIVmac</span> and <span class="annotated ">SIVsm</span> gp120s and the absence of such stretches in the <span class="annotated ">SIVcpz</span> and <span class="annotated ">HIV-1</span> gp120s. Consistent with sequence predictions, two <span class="annotated ">HIV-2</span> gp120s bound jacalin, while one did not. These data demonstrate the presence of non- and monosialylated core 1 O-linked carbohydrate on the gp120s of <span class="annotated ">SIVmac</span> and <span class="annotated ">SIVsm</span> and the lack of these modifications on <span class="annotated ">HIV-1</span> and <span class="annotated ">SIVcpz</span> gp120s. 
+</body></html>

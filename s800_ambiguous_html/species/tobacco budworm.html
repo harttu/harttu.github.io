@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>tobacco budworm</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20946532</h3>Functional characterization of pheromone receptors in the <span class="match annotated ">tobacco budworm</span> <span class="annotated ">Heliothis virescens</span>. <br><br>Functional analyses of candidate <span class="annotated ">Heliothis virescens</span> pheromone odorant receptors (HvORs) were conducted using heterologous expression in Xenopus oocytes. HvOR6 was found to be highly tuned to Z9-14:Ald, while HvOR13, HvOR14 and HvOR16 showed specificity for Z11-16:Ald, Z11-16:OAc and Z11-16:OH, respectively. HvOR15, which had been considered a candidate receptor for Z9-14:Ald did not respond to any of the pheromone compounds tested, nor to 50 other general odorants. Thus, while HvOR15 is specifically expressed in <span class="annotated ">H. virescens</span> male antennae, its role in pheromone reception remains unknown. Based on our results and previous research we can now assign pheromone receptors in <span class="annotated ">H. virescens</span> males to each of the critical <span class="annotated ">H. virescens</span> agonistic pheromone compounds and two antagonistic compounds produced by heterospecific females. 
+<h3>21521143</h3>Post-egression host tissue feeding is another strategy of host regulation by the Koinobiont <span class="unannotated ">wasp</span>, <span class="annotated ">Toxoneuron nigriceps</span>. <br><br>Koinobiont wasps start their lives as hemolymph feeders inside the host body, but before they egress from the host many become tissue predators. One species, the endoparasitoid <span class="annotated ">Toxoneuron nigriceps</span> Viereck (Hymenoptera: Braconidae), exhibits the unusual behavior of egressing before initiating tissue predation. After egression from the host, it reinserts its head into the host body to begin tissue feeding. These third instar <span class="annotated ">T. nigriceps</span> larvae show a significant increase in body size and mass after post-egression feeding. Through this project the importance of post-egression feeding in the development of <span class="annotated ">T. nigriceps</span> in its host the <span class="match annotated ">tobacco budworm</span>, <span class="annotated ">Heliothis virescens</span> Fabricius (Lepidoptera: Noctuidae), has been evaluated. The study was conducted by preventing the egressed third instar <span class="annotated ">T. nigriceps</span> larvae from feeding on host tissue and observing whether they could undergo further development. Though some of the larvae that were prevented from post-egression feeding did undergo cocoon formation, pupation, and adult emergence they were inferior in terms of size, body mass, and survival to those that developed from larvae allowed to feeding after egression. Hence, it is concluded that post-egression host tissue feeding is essential for the normal development of <span class="annotated ">T. nigriceps</span>, as the prevention of feeding resulted in significantly lighter and smaller larvae, cocoons, and adults as well as deformed adults and reduced adult survival. Post-egression feeding as a host regulatory strategy is discussed. 
+</body></html>

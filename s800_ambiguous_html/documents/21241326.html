@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21241326</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Gene expression analysis of wounding-induced root-to-shoot communication in <span class="annotated ">Arabidopsis thaliana</span>. <br><br>Root-to-shoot communication plays an important role in the adaptation to environmental stress. In this study, we established a model system for root-to-shoot signalling to observe global gene expression in <span class="annotated ">Arabidopsis thaliana</span>. The roots of <span class="annotated ">Arabidopsis</span> seedlings were wounded and the expression in the shoots of 68 and 5 genes was up-regulated threefold at 30 min and 6 h post-injury, respectively. These genes were designated early and late Root-to-Shoot responsive (RtS) genes, respectively. Many of the early RtS genes were found to encode transcription factors such as AtERFs, whereas others were associated with jasmonic acid (JA) and ethylene (ET). Some of the late RtS genes were shown to be regulated by 12-oxo-phytodienoic acid (OPDA). In fact, elevated levels of JA and OPDA were detected in the shoots of seedlings 30 min and 6 h, respectively, after wounding of the roots. <span class="unannotated ">A</span> mutant analysis revealed that JA and ET are involved in the expression of the early RtS genes. Thus, root-to-shoot communication for many RtS genes is associated with the systemic production of JA, OPDA and possibly ET. 
+</body></html>

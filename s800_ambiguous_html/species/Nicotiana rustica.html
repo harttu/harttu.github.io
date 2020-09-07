@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Nicotiana rustica</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>22182609</h3>Infection by Mycorrhizal Fungi Increases Natural Enemy Abundance on Tobacco (<span class="match annotated ">Nicotiana rustica</span>). <br><br>The presence of arbuscular mycorrhizal fungi (AMF) influences plant nutrient uptake, growth, and plant defensive chemistry, thereby directly influencing multi-trophic interactions. Different <span class="unannotated ">fungal</span> isolates (genotypes of the same <span class="unannotated ">fungal</span> species) have been shown to differ in nutrient uptake ability. Plants infected with different AMF genotypes may vary in foliar nutrient or defensive chemical levels, potentially influencing multi-trophic interactions. Using a completely randomized design, we compared the effect of two isolates of the mycorrhizal fungus <span class="annotated ">Glomus etunicatum</span> W. N. Becker &amp; Gerdemann on <span class="annotated ">silver leaf whitefly</span> (<span class="annotated ">Bemisia argentifolii</span> Bellows &amp; Perring) (Hemiptera: Aleyrodidae) and parasitic <span class="unannotated ">wasp</span> (<span class="annotated ">Eretmocerus eremicus</span> Rose &amp; Zolnerowich) (Hymenoptera: Aphelinidae) abundance. Whitefly populations were not influenced by AMF infection. Parasite populations were higher on plants infected with the isolate collected from Georgia, even after controlling for whitefly abundance and plant architecture. We propose that AMF indirectly influences parasite abundance and parasitism through a change in leaf surface chemicals that affect parasitic wasps. Because of the ubiquity of and genetic variation in AMF, multi-trophic interactions are likely to be strongly influenced by belowground processes. 
+</body></html>

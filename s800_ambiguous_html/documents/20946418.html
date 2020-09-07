@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20946418</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>A seed high-lysine trait is negatively associated with the TCA cycle and slows down <span class="unannotated ">Arabidopsis</span> seed germination. <br><br>* Lysine is a nutritionally important essential amino acid, but significant elevation of its levels in <span class="unannotated ">Arabidopsis</span> seeds, by enhancing its synthesis and blocking its catabolism, causes a retardation of germination. Here, we hypothesized that this negative effect is associated with changes in primary metabolism and gene expression programs that are essential for early germination. * Seeds at different stages of germination sensu stricto of the seed-high-lysine genotype were subjected to detailed analysis of primary metabolism, using GC-MS, as well as microarray analysis and two-dimensional, isoelectric focusing, sodium dodecylsulfate polyacrylamide gel electrophoresis, to detect storage protein mobilization. * Our results exposed a major negative effect of the seed-specific increased lysine synthesis and knockout of its catabolism on the levels of a number of TCA cycle metabolites. This metabolic alteration also influences significantly the transcriptome, primarily attenuating the boost of specific transcriptional programs that are essential for seedling establishment, such as the onset of photosynthesis, as well as the turnover of specific transcriptional programs associated with seed embryonic traits. * Our results indicate that catabolism of the aspartic acid family of amino acids is an important contributor to the energy status of plants, and hence to the onset of autotrophic growth-associated processes during germination. 
+</body></html>

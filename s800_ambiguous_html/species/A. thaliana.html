@@ -1,0 +1,74 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>A. thaliana</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20880224</h3><span class="annotated ">Arabidopsis thaliana</span> populations show clinal variation in a climatic gradient associated with altitude. <br><br>* Understanding the adaptive basis of life history variation is a central goal in evolutionary ecology. The use of model species enables the combination of molecular mechanistic knowledge with ecological and evolutionary questions, but the study of life history variation in natural environments is required to merge these disciplines. * Here, we tested for clinal variation in life history and associated traits along an environmental and altitudinal gradient in the model species <span class="annotated ">Arabidopsis thaliana</span>. Seventeen natural populations of <span class="match annotated ">A. thaliana</span> were geo-referenced in north-eastern Spain on a gradient in which precipitation increases but maximum spring temperature and minimum winter temperature decrease with altitude. * One hundred and eighty-nine genotypes from the 17 populations were grown under uniform controlled conditions. Variations in traits related to biomass allocation, fecundity, phenology and vegetative growth were tested for relationships with the altitude and climatic variables associated with the home sites. Above-ground mass, number of rosette leaves at bolting, developmental time and seed weight increased with the home site's altitude. Root allocation, vegetative growth during winter and number of seeds decreased with altitude. * We suggest that the differences among home sites provide clues to the variation in adaptive strategies associated with the climatic gradient. We compared these results with adaptations and clinal relationships reported for other species and with molecular mechanisms described in <span class="annotated ">Arabidopsis</span>. 
+<h3>21039566</h3>Nitric oxide participates in cold-responsive phosphosphingolipid formation and gene expression in <span class="annotated ">Arabidopsis thaliana</span>. <br><br>Chilling triggers rapid molecular responses that permit the maintenance of plant cell homeostasis and plant adaptation. Recent data showed that nitric oxide (NO) is involved in plant acclimation and tolerance to cold. The participation of NO in the early transduction of the cold signal in <span class="annotated ">Arabidopsis thaliana</span> was investigated. The production of NO after a short exposure to cold was assessed using the NO-sensitive fluorescent probe 4, 5-diamino fluoresceine diacetate and chemiluminescence. Pharmacological and genetic approaches were used to analyze NO sources and NO-mediated changes in cold-regulated gene expression, phosphatidic acid (PtdOH) synthesis and sphingolipid phosphorylation. NO production was detected after 1-4h of chilling. It was impaired in the nia1nia2 nitrate reductase mutant. Moreover, NO accumulation was not observed in H7 plants overexpressing the <span class="match annotated ">A. thaliana</span> nonsymbiotic hemoglobin <span class="unannotated ">Arabidopsis</span> haemoglobin 1 (AHb1). Cold-regulated gene expression was affected in nia1nia2 and H7 plants. The synthesis of PtdOH upon chilling was not modified by NO depletion. By contrast, the formation of phytosphingosine phosphate and ceramide phosphate, two phosphorylated sphingolipids that are transiently synthesized upon chilling, was negatively regulated by NO. Taken together, these data suggest a new function for NO as an intermediate in gene regulation and lipid-based signaling during cold transduction. 
+<h3>21054410</h3>Possible contributions of TERMINAL FLOWER 1 to the evolution of rosette flowering in Leavenworthia (Brassicaceae). <br><br><span class="annotated ">Leavenworthia crassa</span> is a rosette flowering species that differs from inflorescence flowering species, such as <span class="annotated ">Arabidopsis thaliana</span>, in having elongated pedicels and shortened interfloral internodes on the main axis. Based on previous experiments, we hypothesized that changes to the <span class="unannotated ">L. crassa</span> TFL1 ortholog, LcrTFL1, were important in the evolution of rosette flowering. We isolated LcrTFL1 and introduced a genomic construct into tfl1 mutant <span class="match annotated ">A. thaliana</span> plants. We also generated and analyzed EGFP-LcrTFL1 reporter-fusion lines, and LcrTFL1/LcrLFY doubly transgenic lines. The transgene rescued the mutant defects, but manifested gain-of-function phenotypes. However, LcrTFL1 lines differed from 35S:TFL1 lines in several regards. Defects in floral meristem identity establishment were observed, as was the production of flowers with extra petals. We also noted features that resemble rosette flowering: LcrTFL1 lines produced significantly shorter interfloral internodes and significantly longer pedicels than either wild-type or 35S:TFL1 plants. Our data show that there are substantive differences in the regulation and/or function of TFL1 orthologs between <span class="match annotated ">A. thaliana</span> and <span class="annotated ">L. crassa</span>. These may reflect changes that occurred during the evolution of rosette flowering in Leavenworthia, but, if so, our results show that additional, as-yet-unidentified genes were involved in this instance of architectural evolution. 
+</body></html>

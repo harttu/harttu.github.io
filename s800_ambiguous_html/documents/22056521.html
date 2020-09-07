@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>22056521</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Accumulation of P-bodies in <span class="annotated ">Candida albicans</span> under different stress and filamentous growth conditions. <br><br><span class="annotated ">Candida albicans</span> is an opportunistic <span class="unannotated ">fungal</span> pathogen that grows as budding <span class="unannotated ">yeast</span>, pseudohyphal, and hyphal forms. In response to external signals, <span class="annotated ">C. albicans</span> switches rapidly among these forms. mRNA-containing cytoplasmic granules, termed processing bodies (P-bodies), have been reported to accumulate under various environmental stress conditions in diverse species from <span class="annotated ">yeast</span> to mammals. Here, we provide the first microscopic and genetic characterization of P-bodies in <span class="annotated ">C. albicans</span>. The core components of P-bodies, including the decapping machinery (Dcp2 and Dhh1), 5'-3' exoribonuclease (Kem1/Xrn1), and the P-body scaffolding protein (Edc3), were identified and their localizations with respect to P-bodies were demonstrated. Various growth conditions, including glucose deprivation, hyperosmotic stress, and heat stress, stimulated the accumulation of P-bodies. In addition, we observed P-body aggregation during hyphal development. The deletion mutant strain edc3/edc3 had a defect in filamentation and exhibited a dramatic reduction in the number of P-bodies. These results suggest that Edc3 plays an essential role in the assembly and maintenance of P-bodies in <span class="annotated ">C. albicans</span>, and that the switch to filamentous growth appears to accompany P-body accumulation. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21097630</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Membrane topology and DNA-binding ability of the Streptococcal CpsA protein.<br><br>Many streptococcal pathogens require a polysaccharide capsule for survival in the host during systemic infection. The highly conserved CpsA protein is proposed to be a transcriptional regulator of capsule production in streptococci, although the regulatory mechanism is unknown. Hydropathy plots of CpsA predict an integral membrane protein with 3 transmembrane domains and only 27 cytoplasmic residues, whereas other members of the LytR_cpsA_psr protein family are predicted to have a single transmembrane domain. This unique topology, with the short cytoplasmic domain, membrane localization, and large extracellular domain, suggests a novel mechanism of transcriptional regulation. Therefore, to determine the actual membrane topology of CpsA, specific protein domains were fused to beta-galactosidase or alkaline phosphatase. Enzymatic assays confirmed that the predicted membrane topology for CpsA is correct. To investigate how this integral membrane protein may be functioning in regulation of capsule transcription, purified full-length and truncated forms of CpsA were used in electrophoretic mobility shift assays to characterize the ability to bind the capsule operon promoter. Assays revealed that full-length, purified CpsA protein binds specifically to DNA containing the capsule promoter region. Furthermore, the large extracellular domain is not required for DNA binding, but all cytoplasmic regions of CpsA are necessary and sufficient for specific binding to the capsule operon promoter. This is the first demonstration of a member of this protein family interacting with its target DNA. Taken together, CpsA, as well as other members of the LytR_cpsA_psr protein family, appears to utilize a unique mechanism of transcriptional regulation. 
+</body></html>

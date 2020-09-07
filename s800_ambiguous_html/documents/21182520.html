@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21182520</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Developmental plasticity of immune defence in two life-history ecotypes of the <span class="annotated ">garter snake</span>, <span class="annotated ">Thamnophis elegans</span> - a common-environment experiment. <br><br>1. Ecoimmunological theory predicts a link between life-history and immune-defence strategies such that fast-living organisms should rely more on constitutive innate defences compared to slow-living organisms. An untested assumption of this hypothesis is that the variation in immune defence associated with variation in life history has a genetic basis. 2. Replicate populations of two life-history ecotypes of the <span class="annotated ">garter snake</span> <span class="annotated ">Thamnophis elegans</span> provide an ideal system in which to test this assumption. Free-ranging snakes of the fast-living ecotype, which reside in lakeshore habitats, show higher levels of three measures of constitutive innate immunity than those of the slow-living ecotype, which inhabit meadows around the lake. Although this pattern is consistent with the ecoimmunological pace-of-life hypothesis, environmental differences between the lakeshore and meadow habitats could also explain the observed differences in immune defence. 3. We performed a common-environment experiment to distinguish between these alternatives. Snakes born and raised in common-environment conditions reflected the immune phenotype of their native habitats when sampled at 4 months of age (i.e. fast-living lakeshore snakes showed higher levels of natural antibodies, complement activity and bactericidal competence than slow-living meadow snakes), but no longer showed differences when 19 months old. 4. This suggests that the differences in innate immunity observed between the two ecotypes have an important - and likely age-specific - environmental influence, with these immune components showing developmental plasticity. <span class="unannotated ">A</span> genetic effect in early life may also be present, but further research is needed to confirm this possibility and therefore provide a more definitive test of the ecoimmunological pace-of-life hypothesis in this system. 
+</body></html>

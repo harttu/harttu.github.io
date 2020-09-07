@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21097627</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Fur and the novel regulator YqjI control transcription of the ferric reductase gene yqjH in <span class="annotated ">Escherichia coli</span>. <br><br>Iron acquisition in aerobic habitats is complicated by the low solubility of ferric hydroxides. Siderophores that bind ferric iron with high affinity are used to mobilize iron. The reduction of ferric iron to the ferrous form can be coupled to the release of iron from siderophores. Iron is also stored intracellularly as a ferric mineral in proteins, such as ferritin, and must be reduced during release. In <span class="annotated ">Escherichia coli</span>, the yqjH gene encodes a putative ferric siderophore reductase that is also part of the Fur regulon. Here we show that YqjH has ferric reductase activity and is required for iron homeostasis in <span class="annotated ">E. coli</span>. Divergently transcribed from yqjH is the yqjI gene, which encodes a novel member of the winged-helix family of transcriptional regulators and also contains an N-terminal extension similar to the Ni(2+)-binding C-terminal tail of SlyD. Deletion of yqjI leads to constitutive high-level activity of the yqjH and yqjI promoters. Purified YqjI binds inverted repeat target sequences within the yqjH and yqjI promoters. We also observed that YqjI-dependent transcriptional repression is reduced when cells are exposed to elevated nickel levels, resulting in increased expression of yqjH and yqjI. YqjI binding to nickel or iron reduces YqjI DNA-binding activity in vitro. Furthermore, we found that elevated nickel stress levels disrupt iron homeostasis in <span class="annotated ">E. coli</span> and that deletion of yqjH increases nickel toxicity. Our results suggest that the YqjI protein controls expression of yqjH to help maintain iron homeostasis under conditions (such as elevated cellular nickel levels) that disrupt iron metabolism. 
+</body></html>

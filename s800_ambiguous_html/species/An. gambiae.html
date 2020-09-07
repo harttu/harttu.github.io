@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>An. gambiae</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20958808</h3>The RNA-Seq approach to studying the expression of mosquito mitochondrial genes. <br><br>In this study, we used extensive expressed sequence tag evidence obtained through 454 and Solexa next-generation sequencing to explore mtDNA transcription in male and female first instar larvae of <span class="annotated ">Aedes aegypti</span> and adults of <span class="annotated ">Aedes aegypti</span>, <span class="annotated ">Anopheles gambiae</span>, and <span class="annotated ">Anopheles quadrimaculatus</span>. Relative abundances of individual transcripts differed considerably within each sample, consistent with the differential stability of messenger RNA species. Large differences were also observed between species and between larval and adult stages; however, the male and female larval samples were remarkably similar. Quantitative PCR analysis of selected genes, cox1, l-rRNA and nd5, in larvae and adults of <span class="annotated ">Ae. aegypti</span> and in <span class="match annotated ">An. gambiae</span> adults was consistent with the RNA-Seq-based quantification of expression. Finally, the absence of a conserved mtDNA region involved in transcriptional control in other dipterans suggests that mosquitoes have evolved a distinct mechanism of regulation of gene expression in the mitochondrion. 
+<h3>21699594</h3>Optimization of the Gal4-UAS system in an <span class="annotated ">Anopheles gambiae</span> cell line.<br><br>The development of the bipartite Gal4-UAS system in <span class="annotated ">Anopheles gambiae</span> would improve the functional characterization of genes in this important malaria vector. Towards this aim, we used Gal4 driver plasmids to successfully activate expression of the reporter gene, luciferase, from UAS responder plasmids when cotransfected into an <span class="match annotated ">An. gambiae</span> cell line. To optimize Gal4-regulated gene expression in mosquitoes, we compared the efficiency of a series of alternative Gal4 transactivators to drive reporter gene expression from responder plasmids incorporating different numbers of tandemly arrayed Gal4 binding sites or upstream activation sequences (UAS). The results indicated that the native Gal4 is only weakly active in these cells. Modified forms of Gal4, including those carrying minimal VP16 activation domains, as well as a deleted form of Gal4, give up to 20-fold greater activity than the native protein, when used in conjunction with a responder plasmid having 14 UAS repeats. The identification of Gal4-UAS vectors that are efficiently expressed in a mosquito cell line should facilitate the transfer of this versatile expression system to <span class="match annotated ">An. gambiae</span>, and potentially to other insects of medical importance. 
+</body></html>

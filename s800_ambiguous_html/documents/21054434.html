@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21054434</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Acclimation to high CO2 in <span class="annotated ">maize</span> is related to water status and dependent on leaf rank. <br><br>The responses of C(3) plants to rising atmospheric CO(2) levels are considered to be largely dependent on effects exerted through altered photosynthesis. In contrast, the nature of the responses of C(4) plants to high CO(2) remains controversial because of the absence of CO(2) -dependent effects on photosynthesis. In this study, the effects of atmospheric CO(2) availability on the transcriptome, proteome and metabolome profiles of two ranks of source leaves in <span class="annotated ">maize</span> (<span class="annotated ">Zea mays</span> L.) were studied in plants grown under ambient CO(2) conditions (350 +/- 20 muL L(-1) CO(2) ) or with CO(2) enrichment (700 +/- 20 muL L(-1) CO(2) ). Growth at high CO(2) had no effect on photosynthesis, photorespiration, leaf C/N ratios or anthocyanin contents. However, leaf transpiration rates, carbohydrate metabolism and protein carbonyl accumulation were altered at high CO(2) in a leaf-rank specific manner. Although no significant CO(2) -dependent changes in the leaf transcriptome were observed, qPCR analysis revealed that the abundance of transcripts encoding a Bowman-Birk protease inhibitor and a serpin were changed by the growth CO(2) level in a leaf rank specific manner. Moreover, CO(2) -dependent changes in the leaf proteome were most evident in the oldest source leaves. Small changes in water status may be responsible for the observed responses to high CO(2,) particularly in the older leaf ranks. 
+</body></html>

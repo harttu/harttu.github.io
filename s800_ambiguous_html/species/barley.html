@@ -1,0 +1,74 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>barley</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20955225</h3>Auxin depletion in <span class="match annotated ">barley</span> plants under high-temperature conditions represses DNA proliferation in organelles and nuclei via transcriptional alterations. <br><br>Many plant species are susceptible to high-temperature (HT) injury during reproductive development. We recently demonstrated that HT represses the expression of YUCCA auxin biosynthesis genes and reduces endogenous auxin in the developing anthers of <span class="match annotated ">barley</span> and <span class="unannotated ">Arabidopsis</span>. Here, we show that DNA proliferation in mitochondria, chloroplasts and nuclei of developing panicles is inhibited with increasing temperatures in <span class="match annotated ">barley</span>. Following DNA proliferation suppression, terminal abnormalities were observed in the organelles of anther wall cells, including mitochondrial swelling and overdevelopment of chloroplasts. Comprehensive transcriptome analyses using both reproductive organs and vegetative tissues showed high and positive pairwise correlations between the expression profiles of auxin-induced genes, DNA replication-related genes and mitochondrial-related genes. In contrast, the expression profiles of auxin-repressed protein genes and photosynthesis-/chloroplast-related genes were negatively correlated with those of the previously mentioned genes. Under HT conditions, the former was repressed and the latter was up-regulated in the developing panicles. Furthermore, application of exogenous auxin promoted the expression of DNA replication-related genes under HT conditions, inducing anther cell proliferation. These suggest that compromised auxin biosynthesis/IAA level under HT condition results in nuclear and organellar DNA proliferation arrest due to co-transcriptional alterations. 
+<h3>20955813</h3>Comparative sequence analysis of <span class="annotated ">wheat</span> and <span class="match annotated ">barley</span> powdery mildew fungi reveals gene colinearity, dates divergence and indicates host-pathogen co-evolution. <br><br>The two <span class="unannotated ">fungal</span> pathogens <span class="annotated ">Blumeria graminis f. sp. tritici</span> (<span class="annotated ">B.g. tritici</span>) and <span class="annotated ">hordei</span> (<span class="annotated ">B.g. hordei</span>) cause powdery mildew specifically in <span class="annotated ">wheat</span> or <span class="match annotated ">barley</span>. They have the same life cycle, but their growth is restricted to the respective host. Here, we compared the sequences of two loci in both cereal mildews to determine their divergence time and their relationship with the evolution of their hosts. We sequenced a total of 273.3kb derived from <span class="annotated ">B.g. tritici</span> BAC sequences and compared them with the orthologous regions in the <span class="annotated ">B.g. hordei</span> genome. Protein-coding genes were colinear and well conserved. In contrast, the intergenic regions showed very low conservation mostly due to different integration patterns of transposable elements. To estimate the divergence time of <span class="annotated ">B.g. tritici</span> and <span class="annotated ">B.g. hordei</span>, we used conserved intergenic sequences including orthologous transposable elements. This revealed that <span class="annotated ">B.g. tritici</span> and <span class="annotated ">B.g. hordei</span> have diverged about 10 million years ago (MYA), two million years after <span class="annotated ">wheat</span> and <span class="match annotated ">barley</span> (12 MYA). These data suggest that <span class="annotated ">B.g. tritici</span> and <span class="annotated ">B.g. hordei</span> have co-evolved with their hosts during most of their evolutionary history after host divergence, possibly after a short phase of host expansion when the same pathogen could still grow on the two diverged hosts. 
+<h3>21601644</h3>Analysis of the <span class="annotated ">Fusarium graminearum species complex</span> from <span class="annotated ">wheat</span>, <span class="match annotated ">barley</span> and <span class="annotated ">maize</span> in South Africa provides evidence of species-specific differences in host preference. <br><br>Species identity and trichothecene toxin potential of 560 members of the <span class="annotated ">Fusarium graminearum species complex</span> (<span class="annotated ">FGSC</span>) collected from diseased <span class="annotated ">wheat</span>, <span class="match annotated ">barley</span> and <span class="annotated ">maize</span> in South Africa was determined using a microsphere-based multilocus genotyping assay. Although three trichothecene types (3-ADON, 15-ADON and NIV) were represented among these isolates, strains with the 15-ADON type predominated on all three hosts. <span class="unannotated ">A</span> significant difference, however, was identified in the composition of <span class="annotated ">FGSC</span> pathogens associated with Gibberella ear rot (GER) of <span class="annotated ">maize</span> as compared to Fusarium head blight (FHB) of <span class="annotated ">wheat</span> or <span class="match annotated ">barley</span> (P&lt;0.001). <span class="annotated ">F. graminearum</span> accounted for more than 85% of the <span class="annotated ">FGSC</span> isolates associated with FHB of <span class="annotated ">wheat</span> and <span class="match annotated ">barley</span> (N=425), and was also the dominant species among isolates from <span class="annotated ">maize</span> roots (N=35). However, with the exception of a single isolate identified as an interspecific hybrid between <span class="annotated ">Fusariumboothii</span> and <span class="annotated ">F. graminearum</span>, GER of <span class="annotated ">maize</span> (N=100) was exclusively associated with <span class="annotated ">F. boothii</span>. The predominance of <span class="annotated ">F. graminearum</span> among FHB isolates, and the near exclusivity of <span class="annotated ">F. boothii</span> among GER isolates, was observed across all cultivars, collection dates, and provinces sampled. Because these results suggest a difference in host preference among species of the <span class="annotated ">FGSC</span>, we hypothesize that <span class="annotated ">F. graminearum</span> may be less well adapted to infect <span class="annotated ">maize</span> ears than other members of the <span class="annotated ">FGSC</span>. 
+</body></html>

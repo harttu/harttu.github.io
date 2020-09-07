@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21496907</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Stillbirths: the way forward in high-income countries.<br><br>Stillbirth rates in high-income countries declined dramatically from about 1940, but this decline has slowed or stalled over recent times. The present variation in stillbirth rates across and within high-income countries indicates that further reduction in stillbirth is possible. Large disparities (linked to disadvantage such as poverty) in stillbirth rates need to be addressed by providing more educational opportunities and improving living conditions for <span class="linneaus_only ">women</span>. Placental pathologies and infection associated with preterm birth are linked to a substantial proportion of stillbirths. The proportion of unexplained stillbirths associated with under investigation continues to impede efforts in stillbirth prevention. Overweight, obesity, and smoking are important modifiable risk factors for stillbirth, and advanced maternal age is also an increasingly prevalent risk factor. Intensified efforts are needed to ameliorate the effects of these factors on stillbirth rates. Culturally appropriate preconception care and quality antenatal care that is accessible to all <span class="linneaus_only ">women</span> has the potential to reduce stillbirth rates in high-income countries. Implementation of national perinatal mortality audit programmes aimed at improving the quality of care could substantially reduce stillbirths. Better data on numbers and causes of stillbirth are needed, and international consensus on definition and classification related to stillbirth is a priority. All parents should be offered a thorough investigation including a high-quality autopsy and placental histopathology. Parent organisations are powerful change agents and could have an important role in raising awareness to prevent stillbirth. Future research must focus on screening and interventions to reduce antepartum stillbirth as a result of placental dysfunction. Identification of ways to reduce maternal overweight and obesity is a high priority for high-income countries. 
+</body></html>

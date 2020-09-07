@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>VSV</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20980511</h3>Dominant inhibition of Akt/protein kinase B signaling by the matrix protein of a negative-strand RNA <span class="unannotated ">virus</span>. <br><br><span class="annotated ">Vesicular stomatitis virus</span> (<span class="match annotated ">VSV</span>) is a rhabdovirus that alters host nuclear and cytoplasmic function upon infection. We have investigated the effect of <span class="match annotated ">VSV</span> infection on cellular signaling through the phosphatidylinositol-3 kinase (PI3k)/Akt signaling pathway. Akt phosphorylation at both threonine 308 (Thr308) and serine 473 (Ser473) was inhibited in cells infected with <span class="match annotated ">VSV</span>. This inhibition was rapid (beginning within the first 2 to 3 h postinfection) and correlated with the dephosphorylation of downstream effectors of Akt, such as glycogen synthase kinase 3Beta (GSK3Beta) and mammalian target of rapamycin (mTOR). The dephosphorylation of Akt occurred in the presence of growth factor stimulation and was not overcome through constitutive membrane targeting of Akt or high levels of phosphatidylinositol-3,4,5-triphosphate (PIP3) accumulation in the membrane. Akt dephosphorylation was not a result of alterations in PDK1 phosphorylation or activity, changes in phosphatase and tensin homologue deleted on chromosome 10 (PTEN) levels, or the downregulation of PI3k signaling. Inactivation of Akt was caused by the expression of the <span class="unannotated ">viral</span> M protein in the absence of other <span class="unannotated ">viral</span> components, and an M protein mutant that does not inhibit RNA polymerase II (Pol II) transcription and nuclear/cytoplasmic transport was also defective in inhibiting Akt phosphorylation. These data illustrate that <span class="match annotated ">VSV</span> utilizes a novel mechanism to alter this central player in cell signaling and oncogenesis. It also suggests an inside-out model of signal transduction where <span class="match annotated ">VSV</span> interruption of nuclear events has a rapid and significant effect on membrane signaling events. 
+<h3>20980513</h3>R5 <span class="annotated ">HIV</span> env and <span class="annotated ">vesicular stomatitis virus</span> G protein cooperate to mediate fusion to naive CD4+ T Cells. <br><br>Naive CD4(4) T cells are resistant to both <span class="annotated ">HIV</span> R5 env and <span class="annotated ">vesicular stomatitis virus</span> G protein (<span class="match annotated ">VSV</span>-G)-mediated fusion. However, <span class="annotated ">viral</span> particles carrying both <span class="annotated ">HIV</span> R5 env and <span class="match annotated ">VSV</span>-G infect naive cells by an unexplained mechanism. We show that <span class="match annotated ">VSV</span>-G-pseudotyped <span class="annotated ">virus</span> cannot fuse to unstimulated cells because the <span class="annotated ">viral</span> particles cannot be endocytosed. However, virions carrying both <span class="annotated ">HIV</span> R5 env and <span class="match annotated ">VSV</span>-G can fuse because CD4 binding allows <span class="annotated ">viral</span> uptake. Our findings reveal a unique mechanism by which R5 <span class="annotated ">HIV</span> env and <span class="match annotated ">VSV</span>-G cooperate to allow entry to naive CD4(+) T cells, providing a tool to target naive CD4(+) T cells with R5 <span class="annotated ">HIV</span> to study <span class="annotated ">HIV</span> coreceptor signaling and latency. 
+</body></html>

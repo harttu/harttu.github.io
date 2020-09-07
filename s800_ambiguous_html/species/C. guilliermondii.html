@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>C. guilliermondii</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21807108</h3>Fluorescent protein fusions in <span class="annotated ">Candida guilliermondii</span>. <br><br><span class="annotated ">Candida guilliermondii</span> is an emerging <span class="unannotated ">fungal</span> agent of candidiasis often associated with oncology <span class="linneaus_only ">patients</span>. This <span class="annotated ">yeast</span> also remains a promising biotechnological model for the industrial production of value-added metabolites. In the present study, we developed a recipient strain as well as a set of plasmids for construction of fluorescent protein (FP) fusions in this species. We demonstrated that <span class="match annotated ">C. guilliermondii</span> phosphoglycerate kinase transcription-regulating sequences allow a constitutive expression of codon-optimized green, cyan, yellow and mCherry FP genes in <span class="match annotated ">C. guilliermondii</span> cells and the fluorescence signal could be directly observed at the colony and blastospore level by epifluorescence microcopy. To illustrate differential targeting of the FPs into specified cellular compartments, we studied and validated the expected subcellular localization of various <span class="match annotated ">C. guilliermondii</span> predicted proteins fused to FPs. Furthermore, co-expression experiments of various couples of FP-tagged <span class="match annotated ">C. guilliermondii</span> predicted proteins in the same cell showed that the fluorescence of each FP could be detected independently, providing firm evidences that YFP/CFP and GFP/mCherry pairs can be used for dual labeling in <span class="match annotated ">C. guilliermondii</span> cells. This technical advance will facilitate future studies of protein co-expression and co-localization in <span class="match annotated ">C. guilliermondii</span> and will give precious help for elucidating new molecular events supporting pathogenicity, antifungal resistance and for exploring the potential of <span class="annotated ">yeast</span> metabolic engineering. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>N. tetrasperma</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>22056520</h3>Meiotic silencing by unpaired DNA is expressed more strongly in the early than the late perithecia of crosses involving most wild-isolated <span class="annotated ">Neurospora crassa</span> strains and in self-crosses of <span class="match annotated ">N. tetrasperma</span>. <br><br>Meiotic silencing by unpaired DNA is a presumed RNAi-mediated elimination of the transcripts of any gene that is not properly paired with a homolog in meiosis. Eighty wild-isolated strains of <span class="annotated ">Neurospora crassa</span> were classified into three types based on the apparent strength of meiotic silencing of the bml (Beta-tubulin) and mei-3 genes in crosses with the ::Bml(r) and ::mei-3 tester strains. "OR" and "Sad" type wild-isolates, respectively, did or did not silence both the genes, whereas the "Esm" type (68 strains) silenced bml but not mei-3(+), suggesting an intermediate strength of silencing. Many wild strains, especially of the Esm type, gave fertile crosses with strains bearing the 148kbp chromosome segment duplication Dp(EB4) but their crosses with the 405kbp Dp(IBj5) were barren. Larger Dps might include more genes whose sensitivity to silencing is comparable with that of bml, consequently their crosses with the OR and Esm type strains would be about equally barren, whereas small Dps, with presumably few or no bml-like genes suffer little gene silencing in crosses with Esm and Sad strains and thus remain fertile. Using lollipop-shaped asci as indicators of silencing in crosses of the ::act tester with Esm type strains, and white-spored asci in <span class="annotated ">Neurospora tetrasperma</span> self-crosses heterozygous for an ectopic insertion of the asm-1 gene, we found that meiotic silencing was expressed more strongly in the early but not in the late perithecia of these crosses. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20619737</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Fertility-sparing surgery in <span class="linneaus_only ">patients</span> with cervical cancer.<br><br>There are several types of fertility saving procedures that can be done in <span class="linneaus_only ">patients</span> with cervical cancer, which differ in terms of surgical approach and extent of paracervical resection. This review assesses oncological and pregnancy results after different procedures. The oncological results of vaginal radical trachelectomies (VRT) and abdominal radical trachelectomies (ART) are similar for tumours less than 2 cm in size, and are now considered safe surgical procedures. Oncological outcomes of VRT and ART in tumours larger than 2 cm are also identical, but the results cannot be considered satisfactory. Preliminary findings of less radical procedures (ie, deep cone and simple trachelectomy) in <span class="linneaus_only ">patients</span> with tumours less than 2 cm, and negative sentinel and other pelvic lymph nodes, are comparable with the results of VRT and ART. Downstaging tumours larger than 2 cm by neoadjuvant chemotherapy is still an experimental procedure and will need multicentre cooperation to verify its oncological safety. Pregnancy results vary statistically with the different methods. 
+</body></html>

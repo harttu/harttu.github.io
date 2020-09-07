@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21496906</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Stillbirths: what difference can we make and at what cost?<br><br>Worldwide, 2*65 million (uncertainty range 2*08 million to 3*79 million) stillbirths occur yearly, of which 98% occur in countries of low and middle income. Despite the fact that more than 45% of the global burden of stillbirths occur intrapartum, the perception is that little is known about effective interventions, especially those that can be implemented in low-resource settings. We undertook a systematic review of randomised trials and observational studies of interventions which could reduce the burden of stillbirths, particularly in low-income and middle-income countries. We identified several interventions with sufficient evidence to recommend implementation in health systems, including periconceptional folic acid supplementation or fortification, prevention of malaria, and improved detection and management of syphilis during pregnancy in endemic areas. Basic and comprehensive emergency obstetric care were identified as key effective interventions to reduce intrapartum stillbirths. Broad-scale implementation of intervention packages across 68 countries listed as priorities in the Countdown to 2015 report could avert up to 45% of stillbirths according to a model generated from the Lives Saved Tool. The overall costs for these interventions are within the general estimates of cost-effective interventions for maternal care, especially in view of the effects on outcomes across maternal, fetal, and neonatal health. 
+</body></html>

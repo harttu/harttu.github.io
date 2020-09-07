@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21037003</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>A small protein required for the switch from {sigma}F to {sigma}G during sporulation in <span class="annotated ">Bacillus subtilis</span>. <br><br>A cascade of alternative sigma factors governs the program of developmental gene expression during sporulation in <span class="annotated ">Bacillus subtilis</span>. Little is known, however, about how the early-acting sigma factors are inactivated and replaced by the later-acting factors. Here we identify a small protein, Fin (formerly known as YabK), that is required for efficient switching from sigma(F)- to sigma(G)-directed gene expression in the forespore compartment of the developing sporangium. The fin gene, which is conserved among Bacillus species and species of related genera, is transcribed in the forespore under the control of both sigma(F) and sigma(G). Cells mutant for fin are unable to fully deactivate sigma(F) and, conversely, are unable to fully activate sigma(G). Consistent with their deficiency in sigma(G)-directed gene expression, fin cells are arrested in large numbers following the engulfment stage of sporulation, ultimately forming 50-fold fewer heat-resistant spores than the wild type. Based in part on the similarity of Fin to the anti-sigma(G) factor CsfB (also called Gin), we speculate that Fin is an anti-sigma(F) factor which, by disabling sigma(F), promotes the switch to late developmental gene expression in the forespore. 
+</body></html>

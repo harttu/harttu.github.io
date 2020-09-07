@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>S. littoralis</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20840610</h3>The role of abscisic acid and water stress in root herbivore-induced leaf resistance. <br><br>* Herbivore-induced systemic resistance occurs in many plants and is commonly assumed to be adaptive. The mechanisms triggered by leaf-herbivores that lead to systemic resistance are largely understood, but it remains unknown how and why root herbivory also increases resistance in leaves. * To resolve this, we investigated the mechanism by which the root herbivore <span class="annotated ">Diabrotica virgifera</span> induces resistance against lepidopteran herbivores in the leaves of <span class="annotated ">Zea mays</span>. * <span class="annotated ">Diabrotica virgifera</span> infested plants suffered less aboveground herbivory in the field and showed reduced growth of <span class="annotated ">Spodoptera littoralis</span> caterpillars in the laboratory. Root herbivory did not lead to a jasmonate-dependent response in the leaves, but specifically triggered water loss and abscisic acid (ABA) accumulation. The induction of ABA by itself was partly responsible for the induction of leaf defenses, but not for the resistance against <span class="match annotated ">S. littoralis</span>. Root-herbivore induced hydraulic changes in the leaves, however, were crucial for the increase in insect resistance. * We conclude that the induced leaf resistance after root feeding is the result of hydraulic changes, which reduce the quality of the leaves for chewing herbivores. This finding calls into question whether root-herbivore induced leaf-resistance is an evolved response. 
+<h3>21091811</h3>Candidate chemosensory ionotropic receptors in a Lepidoptera.<br><br>A new family of candidate chemosensory ionotropic receptors (IRs) related to ionotropic glutamate receptors (iGluRs) was recently discovered in <span class="annotated ">Drosophila melanogaster</span>. Through Blast analyses of an expressed sequenced tag library prepared from male antennae of the noctuid <span class="linneaus_only ">moth</span> <span class="annotated ">Spodoptera littoralis</span>, we identified 12 unigenes encoding proteins related to <span class="annotated ">D. melanogaster</span> and <span class="annotated ">Bombyx mori</span> IRs. Their full length sequences were obtained and the analyses of their expression patterns suggest that they were exclusively expressed or clearly enriched in chemosensory organs. The deduced protein sequences were more similar to <span class="annotated ">B. mori</span> and <span class="annotated ">D. melanogaster</span> IRs than to iGluRs and showed considerable variations in the predicted ligand-binding domains; none have the three glutamate-interacting residues found in iGluRs, suggesting different binding specificities. Our data suggest that we identified members of the insect IR chemosensory receptor family in <span class="match annotated ">S. littoralis</span> and we report here the first demonstration of IR expression in Lepidoptera. 
+</body></html>

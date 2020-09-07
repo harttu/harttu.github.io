@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20962079</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Blood myeloid dendritic cells from <span class="annotated ">HIV-1</span>-infected individuals display a proapoptotic profile characterized by decreased Bcl-2 levels and by caspase-3+ frequencies that are associated with levels of plasma viremia and T cell activation in an exploratory study. <br><br>Reduced frequencies of myeloid and plasmacytoid dendritic cell (DC) subsets (mDCs and pDCs, respectively) have been observed in the peripheral blood of <span class="annotated ">HIV-1</span>-infected individuals throughout the course of disease. Accumulation of DCs in lymph nodes (LNs) may partly account for the decreased numbers observed in blood, but increased DC death may also be a contributing factor. We used multiparameter flow cytometry to evaluate pro- and antiapoptotic markers in blood mDCs and pDCs from untreated <span class="annotated ">HIV-1</span>-infected donors, from a subset of infected donors before and after receiving antiretroviral therapy (ART), and from uninfected control donors. Blood mDCs, but not pDCs, from untreated <span class="annotated ">HIV-1</span>-infected donors expressed lower levels of antiapoptotic Bcl-2 than DCs from uninfected donors. <span class="unannotated ">A</span> subset of <span class="annotated ">HIV-1</span>-infected donors had elevated frequencies of proapoptotic caspase-3(+) blood mDCs, and positive correlations were observed between caspase-3(+) mDC frequencies and plasma <span class="unannotated ">viral</span> load and CD8(+) T-cell activation levels. Caspase-3(+) mDC frequencies, but not mDC Bcl-2 expression, were reduced with <span class="unannotated ">viral</span> suppression on ART. Apoptosis markers on DCs in blood and LN samples from a cohort of untreated, <span class="annotated ">HIV-1</span>-infected donors with chronic disease were also evaluated. LN mDCs displayed higher levels of Bcl-2 and lower caspase-3(+) frequencies than did matched blood mDCs. Conversely, LN pDCs expressed lower Bcl-2 levels than their blood counterparts. In summary, blood mDCs from untreated <span class="annotated ">HIV-1</span>-infected subjects displayed a proapoptotic profile that was partially reversed with <span class="unannotated ">viral</span> suppression, suggesting that DC death may be a factor contributing to blood DC depletion in the setting of chronic, untreated <span class="annotated ">HIV</span> disease. 
+</body></html>

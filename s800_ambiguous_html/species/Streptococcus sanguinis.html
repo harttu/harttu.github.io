@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Streptococcus sanguinis</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21036992</h3>Catabolite control protein <span class="unannotated ">A</span> controls hydrogen peroxide production and cell death in <span class="match annotated ">Streptococcus sanguinis</span>. <br><br><span class="match annotated ">Streptococcus sanguinis</span> is a commensal oral bacterium producing hydrogen peroxide (H2O2) that is dependent on pyruvate oxidase (Spx) activity. In addition to its well-known role in bacterial antagonism during interspecies competition, H2O2 causes cell death in about 10% of the <span class="annotated ">S. sanguinis</span> population. As a consequence of H2O2-induced cell death, largely intact chromosomal DNA is released into the environment. This extracellular DNA (eDNA) contributes to the self-aggregation phenotype under aerobic conditions. To further investigate the regulation of spx gene expression, we assessed the role of catabolite control protein <span class="unannotated ">A</span> (CcpA) in spx expression control. We report here that CcpA represses spx expression. An isogenic DeltaccpA mutant showed elevated spx expression, increased Spx abundance, and H2O2 production, whereas the wild type did not respond with altered spx expression in the presence of glucose and other carbohydrates. Since H2O2 is directly involved in the release of eDNA and bacterial cell death, the presented data suggest that CcpA is a central control element in this important developmental process in <span class="annotated ">S. sanguinis</span>. 
+</body></html>

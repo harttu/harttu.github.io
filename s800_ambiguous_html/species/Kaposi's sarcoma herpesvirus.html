@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Kaposi's sarcoma herpesvirus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20980505</h3>Translational control of the abundance of cytoplasmic poly(A) binding protein in <span class="annotated ">human cytomegalovirus</span>-infected cells. <br><br>Irrespective of their effects on ongoing host protein synthesis, productive replication of the representative alphaherpesvirus <span class="annotated ">herpes simplex virus type 1</span>, the representative gammaherpesvirus <span class="match annotated ">Kaposi's sarcoma herpesvirus</span>, and the representative betaherpesvirus <span class="annotated ">human cytomegalovirus</span> [<span class="annotated ">HCMV</span>] stimulates the assembly of the multisubunit, cap-binding translation factor eIF4F. However, only <span class="annotated ">HCMV</span> replication is associated with an increased abundance of eIF4F core components (eIF4E, eIF4G, eIF4A) and the eIF4F-associated factor poly(A) binding protein (PABP). Here, we demonstrate that the increase in translation factor concentration was readily detected in an asynchronous population of <span class="annotated ">HCMV</span>-infected primary <span class="annotated ">human</span> fibroblasts, abolished by prior UV inactivation of <span class="unannotated ">virus</span>, and genetically dependent upon <span class="unannotated ">viral</span> immediate-early genes. Strikingly, while increased mRNA steady-state levels accompanied the rise in eIF4E and eIF4G protein levels, the overall abundance of PABP mRNA, together with the half-life of the polypeptide it encodes, remained relatively unchanged by <span class="annotated ">HCMV</span> infection. Instead, <span class="annotated ">HCMV</span>-induced PABP accumulation resulted from new protein synthesis and was sensitive to the mTORC1-selective inhibitor rapamycin, which interferes with phosphorylation of the mTORC1 substrate p70 S6K and the translational repressor 4E-BP1. While virus-induced PABP accumulation did not require p70 S6K, it was inhibited by the expression of a dominant-acting 4E-BP1 variant unable to be inactivated by mTORC1. Finally, unlike the situation in alpha- or gammaherpesvirus-infected cells, where PABP is redistributed to nuclei, PABP accumulated in the cytoplasm of <span class="annotated ">HCMV</span>-infected cells. Thus, cytoplasmic PABP accumulation is translationally controlled in <span class="annotated ">HCMV</span>-infected cells via a mechanism requiring mTORC1-mediated inhibition of the cellular 4E-BP1 translational repressor. 
+</body></html>

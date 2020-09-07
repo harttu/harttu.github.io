@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Mycobacterium bovis</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21097608</h3>African 2, a clonal complex of <span class="match annotated ">Mycobacterium bovis</span> epidemiologically important in East Africa. <br><br>We have identified a clonal complex of <span class="match annotated ">Mycobacterium bovis</span> isolated at high frequency from <span class="annotated ">cattle</span> in Uganda, Burundi, Tanzania, and Ethiopia. We have named this related group of <span class="annotated ">M. bovis</span> strains the African 2 (Af2) clonal complex of <span class="annotated ">M. bovis</span>. Af2 strains are defined by a specific chromosomal deletion (RDAf2) and can be identified by the absence of spacers 3 to 7 in their spoligotype patterns. Deletion analysis of <span class="annotated ">M. bovis</span> isolates from Algeria, Mali, Chad, Nigeria, Cameroon, South Africa, and Mozambique did not identify any strains of the Af2 clonal complex, suggesting that this clonal complex of <span class="annotated ">M. bovis</span> is localized in East Africa. The specific spoligotype pattern of the Af2 clonal complex was rarely identified among isolates from outside Africa, and the few isolates that were found and tested were intact at the RDAf2 locus. We conclude that the Af2 clonal complex is localized to <span class="annotated ">cattle</span> in East Africa. We found that strains of the Af2 clonal complex of <span class="annotated ">M. bovis</span> have, in general, four or more copies of the insertion sequence IS6110, in contrast to the majority of <span class="annotated ">M. bovis</span> strains isolated from <span class="annotated ">cattle</span>, which are thought to carry only one or a few copies. 
+</body></html>

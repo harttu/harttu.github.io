@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20962091</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Macaque long-term nonprogressors resist superinfection with multiple CD8+ T cell escape variants of <span class="annotated ">simian immunodeficiency virus</span>. <br><br><span class="annotated ">Human immunodeficiency virus</span> (<span class="annotated ">HIV</span>)-positive individuals can be superinfected with different <span class="unannotated ">virus</span> strains. Individuals who control an initial <span class="annotated ">HIV</span> infection are therefore still at risk for subsequent infection with divergent viruses, but the barriers to such superinfection remain unclear. Here we tested long-term nonprogressors' (LTNPs') susceptibility to superinfection using <span class="annotated ">Indian rhesus macaques</span> that express the major histocompatibility complex <span class="unannotated ">class I</span> (MHC-I) allele Mamu-B 17, which is associated with control of the pathogenic AIDS <span class="annotated ">virus SIVmac239</span>. The Mamu-B 17-restricted CD8(+) T cell repertoire is focused almost entirely on 5 epitopes. We engineered a series of <span class="unannotated ">SIVmac239</span> variants bearing mutations in 3, 4, or all 5 of these epitopes and used them to serially challenge 2 Mamu-B 17-positive LTNPs. None of the escape variants caused breakthrough replication in LTNPs, although they readily infected Mamu-B 17-negative naive macaques. In vitro competing coculture assays and examination of <span class="unannotated ">viral</span> evolution in hosts lacking Mamu-B 17 suggested that the mutant viruses had negligible defects in replicative fitness. Both LTNPs maintained robust immune responses, including <span class="annotated ">simian immunodeficiency virus</span> (<span class="annotated ">SIV</span>)-specific CD8(+) and CD4(+) T cells and neutralizing antibodies. Our results suggest that escape mutations in epitopes bound by &quot;protective&quot; MHC-I molecules may not be sufficient to establish superinfection in LTNPs. 
+</body></html>

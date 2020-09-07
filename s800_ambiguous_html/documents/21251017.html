@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21251017</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>A bicistronic, Ubiquitin-10 promoter-based vector cassette for transient transformation and functional analysis of membrane transport demonstrates the utility of quantitative voltage clamp studies on intact <span class="unannotated ">Arabidopsis</span> root epidermis. <br><br>To date the use of fluorescent reporter constructs in analysing membrane transport has been limited primarily to cell lines expressing stably either the tagged transporter protein(s) or markers to identify lineages of interest. Strategies for transient expression have yet to be exploited in transport analysis, despite their wide application in cellular imaging studies. Here we describe a Gateway-compatible, bicistronic vector, incorporating the constitutive Ubiqutin-10 gene promoter of <span class="unannotated ">Arabidopsis</span> that gives prolonged expression after transient transformation and enables fluorescence marking of cells without a fusion construct. We show that <span class="unannotated ">Arabidopsis</span> root epidermal cells are readily transformed by co-cultivation with Agrobacterium and are tractable for quantitative electrophysiological analysis. As a proof of principle, we transiently transformed <span class="unannotated ">Arabidopsis</span> with the bicistronic vector carrying GFP as the fluorescent marker and, separately, the integral plasma membrane protein SYP121 essential for the inward K+ channel current. We demonstrate that transient expression of SYP121 in syp121 mutant plants is sufficient to rescue the K+ current in vivo. The combination of transient expression and use of the bicistronic vector promises significant advantages for studies of membrane transport and nutrient acquisition in roots. 
+</body></html>

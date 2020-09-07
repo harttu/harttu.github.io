@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21131484</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Constitutive expression of the maltoporin LamB in the absence of OmpR damages the cell envelope. <br><br>Cells experience multiple environmental stimuli simultaneously. To survive, they must respond accordingly. Unfortunately, the proper response to one stress easily could make the cell more susceptible to a second coexistent stress. To deal with such a problem, a cell must possess a mechanism that balances the need to respond simultaneously to both stresses. Our recent studies of ompR malT(Con) double mutants show that elevated expression of LamB, the outer membrane porin responsible for maltose uptake, causes cell death when the osmoregulator OmpR is disabled. To obtain insight into the nature of the death experienced by ompR malT(Con) mutants, we described the death process. On the basis of microscopic and biochemical approaches, we conclude that death results from a loss of membrane integrity. On the basis of an unbiased genome-wide search for suppressor mutations, we conclude that this loss of membrane integrity results from a LamB-induced envelope stress that the cells do not sufficiently perceive and thus do not adequately accommodate. Finally, we conclude that this envelope stress involves an imbalance in the lipopolysaccharide/porin composition of the outer membrane and an increased requirement for inorganic phosphate. 
+</body></html>

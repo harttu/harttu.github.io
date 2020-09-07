@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21269685</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Health and health-care systems in southeast Asia: diversity and transitions.<br><br>Southeast Asia is a region of enormous social, economic, and political diversity, both across and within countries, shaped by its history, geography, and position as a major crossroad of trade and the movement of goods and services. These factors have not only contributed to the disparate health status of the region's diverse populations, but also to the diverse nature of its health systems, which are at varying stages of evolution. Rapid but inequitable socioeconomic development, coupled with differing rates of demographic and epidemiological transitions, have accentuated health disparities and posed great public health challenges for national health systems, particularly the control of emerging infectious diseases and the rise of non-communicable diseases within ageing populations. While novel forms of health care are evolving in the region, such as corporatised public health-care systems (government owned, but operating according to corporate principles and with private-sector participation) and financing mechanisms to achieve universal coverage, there are key lessons for health reforms and decentralisation. New challenges have emerged with rising trade in health services, migration of the health workforce, and medical tourism. Juxtaposed between the emerging giant economies of China and India, countries of the region are attempting to forge a common regional identity, despite their diversity, to seek mutually acceptable and effective solutions to key regional health challenges. In this first paper in the Lancet Series on health in southeast Asia, we present an overview of key demographic and epidemiological changes in the region, explore challenges facing health systems, and draw attention to the potential for regional collaboration in health. 
+</body></html>

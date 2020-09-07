@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21429718</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><span class="annotated ">Dermamoeba algensis n. sp.</span> (Amoebozoa, Dermamoebidae): an algivorous lobose amoeba with complex cell coat and unusual feeding mode. <br><br>The genus Dermamoeba unifies oblong, flattened amoebae of lingulate morphotype, possessing a thick multilayered cell coat. It includes two species, D. granifera and D. minor. In this paper we describe a third species of this genus, <span class="annotated ">D. algensis n. sp.</span> This species is algivorous; engulfing a large algal cell, it destroys part of the cell coat liberating the plasma membrane, which forms the food vacuole. Thus the glycocalyx never appears inside the phagosome. This observation confirms that some of the thick-coated amoebae may use this way to avoid energetically costly digestion of their own glycocalyx. Studies of the physiology of this organism show that it feeds most actively at a temperature of 22-25 ^0C. Below and above this temperature the feeding intensity drastically decreases. The new species can survive NaCl concentrations up to 5%, which roughly corresponds to 50 ppt salinity. Accordingly, <span class="annotated ">D. algensis</span> has a wide range of salinity tolerance. 
+</body></html>

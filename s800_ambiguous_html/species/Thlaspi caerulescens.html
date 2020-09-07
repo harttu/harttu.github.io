@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Thlaspi caerulescens</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20880204</h3>Cadmium uptake and sequestration kinetics in individual leaf cell protoplasts of the Cd/Zn hyperaccumulator <span class="match annotated ">Thlaspi caerulescens</span>. <br><br>Hyperaccumulators store accumulated metals in the vacuoles of large leaf epidermal cells (storage cells). For investigating cadmium uptake, we incubated protoplasts obtained from leaves of <span class="annotated ">Thlaspi caerulescens (Ganges ecotype)</span> with a Cd-specific fluorescent dye. <span class="unannotated ">A</span> fluorescence kinetic microscope was used for selectively measuring Cd-uptake and photosynthesis in different cell types, so that physical separation of cell types was not necessary. Few minutes after its addition, cadmium accumulated in the cytoplasm before its transport into the vacuole. This demonstrated that vacuolar sequestration is the rate-limiting step in cadmium uptake into protoplasts of all leaf cell types. During accumulation in the cytoplasm, Cd-rich vesicle-like structures were observed. Cd uptake rates into epidermal storage cells were higher than into standard-sized epidermal cells and mesophyll cells. This shows that the preferential heavy metal accumulation in epidermal storage cells, previously observed for several metals in intact leaves of various hyperaccumulator species, is due to differences in active metal transport and not differences in passive mechanisms like transpiration stream transport or cell wall adhesion. Combining this with previous studies, it seems likely that the transport steps over the plasma and tonoplast membranes of leaf epidermal storage cells are driving forces behind the hyperaccumulation phenotype. 
+</body></html>

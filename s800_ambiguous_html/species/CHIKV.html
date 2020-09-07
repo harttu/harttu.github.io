@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>CHIKV</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20962078</h3><span class="annotated ">Chikungunya virus</span> induces IPS-1-dependent innate immune activation and protein kinase R-independent translational shutoff. <br><br><span class="annotated ">Chikungunya virus</span> (<span class="match annotated ">CHIKV</span>) is an arthritogenic mosquito-transmitted alphavirus that is undergoing reemergence in areas around the Indian Ocean. Despite the current and potential danger posed by this <span class="unannotated ">virus</span>, we know surprisingly little about the induction and evasion of <span class="match annotated ">CHIKV</span>-associated antiviral immune responses. With this in mind we investigated innate immune reactions to <span class="match annotated ">CHIKV</span> in <span class="annotated ">human</span> fibroblasts, a demonstrable in vivo target of <span class="unannotated ">virus</span> replication and spread. We show that <span class="match annotated ">CHIKV</span> infection leads to activation of the transcription factor interferon regulatory factor 3 (IRF3) and subsequent transcription of IRF3-dependent antiviral genes, including beta interferon (IFN-Beta). IRF3 activation occurs by way of a virus-induced innate immune signaling pathway that includes the adaptor molecule interferon promoter stimulator 1 (IPS-1). Despite strong transcriptional upregulation of these genes, however, translation of the corresponding proteins is not observed. We further demonstrate that translation of cellular (but not viral) genes is blocked during infection and that although <span class="match annotated ">CHIKV</span> is found to trigger inactivation of the translational molecule eukaryotic initiation factor subunit 2alpha by way of the double-stranded RNA sensor protein kinase R, this response is not required for the block to protein synthesis. Furthermore, overall diminution of cellular RNA synthesis is also observed in the presence of <span class="match annotated ">CHIKV</span> and transcription of IRF3-dependent antiviral genes appears specifically blocked late in infection. We hypothesize that the observed absence of IFN-Beta and antiviral proteins during infection results from an evasion mechanism exhibited by <span class="match annotated ">CHIKV</span> that is dependent on widespread shutoff of cellular protein synthesis and a targeted block to late synthesis of antiviral mRNA transcripts. 
+</body></html>

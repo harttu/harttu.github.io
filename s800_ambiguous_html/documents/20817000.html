@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20817000</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Amino acid divergence between the CHS domain contributes to the different intracellular behaviour of Family II <span class="unannotated ">fungal</span> chitin synthases in <span class="annotated ">Saccharomyces cerevisiae</span>. <br><br>Family II chitin synthases (CS), including classes IV and V enzymes, share conserved catalytic domains flanked by transmembrane regions. Here we addressed the characterization of Family II <span class="unannotated ">fungal</span> CSs by heterologous expression in <span class="annotated ">Saccharomyces cerevisiae</span>. Full-length CSs from classes V or IV were not functional when expressed in <span class="annotated ">S. cerevisiae</span> and accumulated in different intracellular compartments. However, the exchange between different class IV, but not of class V, CHS domains resulted in functional proteins both in vivo and in vitro. The different domains afford the chimeric proteins distinct intracellular behaviours, ranging from endoplasmic reticulum retention to reduced endocytic turnover at the plasma membrane. These results allow a role in chitin synthesis to be assigned to all class IV enzymes, but they also highlight the involvement of the intracellular globular domain of these CSs, not only in enzymatic activity but also in the regulation of their intracellular turnover. 
+</body></html>

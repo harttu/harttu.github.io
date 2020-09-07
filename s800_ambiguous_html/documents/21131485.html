@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21131485</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Regulation of nleA in Shiga toxin-producing <span class="annotated ">Escherichia coli O84:H4 strain 4795/97</span>. <br><br>Many Shiga toxin-producing <span class="annotated ">Escherichia coli</span> (<span class="annotated ">STEC</span>) strains express a type III secretion system (TTSS) encoded by the locus of enterocyte effacement (LEE). Using the TTSS, <span class="annotated ">STEC</span> is able to inject effector proteins directly into eukaryotic host cells, where they cause characteristic attaching and effacing (A/E) lesions. In addition to the LEE-encoded effectors, a number of non-LEE-encoded effectors, located on phage-associated elements, have been described. One of them, the non-LEE-encoded effector <span class="unannotated ">A</span> (NleA), is widely distributed among pathogenic <span class="annotated ">E. coli</span>. In this study, we investigated the influence of environmental conditions on the expression of the phage-encoded effector nleA gene (designated nleA(4795)) present in <span class="annotated ">STEC O84:H4 strain 4795/97</span>. We demonstrated that a particular NaCl concentration and starvation stress increase the activity of the nleA(4795) promoter. Moreover, several regulators that control nleA(4795) expression were identified. The involvement of the LEE regulators Ler, GrlA, and GrlR show that nleA(4795) is integrated in the LEE regulation circuit. Furthermore, the binding of Ler to sequences upstream of nleA(4795) underlined these findings. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Apis cerana cerana (Acc)</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21382109</h3>Molecular cloning and characterization of a thioredoxin peroxidase gene from <span class="annotated ">Apis cerana cerana</span>. <br><br>Thioredoxin peroxidases (Tpxs) play important roles in protecting organisms against the toxicity of reactive oxygen species (ROS) and regulating intracellular signal transduction. In the present study, we cloned the full cDNA of Tpx1 encoding a 195-amino acid protein from <span class="match annotated ">Apis cerana cerana (Acc)</span>. Based on the genomic DNA sequence, a 1442-bp 5'-flanking region was obtained, and the putative transcription factor binding sites were predicted. Quantitative PCR analysis showed that AccTpx1 was highly expressed in thorax and that the AccTpx1 transcript reached its highest level in two-week-old adult <span class="annotated ">worker honeybees</span>. Moreover, expression of the AccTpx1 transcript was increased by various abiotic stresses, such as ultraviolet light, HgCl(2) , and insecticide treatments. In addition, the recombinant AccTpx1 protein exhibited antioxidant activity; it removed hydrogen peroxide and protected DNA. These results suggest that AccTpx1 plays an important role in protecting <span class="annotated ">honeybees</span> from oxidative injury and may act in extending the lifespan of them. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>MutSL knockout strain</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20971907</h3>Mismatch repair modulation of MutY activity drives <span class="annotated ">Bacillus subtilis</span> stationary-phase mutagenesis. <br><br>Stress-promoted mutations that occur in nondividing cells (adaptive mutations) have been implicated strongly in causing genetic variability as well as in species survival and evolutionary processes. Oxidative stress-induced DNA damage has been associated with generation of adaptive His(+) and Met(+) but not Leu(+) revertants in <span class="annotated ">strain Bacillus subtilis YB955 (hisC952 metB5 leuC427)</span>. Here we report that an interplay between MutY and MutSL (mismatch repair system [MMR]) plays a pivotal role in the production of adaptive Leu(+) revertants. Essentially, the genetic disruption of MutY dramatically reduced the reversion frequency to the leu allele in this model system. Moreover, the increased rate of adaptive Leu(+) revertants produced by a <span class="match annotated ">MutSL knockout strain</span> was significantly diminished following mutY disruption. Interestingly, although the expression of mutY took place during growth and stationary phase and was not under the control of RecA, PerR, or sigma(B), a null mutation in the mutSL operon increased the expression of mutY several times. Thus, in starved cells, saturation of the MMR system may induce the expression of mutY, disturbing the balance between MutY and MMR proteins and aiding in the production of types of mutations detected by reversion to leucine prototrophy. In conclusion, our results support the idea that MMR regulation of the mutagenic/antimutagenic properties of MutY promotes stationary-phase mutagenesis in <span class="annotated ">B. subtilis</span> cells. 
+</body></html>

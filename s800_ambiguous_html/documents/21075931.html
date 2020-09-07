@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21075931</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>MexT regulates the type III secretion system through MexS and PtrC in <span class="unannotated ">Pseudomonas aeruginosa</span>. <br><br>The type III secretion system (T3SS) is the most important virulence factor in <span class="unannotated ">Pseudomonas aeruginosa</span>, and its expression level varies in different isolates. We studied the molecular basis for such differences in two laboratory strains, PAK and PAO1. <span class="unannotated ">A</span> chromosomal clone library from the high-T3SS-producer strain PAK was introduced into the low-producer strain PAO1, and we found that a mexS gene from PAK confers high T3SS expression in the PAO1 background. Further tests demonstrated that both mexS and its neighboring mexT gene are required for the repression of the T3SS in PAO1, while the PAK genome encodes a defective MexS, accounting for the derepression of the T3SS in PAK and the dominant negative effect when it is introduced into PAO1. MexS is a probable oxidoreductase whose expression is dependent on MexT, a LysR-type transcriptional regulator. Various genetic data support the idea that MexS modulates the transcriptional regulator function of MexT. In searching for the MexT-dependent repressor of the T3SS, a small gene product of PA2486 (ptrC) was found effective in suppressing the T3SS upon overexpression. However, deletion of ptrC in the PAO1 background did not result in derepression of the T3SS, indicating the presence of another repressor for the T3SS. Interestingly, overexpression of functional mexS alone was sufficient to repress T3SS even in the absence of MexT, suggesting that MexS is another mediator of MexT-dependent T3SS repression. Overexpression of mexS alone had no effect on the well-known MexT-dependent genes, including those encoding MexEF efflux pump, elastase, and pyocyanin, indicating alternative regulatory mechanisms. <span class="unannotated ">A</span> model has been proposed for the MexS/MexT-mediated regulation of the T3SS, the MexEF efflux pump, and the production of elastase and pyocyanin. 
+</body></html>

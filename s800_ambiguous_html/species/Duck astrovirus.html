@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Duck astrovirus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20863856</h3>Expression of the C-terminal ORF2 protein of <span class="annotated ">duck astrovirus</span> for application in a serological test. <br><br><span class="match annotated ">Duck astrovirus</span> (<span class="annotated ">DAstV</span>) is an important pathogen causing duck <span class="unannotated ">viral</span> hepatitis (DVH), a highly contagious and fatal disease in young ducklings. To provide an antigen for a diagnostic serum test, the C-terminus of <span class="unannotated ">DAstV</span> ORF2 protein was expressed in <span class="annotated ">Escherichia coli</span>. Four positive and 30 negative sera were used to validate the purified ORF2 protein by developing an indirect enzyme-linked immunosorbent assay (ELISA). No cross-reactions were found against other duck pathogens, including <span class="annotated ">duck hepatitis A virus</span>, <span class="annotated ">duck plague herpesvirus</span>, <span class="annotated ">duck reovirus</span>, <span class="annotated ">Newcastle disease virus</span>, and <span class="annotated ">Riemerella anatipestifer 12/19</span> (63.2%) and <span class="annotated ">26/51</span> (51%) sera samples from two flocks of ducks that survived <span class="annotated ">DAstV</span> infections in commercial duck farms were positive for <span class="annotated ">DAstV</span> by this method, respectively. Interestingly, <span class="annotated ">DAstV</span>-specific antibodies were also detected in 12 (28.6%) of 42 sera samples from a different flock without DVH, indicating a wide distribution of subclinical infections caused by <span class="annotated ">DAstV</span>. 
+</body></html>

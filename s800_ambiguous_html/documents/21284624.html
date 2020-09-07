@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21284624</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Determinants of reproductive success in dominant pairs of clownfish: a boosted regression tree analysis. <br><br>1. Central questions of behavioural and evolutionary ecology are what factors influence the reproductive success of dominant breeders and subordinate nonbreeders within animal societies? <span class="unannotated ">A</span> complete understanding of any society requires that these questions be answered for all individuals. 2. The clown anemonefish, <span class="annotated ">Amphiprion percula</span>, forms simple societies that live in close association with sea anemones, <span class="annotated ">Heteractis magnifica</span>. Here, we use data from a well-studied population of <span class="annotated ">A. percula</span> to determine the major predictors of reproductive success of dominant pairs in this species. 3. We analyse the effect of multiple predictors on four components of reproductive success, using a relatively new technique from the field of statistical learning: boosted regression trees (BRTs). BRTs have the potential to model complex relationships in ways that give powerful insight. 4. We show that the reproductive success of dominant pairs is unrelated to the presence, number or phenotype of nonbreeders. This is consistent with the observation that nonbreeders do not help or hinder breeders in any way, confirming and extending the results of a previous study. 5. Primarily, reproductive success is negatively related to male growth and positively related to breeding experience. It is likely that these effects are interrelated because males that grow a lot have little breeding experience. These effects are indicative of a trade-off between male growth and parental investment. 6. Secondarily, reproductive success is positively related to female growth and size. In this population, female size is positively related to group size and anemone size, also. These positive correlations among traits likely are caused by variation in site quality and are suggestive of a silver-spoon effect. 7. Noteworthily, whereas reproductive success is positively related to female size, it is unrelated to male size. This observation provides support for the size advantage hypothesis for sex change: both individuals maximize their reproductive success when the larger individual adopts the female tactic. 8. This study provides the most complete picture to date of the factors that predict the reproductive success of dominant pairs of clown anemonefish and illustrates the utility of BRTs for analysis of complex behavioural and evolutionary ecology data. 
+</body></html>

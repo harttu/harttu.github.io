@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Campylobacter fetus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21115658</h3>Interbacterial macromolecular transfer by the <span class="annotated ">Campylobacter fetus subsp. venerealis</span> type IV secretion system. <br><br>We report here the first demonstration of intra- and interspecies conjugative plasmid DNA transfer for <span class="match annotated ">Campylobacter fetus</span>. Gene regions carried by a <span class="annotated ">Campylobacter coli</span> plasmid were identified that are sufficient for conjugative mobilization to <span class="annotated ">Escherichia coli</span> and <span class="annotated ">C. fetus</span> recipients. <span class="unannotated ">A</span> broader functional range is predicted. Efficient DNA transfer involves the virB9 and virD4 genes of the type IV bacterial secretion system encoded by a pathogenicity island of <span class="annotated ">C. fetus subsp. venerealis</span>. Complementation of these phenotypes from expression constructions based on the promoter of the <span class="annotated ">C. fetus</span> surface antigen protein (sap) locus was temperature dependent, and a temperature regulation of the sap promoter was subsequently confirmed under laboratory conditions. Gene transfer was sensitive to surface or entry exclusion functions in potential recipient cells carrying IncPalpha plasmid RP4 implying functional relatedness to <span class="annotated ">C. fetus</span> proteins. The virB/virD4 locus is also known to be involved in bacterial invasion and killing of cultured <span class="annotated ">human</span> cells in vitro. Whether specifically secreted effector proteins contribute to host colonization and infection activities is currently unknown. Two putative effector proteins carrying an FIC domain conserved in a few bacterial type III and type IV secreted proteins of pathogens were analyzed for secretion by the <span class="annotated ">C. fetus</span> or heterologous conjugative systems. No evidence for interbacterial translocation of the Fic proteins was found. 
+</body></html>

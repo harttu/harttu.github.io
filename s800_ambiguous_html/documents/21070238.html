@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21070238</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Climate, history and neutrality as drivers of mammal beta diversity in Europe: insights from multiscale deconstruction. <br><br>1. Environmental sorting, historical factors and neutral dynamics may all drive beta diversity (change in species composition across space), but their relative importance remains unresolved. In the case of European mammals, key potential drivers of large-scale beta diversity include current climate, neutral dynamics and two historical factors: Pleistocene glaciations and peninsular dynamics (immigration from extra-regional eastern faunal source areas and inter-linked relictual survival and evolutionary differentiation in isolated areas). 2. We assessed the relative importance of these drivers using a novel analytical framework to deconstruct beta diversity of non-volant mammals in Europe (138 species) into its turnover (change in species composition because of species replacements) and nestedness components (change in species composition because of species richness differences) at continental and regional (250,000 km(2) ) scales. 3. We found continental-scale mammal beta diversity to be mainly caused by spatial turnover (99*9%), with only a small contribution (0*1%) from nestedness. 4. Current climate emerged as an important driver of beta diversity, given the strong continental-scale turnover, particularly in north-south direction, i.e., in line with the latitudinal climate gradient, and, more directly, the strong correlation of climate with spatial turnover at both continental and regional scales. 5. However, there was also evidence for the importance of non-climatic drivers. Notably, the compositional variation purely accounted for by space was greater than that purely accounted for by environment for both the turnover and the nestedness component of beta diversity. Furthermore, the strong longitudinal turnover within Southern Europe is in accordance with the region's long-term climatic stability having allowed multiple refugia and local evolutionary diversification. As expected from peninsular dynamics, there was increasing dissimilarity with geographic distance in an east-west direction because of nestedness, but only in Central and Northern Europe. 6. In conclusion, European mammal beta diversity mainly reflects spatial turnover and only to a limited extent nestedness and is driven by current climate in combination with historical - and perhaps, neutral - dynamics. These findings suggest that a key challenge for climate-change predictive studies will be taking the influence of non-climatic factors into account. 
+</body></html>

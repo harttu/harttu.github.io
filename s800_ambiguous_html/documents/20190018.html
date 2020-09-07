@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20190018</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>An rpoB signature sequence provides unique resolution for the molecular typing of cyanobacteria. <br><br>The use of morphological characters for the classification of cyanobacteria has often led to ambiguous strain assignment. In the past two decades, the availability of sequences, such as those of the 16S rRNA, nif, cpc and rpoC1 genes, and the use of metagenomics, has steadily increased and has made the reconstruction of evolutionary relationships of some <span class="linneaus_only ">cyanobacterial</span> groups possible in addition to improving strain assignment. Conserved indels (insertions/deletions) are present in all <span class="linneaus_only ">cyanobacterial</span> RpoB (Beta subunit of RNA polymerase) sequences presently available in public databases. These indels are located in the Rpb2_6 domain of RpoB, which is involved in DNA binding and DNA-directed RNA polymerase activity. They are variable in length (6-44 aa) and sequence, and form part of what appears to be a longer signature sequence (43-81 aa). Indeed, a number of these sequences turn out to be distinctive among several strains of a given genus and even among strains of a given species. These signature sequences can thus be used to identify cyanobacteria at a subgenus level and can be useful molecular markers to establish the taxonomic positions of <span class="linneaus_only ">cyanobacterial</span> isolates in laboratory cultures, and/or to assess <span class="linneaus_only ">cyanobacterial</span> biodiversity in space and time in natural ecosystems. 
+</body></html>

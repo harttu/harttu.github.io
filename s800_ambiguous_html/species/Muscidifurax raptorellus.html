@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Muscidifurax raptorellus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>22182616</h3>The ability of selected pupal parasitoids (hymenoptera: pteromalidae) to locate <span class="annotated ">stable fly</span> hosts in a soiled equine bedding substrate. <br><br>The ability of <span class="annotated ">Spalangia cameroni</span> Perkins, <span class="annotated ">Spalangia endius</span> Walker, and <span class="match annotated ">Muscidifurax raptorellus</span> Kogan and Legner to locate and attack <span class="annotated ">stable fly</span> hosts was evaluated under laboratory conditions. Postfeeding third-instar <span class="annotated ">stable fly</span> larvae were released and allowed to pupate in two arena types: large 4.8 liter chambers containing a field-collected, soiled equine bedding substrate; or 120-ml plastic cups containing wood chips. At the time of <span class="linneaus_only ">fly</span> pupariation, parasitoids were released and permitted 72 h to locate and attack hosts. On average, parasitism rates of freely accessible <span class="annotated ">stable fly</span> pupae in cups were not significantly different between parasitoid species. However, parasitism rates in chambers containing either Spalangia spp. were =50-fold more than <span class="annotated ">M. raptorellus</span>. Additional intraspecies analysis revealed that parasitism rates both by <span class="annotated ">S. cameroni</span> and <span class="annotated ">S. endius</span> were not significantly different when pupae were freely accessible or within bedding, whereas <span class="annotated ">M. raptorellus</span> attacked significantly more pupae in cups than in the larger chambers where hosts were distributed within bedding. These results suggest that Spalangia spp. are more suited to successfully locate and attack hosts in habitats created by equine husbandry in Florida. Therefore, commercially available parasitoid mixtures containing Muscidifurax spp. may be ineffective if used as a control measure at Florida equine facilities. 
+</body></html>

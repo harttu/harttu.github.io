@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>coho salmon</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21466553</h3>Adaptive trade-offs in juvenile salmonid metabolism associated with habitat partitioning between <span class="match annotated ">coho salmon</span> and <span class="annotated ">steelhead trout</span> in coastal streams. <br><br>1. Adaptive trade-offs are fundamental to the evolution of diversity and the coexistence of similar taxa and occur when complimentary combinations of traits maximize efficiency of resource exploitation or survival at different points on environmental gradients. 2. Standard metabolic rate (SMR) is a key physiological trait that reflects adaptations to baseline metabolic performance, whereas active metabolism reflects adaptations to variable metabolic output associated with performance related to foraging, predator avoidance, aggressive interactions or migratory movements. Benefits of high SMR and active metabolism may change along a resource (productivity) gradient, indicating that a trade-off exists among active metabolism, resting metabolism and energy intake. 3. We measured and compared SMR, maximal metabolic rate (MMR), aerobic scope (AS), swim performance (UCrit) and growth of juvenile hatchery and wild <span class="annotated ">steelhead</span> and <span class="match annotated ">coho salmon</span> held on high- and low-food rations in order to better understand the potential significance of variation in SMR to growth, differentiation between species, and patterns of habitat use along a productivity gradient. 4. We found that differences in SMR, MMR, AS, swim performance and growth rate between <span class="annotated ">steelhead trout</span> and <span class="match annotated ">coho salmon</span> were reduced in hatchery-reared fish compared with wild fish. Wild <span class="annotated ">steelhead</span> had a higher MMR, AS, swim performance and growth rate than wild <span class="annotated ">coho</span>, but adaptations between species do not appear to involve differences in SMR or to trade-off increased growth rate against lower swim performance, as commonly observed for high-growth strains. Instead, we hypothesize that wild <span class="annotated ">steelhead</span> may be trading off higher growth rate for lower food consumption efficiency, similar to strategies adopted by anadromous vs. resident <span class="annotated ">brook trout</span> and <span class="annotated ">Atlantic salmon</span> vs. <span class="annotated ">brook trout</span>. This highlights potential differences in food consumption and digestion strategies as cryptic adaptations ecologically differentiating salmonid species. 5. We hypothesize that divergent digestive strategies, which are common and well documented among terrestrial vertebrates, may be an important but overlooked aspect of adaptive strategies of juvenile salmonids, and fish in general. 
+</body></html>

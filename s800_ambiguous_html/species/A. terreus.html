@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>A. terreus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21324422</h3>A clone-based transcriptomics approach for the identification of genes relevant for itaconic acid production in Aspergillus. <br><br>Several Aspergillus species are well-known for the production of a variety of organic acids. In this study, a cloned based transcriptomics approach was used to identify genes crucial in the biosynthesis pathway for one of these acids, itaconic acid. From a number of different <span class="annotated ">Aspergillus terreus</span> controlled batch fermentations, those cultures with the largest difference in itaconic acid titer and productivity were selected for mRNA isolation. cDNAs derived from these mRNA samples were used for subsequent hybridization of glass slide arrays based on a collection of 5000 cDNA clones. <span class="unannotated ">A</span> selection of 13 cDNA clones resulting in the strongest (>10-fold) differential hybridization signals were identified and subsequently the inserts of these clones were sequenced. Sequence analysis revealed the presence of in total five different gene inserts among the sequenced clones. From one of these sequences, encoding a gene of the MmgE-PrpD family, the full length coding region was shown to encode one of the crucial itaconic acid pathway enzymes cis-aconitate decarboxylase, by heterologous expression in <span class="unannotated ">Escherichia coli</span>. Expression of this gene in <span class="annotated ">Aspergillus niger</span>, which is a natural citric acid producer, resulted in itaconate production. Genome analysis suggests that in <span class="match annotated ">A. terreus</span> the cis-aconitate decarboxylase gene is part of an itaconate acid related gene cluster including genes encoding two pathway specific transporters and a Zinc finger protein. Interestingly, this cluster is directly linked to the large lovastatin gene cluster. 
+</body></html>

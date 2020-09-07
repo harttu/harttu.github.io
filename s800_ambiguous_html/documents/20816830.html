@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20816830</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Cross-talk between light and glucose regulation controls toxin production and morphogenesis in <span class="annotated ">Aspergillus nidulans</span>. <br><br>Light is a major environmental stimulus that has a broad effect on organisms, triggering a cellular response that results in an optimal adaptation enhancing fitness and survival. In fungi, light affects growth, and causes diverse morphological changes such as those leading to reproduction. Light can also affect <span class="unannotated ">fungal</span> metabolism, including the biosynthesis of natural products. In this study we show that in <span class="annotated ">Aspergillus nidulans</span> the effect of light on the production of the sterigmatocystin (ST) toxin depends on the glucose concentration. In cultures grown with 1% glucose and exposed to light, ST production was lower than when grown in the dark. This lower ST production coincided with an elevated rate of cellular damage with partial loss of nuclear integrity and vacuolated cytoplasm. However, in cultures grown with 2% glucose these effects were reversed and light enhanced ST production. Glucose abundance also affected the light-dependent subcellular localization of the VeA (velvet) protein, a key regulator necessary for normal light-dependent morphogenesis and secondary metabolism in Aspergilli and other <span class="unannotated ">fungal</span> genera. The role of other VeA-associated proteins, particularly the blue-light-sensing proteins LreA and LreB (WC-1 and WC-2 orthologs), on conidiation could also be modified by the abundance of glucose. We also show that LreA and LreB, as well as the phytochrome FphA, modulate not only the synthesis of sterigmatocystin, but also the production of the antibiotic penicillin. 
+</body></html>

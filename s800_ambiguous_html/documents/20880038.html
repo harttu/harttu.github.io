@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20880038</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Evidence for functional divergence in arbuscular mycorrhizal fungi from contrasting climatic origins. <br><br>A considerable amount of phenotypic, genetic and symbiotic functional variability has been documented in arbuscular mycorrhizal fungi (AMF). However, little is known about whether distinct AMF ecotypes have evolved within their geographic range. We tested the hypothesis that AMF growing at temperatures closer to those prevalent within their origin would benefit their host and grow more than isolates distant from their native conditions. For each of six AMF species, we chose pairs of isolates that originated from distant areas with contrasting climates. Each isolate was grown in association with two grass species of different thermal optima at two temperature settings. Thus, we also tested whether AMF from different climatic origins were dependent on the thermal adaptation of the host plant species or to temperature per se. Although <span class="unannotated ">fungal</span> growth was not directly affected by temperature, we found that AMF isolates originating from contrasting climates consistently and differentially altered plant growth. Our results suggest that AMF from contrasting climates have altered symbiotic function, thus linking an abiotic factor to ecotypic differentiation of putatively important symbionts. 
+</body></html>

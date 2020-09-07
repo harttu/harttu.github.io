@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21039570</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Genomic profiling of carbohydrate metabolism in the ectomycorrhizal fungus <span class="annotated ">Tuber melanosporum</span>.<br><br>* Primary carbohydrate metabolism plays a special role related to carbon/nitrogen exchange, as well as metabolic support of fruiting body development, in ectomycorrhizal macrofungi. In this study, we used information retrieved from the recently sequenced <span class="annotated ">Tuber melanosporum</span> genome, together with transcriptome analysis data and targeted validation experiments, to construct the first genome-wide catalogue of the proteins supporting carbohydrate metabolism in a plant-symbiotic ascomycete. * More than 100 genes coding for enzymes of the glycolysis, pentose phosphate, tricarboxylic acid, glyoxylate and methylcitrate pathways, glycogen, trehalose and mannitol metabolism and cell wall precursor were annotated. Transcriptional regulation of these pathways in different stages of the <span class="annotated ">T. melanosporum</span> lifecycle was investigated using whole-genome oligoarray expression data together with real-time reverse transcription-polymerase chain reaction analysis of selected genes. * The most significant results were the identification of methylcitrate cycle genes and of an acid invertase, the first enzyme of this kind to be described in a plant-symbiotic filamentous fungus. * <span class="unannotated ">A</span> subset of transcripts coding for trehalose, glyoxylate and methylcitrate enzymes was up-regulated in fruiting bodies, whereas genes involved in mannitol and glycogen metabolism were preferentially expressed in mycelia and ectomycorrhizas, respectively. These data indicate a high degree of lifecycle stage specialization for particular branches of carbohydrate metabolism in <span class="annotated ">T. melanosporum</span>. 
+</body></html>

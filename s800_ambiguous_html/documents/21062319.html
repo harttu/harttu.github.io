@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21062319</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Effect of soil acidity, soil strength and macropores on root growth and morphology of perennial grass species differing in acid-soil resistance. <br><br>It is unclear whether roots of acid-soil resistant plants have significant advantages, compared with acid-soil sensitive genotypes, when growing in high-strength, acid soils or in acid soils where macropores may allow the effects of soil acidity and strength to be avoided. The responses of root growth and morphology to soil acidity, soil strength and macropores by seedlings of five perennial grass genotypes differing in acid-soil resistance were determined, and the interaction of soil acidity and strength for growth and morphology of roots was investigated. Soil acidity and strength altered root length and architecture, root hair development, and deformed the root tip, especially in acid-soil sensitive genotypes. Root length was restricted to some extent by soil acidity in all genotypes, but the adverse impact of soil acidity on root growth by acid-soil resistant genotypes was greater at high levels of soil strength. Roots reacted to soil acidity when growing in macropores, but elongation through high-strength soil was improved. Soil strength can confound the effect of acidity on root growth, with the sensitivity of acid-resistant genotypes being greater in high-strength soils. This highlights the need to select for genotypes that resist both acidity and high soil strength. 
+</body></html>

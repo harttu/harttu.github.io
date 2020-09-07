@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>21097632</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Acyl-homoserine lactone binding to and stability of the orphan <span class="annotated ">Pseudomonas aeruginosa</span> quorum-sensing signal receptor QscR. <br><br>The <span class="annotated ">Pseudomonas aeruginosa</span> transcription factor QscR responds to a variety of fatty acyl-homoserine lactones (HSLs), including N-3-oxododecanoyl-HSL (3OC12-HSL), which is produced and detected by the <span class="annotated ">P. aeruginosa</span> quorum-sensing circuit LasI and LasR. As is true for LasR and many other acyl-HSL-dependent transcription factors, production of soluble QscR in sufficient amounts for purification requires growth of recombinant bacteria in the presence of an appropriate acyl-HSL. QscR is thought to bind 3OC12-HSL relatively weakly compared to LasR, and unlike LasR, binding of purified QscR to target DNA was shown to strongly depend on exogenously added 3OC12-HSL. We show that purified QscR is dimeric at sufficiently high concentrations and monomeric at lower concentrations. Furthermore, QscR bound 3OC12-HSL more tightly than previously believed. Purified QscR retained 3OC12-HSL, and at sufficiently high concentrations, it bound target DNA in the absence of added 3OC12-HSL. We also obtained soluble QscR from recombinant <span class="annotated ">Escherichia coli</span> grown in the presence of N-3-oxohexanoyl-HSL (3OC6-HSL) instead of 3OC12-HSL, and because 3OC6-HSL bound much more loosely to QscR than other acyl-HSLs tested, we were able to exchange 3OC6-HSL with other acyl-HSLs in vitro and then estimate binding affinities of QscR for different acyl-HSLs and for target DNA. Our data support a model whereby QscR polypeptides fold properly in the absence of an acyl-HSL, but soluble, acyl-HSL-free QscR does not accumulate because it is subject to rapid aggregation or proteolysis. 
+</body></html>

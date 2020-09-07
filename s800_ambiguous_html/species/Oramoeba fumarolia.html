@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Oramoeba fumarolia</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>20932726</h3><span class="match annotated ">Oramoeba fumarolia</span> gen. nov., sp. nov., a new marine heterolobosean amoeboflagellate growing at 54 ^0C. <br><br>An amoeba strain was isolated from marine sediment taken from the beach near a fumarole in Italy. The trophozoites of this new marine species transforms into flagellates with variable numbers of flagella, from 2 to 10. The strain forms round to oval cysts. This thermophilic amoeboflagellate grows at temperatures up to 54^0C. Molecular phylogenetic analysis of the small subunit ribosomal DNA (SSU rDNA) places the amoeboflagellate in the Heterolobosea. The closest relatives are <span class="annotated ">Stachyamoeba sp. ATCC50324</span>, a strain isolated from an ocean sample, and <span class="annotated ">Vrihiamoeba italica</span>, a recent isolate from a <span class="annotated ">rice</span> field. Like some other heterolobosean species, this new isolate has a group I intron in the SSU rDNA. Because of the unique place in the molecular phylogenetic tree, and because there is no species found in the literature with similar morphological and physiological characteristics, this isolate is considered to be a new genus and a new species, <span class="match annotated ">Oramoeba fumarolia</span> gen. nov., sp. nov. 
+</body></html>

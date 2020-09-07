@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Nothofagus pumilio</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21039558</h3>Intraspecific trait variation and covariation in a widespread tree species (<span class="match annotated ">Nothofagus pumilio</span>) in southern Chile. <br><br>* The focus of the trait-based approach to study community ecology has mostly been on trait comparisons at the interspecific level. Here we quantified intraspecific variation and covariation of leaf mass per area (LMA) and wood density (WD) in monospecific forests of the widespread tree species <span class="match annotated ">Nothofagus pumilio</span> to determine its magnitude and whether it is related to environmental conditions and ontogeny. We also discuss probable mechanisms controlling the trait variation found. * We collected leaf and stem woody tissues from 30-50 trees of different ages (ontogeny) from each of four populations at differing elevations (i.e. temperatures) and placed at each of three locations differing in soil moisture. * The total variation in LMA (coefficient of variation (CV) = 21.14%) was twice that of WD (CV = 10.52%). The total variation in traits was never less than 23% when compared with interspecific studies. Differences in elevation (temperature) for the most part explained variation in LMA, while differences in soil moisture and ontogeny explained the variation in WD. Traits covaried similarly in the altitudinal gradient only. * Functional traits of <span class="annotated ">N. pumilio</span> exhibited nonnegligible variation; LMA varied for the most part with temperature, while WD mostly varied with moisture and ontogeny. We demonstrate that environmental variation can cause important trait variation without species turnover. 
+</body></html>

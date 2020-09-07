@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>20840499</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr>Functional characterization of <span class="annotated ">Arabidopsis thaliana</span> isopropylmalate dehydrogenases reveals their important roles in gametophyte development. <br><br>* Isopropylmalate dehydrogenases (IPMDHs) catalyze the oxidative decarboxylation of 3-isopropylmalate (3-IPM) in leucine biosynthesis in microorganisms. The <span class="annotated ">Arabidopsis thaliana</span> genome contains three putative IPMDH genes. * IPMDH2 and IPMDH3 proteins exhibited significantly higher activity toward 3-IPM than IPMDH1, which is indicative of a pivotal role in leucine biosynthesis. Single mutants of IPMDH2 or IPMDH3 lacked a discernible phenotype. Genetic analysis showed that ipmdh2 ipmdh3 was lethal in male gametophytes and had reduced transmission through female gametophytes. The aborted pollen grains were small, abnormal in cellular structure, and arrested in germination. In addition, half of the double mutant embryo sacs exhibited slowed development. * The IPMDH2/ipmdh2 ipmdh3/ipmdh3 genotype exhibited abnormal vegetative phenotypes, suggesting haplo-insufficiency of IPMDH2 in the ipmdh3 background. This mutant and a triple mutant containing one allele of IPMDH2 or IPMDH3 had decreased leucine biosynthetic enzyme activities and lower free leucine concentrations. The latter mutant showed changes in glucosinolate profiles different from those in the ipmdh1 mutant. * The results demonstrate that IPMDH2 and IPMDH3 primarily function in leucine biosynthesis, are essential for pollen development and are needed for proper embryo sac development. 
+</body></html>

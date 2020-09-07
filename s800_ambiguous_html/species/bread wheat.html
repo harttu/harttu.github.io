@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>bread wheat</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21039562</h3>Haplotype analysis of the genes encoding glutamine synthetase plastic isoforms and their association with nitrogen-use- and yield-related traits in <span class="match annotated ">bread wheat</span>. <br><br>Glutamine synthetase (GS) plays a key role in the growth, nitrogen (N) use and yield potential of cereal crops. Investigating the haplotype variation of GS genes and its association with agronomic traits may provide useful information for improving <span class="annotated ">wheat</span> N-use efficiency and yield. We isolated the promoter and coding region sequences of the plastic glutamine synthetase isoform (GS2) genes located on chromosomes 2A, 2B and 2D in <span class="match annotated ">bread wheat</span>. By analyzing nucleotide sequence variations of the coding region, two, six and two haplotypes were distinguished for TaGS2-A1 (a and b), TaGS2-B1 (a-f) and TaGS2-D1 (a and b), respectively. By analyzing the frequency data of different haplotypes and their association with N use and agronomic traits, four major and favorable TaGS2 haplotypes (A1b, B1a, B1b, D1a) were revealed. These favorable haplotypes may confer better seedling growth, better agronomic performance, and improved N uptake during vegetative growth or grain N concentration. Our data suggest that certain TaGS2 haplotypes may be valuable in breeding <span class="annotated ">wheat</span> varieties with improved agronomic performance and N-use efficiency. 
+</body></html>

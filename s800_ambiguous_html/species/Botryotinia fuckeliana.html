@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.linneaus_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Botryotinia fuckeliana</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="linneaus_only">LINNEAUS only</span><br><hr><h3>21073977</h3>Cleavage of resveratrol in fungi: characterization of the enzyme Rco1 from <span class="annotated ">Ustilago maydis</span>. <br><br><span class="annotated ">Ustilago maydis</span>, the causative agent of <span class="annotated ">corn smut</span> disease, contains two genes encoding members of the carotenoid cleavage oxygenase family, a group of enzymes that cleave double bonds in different substrates. One of them, Cco1, was formerly identified as a Beta-carotene cleaving enzyme. Here we elucidate the function of the protein encoded by the second gene, termed here as <span class="annotated ">Ustilago maydis</span> Resveratrol cleavage oxygenase 1 (Um Rco1). In vitro incubations of heterologously expressed and purified UM Rco1 with different carotenoid and stilbene substrates demonstrate that it cleaves the interphenyl Calpha-CBeta double bond of the phytoalexin resveratrol and its derivative piceatannol. Um Rco1 exhibits a high degree of substrate specificity, as suggested by the lack of activity on carotenoids and the other resveratrol-related compounds tested. The activity of Um Rco1 was confirmed by incubation of <span class="annotated ">U. maydis</span> rco1 deletion and over-expression strains with resveratrol. Furthermore, treatment with resveratrol resulted in striking alterations of cell morphology. However, pathogenicity assays indicated that Um rco1 is largely dispensable for biotrophic development. Our work reveals Um Rco1 as the first eukaryotic resveratrol cleavage enzyme identified so far. Moreover, Um Rco1 represents a subfamily of <span class="unannotated ">fungal</span> enzymes likely involved in the degradation of stilbene compounds, as suggested by the cleavage of resveratrol by homologs from <span class="annotated ">Aspergillus fumigatus</span>, <span class="annotated ">Chaetomium globosum</span> and <span class="match annotated ">Botryotinia fuckeliana</span>. 
+</body></html>
