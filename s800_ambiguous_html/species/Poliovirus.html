@@ -1,0 +1,73 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Poliovirus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>20962086</h3><span class="match annotated ">Poliovirus</span>-mediated disruption of cytoplasmic processing bodies.<br><br>Metazoan cells form cytoplasmic mRNA granules such as stress granules (SG) and processing bodies (P bodies) that are proposed to be sites of aggregated, translationally silenced mRNAs and mRNA degradation. <span class="match annotated ">Poliovirus</span> (<span class="annotated ">PV</span>) is a plus-strand RNA <span class="unannotated ">virus</span> containing a genome that is a functional mRNA; thus, we investigated if <span class="annotated ">PV</span> antagonizes the processes that lead to formation of these structures. We have previously shown that <span class="annotated ">PV</span> infection inhibits the ability of cells to form stress granules by cleaving RasGAP-SH3-binding protein (G3BP). Here, we show that P bodies are also disrupted during <span class="annotated ">PV</span> infection in cells by 4 h postinfection. The disruption of P bodies is more rapid and more complete than disruption of stress granules. The kinetics of P body disruption correlated with production of <span class="unannotated ">viral</span> proteinases and required substantial <span class="unannotated ">viral</span> gene product expression. The organizing mechanism that forms P body foci in cells is unknown; however, potential scaffolding, aggregating, or other regulatory proteins found in P bodies were investigated for degradation. Two factors involved in 5'-end mRNA decapping and degradation, Xrn1 and Dcp1a, and the 3' deadenylase complex component Pan3 underwent accelerated degradation during infection, and Dcp1a may be a direct substrate of <span class="annotated ">PV</span> 3C proteinase. Several other key factors proposed to be essential for P body formation, GW182, Edc3, and Edc4, were unaffected by <span class="annotated ">poliovirus</span> infection. Since deadenylation has been reported to be required for P body formation, <span class="unannotated ">viral</span> inhibition of deadenylation, through Pan3 degradation, is a potential mechanism of P body disruption. 
+<h3>20980499</h3><span class="match annotated ">Poliovirus</span> RNA is released from the capsid near a twofold symmetry axis.<br><br>After recognizing and binding to its host cell, <span class="annotated ">poliovirus</span> (like other nonenveloped viruses) faces the challenge of translocating its genome across a cellular membrane and into the cytoplasm. To avoid entanglement with the capsid, the RNA must exit via a single site on the virion surface. However, the mechanism by which a single site is selected (from among 60 equivalents) is unknown; and until now, even its location on the virion surface has been controversial. To help to elucidate the mechanism of infection, we have used single-particle cryo-electron microscopy and tomography to reconstruct conformationally altered intermediates that are formed by the poliovirion at various stages of the <span class="annotated ">poliovirus</span> infection process. Recently, we reported icosahedrally symmetric structures for two forms of the end-state 80S empty capsid particle. Surprisingly, RNA was frequently visible near the capsid; and in a subset of the virions, RNA was seen on both the inside and outside of the capsid, caught in the act of exiting. To visualize RNA exiting, we have now determined asymmetric reconstructions from that subset, using both single-particle cryo-electron microscopy and cryo-electron tomographic methods, producing independent reconstructions at -50-A resolution. Contrary to predictions in the literature, the footprint of RNA on the capsid surface is located close to a <span class="unannotated ">viral</span> 2-fold axis, covering a slot-shaped area of reduced density that is present in both of the symmetrized 80S reconstructions and which extends by about 20 <span class="unannotated ">A</span> away from the 2-fold axis toward each neighboring 5-fold axis. 
+</body></html>
