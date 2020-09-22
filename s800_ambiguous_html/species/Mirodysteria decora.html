@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Mirodysteria decora</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>21565476</h3>Morphological redescriptions of four marine ciliates (Ciliophora: Cyrtophorida: Dysteriidae) from Qingdao, China. <br><br>The morphology and infraciliature of four marine cyrtophorid ciliates isolated from Qingdao, China, were investigated. Based on the present work and on previous data, improved diagnoses for three rarely known species are provided: (1) <span class="match annotated ">Mirodysteria decora</span>; small-sized marine Mirodysteria about 35-60 x 25-35 mum in vivo, oval in outline; body surface with two or three conspicuous dorsal spines and one caudal spine; three right kineties, the rightmost one extending dorso-apically; left frontal kineties reduced, each consisting of three basal bodies only; podite subcaudally positioned; two ventrally located contractile vacuoles. (2) <span class="annotated ">Dysteria legumen</span>; body oval with two longitudinal grooves on different plates; six right kineties, the rightmost two of which extend dorso-apically; two left frontal kineties and two ventrally located contractile vacuoles. (3) <span class="annotated ">Dysteria proraefrons</span>; body about 60x35 mum in vivo; six right kineties, the two rightmost of which extend dorso-apically and the leftmost one is considerably shortened; three left frontal kineties; two ventrally located contractile vacuoles. <span class="unannotated ">A</span> population of <span class="annotated ">D. derouxi</span> with eight or nine right kineties is also briefly described. The current investigation further demonstrates high diversity and cosmopolitan distribution of this highly specialized group of benthic ciliates. 
+</body></html>

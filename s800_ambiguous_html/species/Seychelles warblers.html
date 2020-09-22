@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Seychelles warblers</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>21198588</h3>Spatio-temporal variation in territory quality and oxidative status: a natural experiment in the <span class="annotated ">Seychelles warbler</span> (<span class="annotated ">Acrocephalus sechellensis</span>). <br><br>1. Fluctuations in the quality of the habitat in which an animal lives can have major consequences for its behaviour and physiological state. In poor-quality habitat with low food availability, metabolically intensive foraging activity is likely to result in increased generation of reactive oxygen species, while scarcity of food can lead to a weakening of exogenously derived antioxidant defences. The consequent oxidant/antioxidant imbalance may lead to elevated oxidative stress. 2. Although the link between food availability and oxidative stress has been studied in the laboratory, very little is known about this relationship in the wild. Here, we investigate the association between territory quality (measured through food availability) and oxidative stress in the <span class="annotated ">Seychelles warbler</span> (<span class="annotated ">Acrocephalus sechellensis</span>). 3. <span class="match annotated ">Seychelles warblers</span> are insectivorous birds that inhabit a fixed feeding territory year round. Individuals experience profound and rapid local fluctuations in territory quality within these territories, owing to changing patterns of vegetation defoliation resulting from seasonal changes in prevailing wind direction and wind-borne salt spray. 4. As expected, oxidant generation (measured as reactive oxygen metabolites; ROMs) was higher when territory quality was low, but there was no correlation between territory quality and antioxidant capacity (OXY). The negative correlation between territory quality and ROMs was significant between individuals and approached significance within individuals, indicating that the pattern resulted from individual responses to environmental variation. 5. ROMs and OXY levels within individuals were positively correlated, but the relationship between territory quality and ROMs persisted after including OXY as a covariate, implying that oxidative stress occurs in low territory quality conditions. 6. Our results indicate that the oxidative stress balance of an individual is sensitive to relatively short-term changes in territory quality, which may have consequences for the birds' fitness. 
+</body></html>

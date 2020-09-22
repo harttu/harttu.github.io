@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>S. wilberti</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>20961741</h3>Updated hypothesis on the evolution of oligotrichid ciliates (Ciliophora, Spirotricha, Oligotrichida) based on somatic ciliary patterns and ontogenetic data. <br><br>The two recently established genera Apostrombidium Xu et al., 2009 and Varistrombidium Xu et al., 2009 and the analysis of ontogenetic data in <span class="annotated ">Strombidium constrictum</span>, <span class="annotated ">S. montagnesi</span>, <span class="match annotated ">S. wilberti</span>, <span class="annotated ">Omegastrombidium elegans</span>, and <span class="annotated ">Paratontonia gracillima</span> necessitated a revision of the hypothesis about the somatic ciliary pattern evolution in oligotrichid ciliates. As a consequence, the species-rich genus Strombidium was split, establishing two genera for species with a horizontal girdle kinety posterior to the oral primordium: Opisthostrombidium nov. gen. with the extrusome attachment sites along the anterior margin of the girdle kinety and posterior to the oral primordium and Foissneridium nov. gen. with the extrusome attachment sites distinctly apart from the girdle kinety and anterior to the oral primordium. The ontogenetic data revealed that the Omega-shaped girdle kinety pattern evolved convergently from the Pseudotontonia pattern with its horizontal girdle kinety in the tailed genus Paratontonia and from the Novistrombidium pattern with its dextrally spiralled girdle kinety in the tailless genus Omegastrombidium. The somatic ciliary pattern of the latter genus probably gave rise to the patterns of Apostrombidium and Varistrombidium. 
+</body></html>

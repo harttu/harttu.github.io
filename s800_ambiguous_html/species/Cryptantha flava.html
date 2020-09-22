@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Cryptantha flava</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>20831647</h3>A hydraulic explanation for size-specific plant shrinkage: developmental hydraulic sectoriality. <br><br>* While great attention has been paid to the mechanisms controlling plant growth, much less is known about why and how plants shrink. The modular design of plants may facilitate the independence of modules if the xylem vasculature is hydraulically sectored. We examined the hydraulic connectivity of modules comprising juveniles and adults of the aridland chamaephyte <span class="match annotated ">Cryptantha flava</span> (Boraginaceae), motivated by the observation that rosette mortality is spatially aggregated in adults, but not in juveniles. * We explored spatial patterns of leaf wilting after clipping a single lateral root, tracked physiological dyes taken up by a single root, and measured within-plant variation in leaf water potentials after watering a portion of the root system. We then measured xylem anatomical features related to hydraulic connectivity. * Our approaches revealed hydraulic integration in juveniles but hydraulic sectoriality in adults. We attribute such developmental changes to increasing distances between xylem bundles, and larger xylem lumen and heartwood areas as plants age. * We have demonstrated functional sectoriality in a desert chamaephyte, and report the mechanism by which sectoriality occurs, offering a hydraulic explanation for the death of whole plant portions resulting in shrinkage of large plants, and for the high occurrence of this design in deserts. 
+</body></html>

@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>M. aeneus</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>22182621</h3>The Role of Frass and Cocoon Volatiles in Host Location by <span class="unannotated ">Monodontomerus aeneus</span>, a Parasitoid of Megachilid Solitary <span class="annotated ">Bees</span>. <br><br><span class="annotated ">Monodontomerus aeneus</span> (Fonscolombe) is a parasitic wasp that oviposits on the prepupae and pupae of <span class="annotated ">Osmia cornuta</span> (Latreille) and other solitary <span class="annotated ">bee</span> species. <span class="unannotated ">A</span> two-armed olfactometer was used to test the olfactory attractiveness of <span class="annotated ">O. cornuta</span> prepupae, cocoon, and larval frass to female <span class="match annotated ">M. aeneus</span>. Both cocoon and frass attracted the female parasitoids, but frass alone was more attractive than the cocoon and the cocoon with frass was more attractive than frass alone. Female parasitoids were not attracted by the host prepupa. M33 (methanol) was the organic volatile most emitted by cocoons and m61 (acetic acid) was the compound most emitted by frass. However, cocoons showed higher emission for almost all compounds, including m61 (acetic acid). Although acetic acid alone attracted <span class="match annotated ">M. aeneus</span>, a complex volatile signal is probably involved in the attraction process because the ratio of acetic acid and acetaldehyde characteristic of the frass was more attractive than other ratios. 
+</body></html>

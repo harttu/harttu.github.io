@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Falcicyclidium atractodes</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>21570267</h3>Morphological description of three marine ciliates (Ciliophora, Scuticociliatia), with establishment of a new genus and two new species. <br><br>Three marine scuticociliates, <span class="annotated ">Falcicyclidium fangi</span> nov. gen., nov. spec., <span class="match annotated ">Falcicyclidium atractodes</span> nov. spec., and <span class="annotated ">Cristigera media</span> Kahl, 1928 were investigated using live observation and silver impregnation methods. The genus Falcicyclidium is distinguished by the combination of: (i) dorsoventrally flattened body, (ii) hook-like (falciform) paroral membrane, (iii) anterior end of paroral membrane posterior to anterior end of membranelle 1, and (iv) multiple caudal cilia. <span class="annotated ">Falcicyclidium fangi</span> nov. spec., the type of the new genus, can be recognized by the combination of its large size, extremely dorsoventrally flattened (3:1) body, consistently 10 somatic kineties, and the broad, elongate buccal area occupying 60% of the body length. <span class="match annotated ">Falcicyclidium atractodes</span> nov. spec. is mainly characterized by a unique spine projecting from both the anterior and posterior end. The uncommon form, <span class="annotated ">Cristigera media</span> is redescribed based on the population from Qingdao, the statistic data and additional features, especially the morphology of the living cells, are documented. 
+</body></html>

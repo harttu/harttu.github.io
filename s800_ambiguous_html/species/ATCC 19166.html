@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>ATCC 19166</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>20173013</h3><span class="annotated ">Streptomyces lacticiproducens</span> sp. nov., a lactic acid-producing streptomycete isolated from the rhizosphere of <span class="annotated ">tomato</span> plants. <br><br>A novel actinomycete, designated strain GIMN4.001(T), was isolated from the rhizosphere of <span class="annotated ">tomato</span> plants grown in Guangzhou, China. The strain produced greyish white aerial mycelia, lactic acid and a large quantity of double diamond-shaped crystals on <span class="annotated ">potato</span> dextrose agar and <span class="LINNAEUS_only ">yeast</span> extract-malt extract agar. The colour of the substrate mycelium was not sensitive to pH. Microscopic observations revealed that strain GIMN4.001(T) produced verticillate chains of cylindrical spores. Chemotaxonomic data confirmed that strain GIMN4.001(T) belonged to the genus Streptomyces. Melanin pigments were not produced. No antibacterial activity was observed against <span class="annotated ">Escherichia coli</span>, <span class="annotated ">Pseudomonas aeruginosa</span>, <span class="annotated ">Bacillus subtilis</span> or <span class="annotated ">Candida albicans</span>, but inhibitory activity was observed against <span class="annotated ">Penicillium citrinum</span>. 16S rRNA gene sequence analysis revealed that strain GIMN4.001(T) was related most closely to <span class="annotated ">Streptomyces morookaense</span> <span class="match annotated ">ATCC 19166</span>(T) (98.9 % similarity) and <span class="annotated ">Streptomyces lavenduligriseus</span> <span class="annotated ">ATCC 13306</span>(T) (98.7 %). Levels of DNA-DNA relatedness between strain GIMN4.001(T) and the type strains of these species were low (14-20 %). Furthermore, strain GIMN4.001(T) could be differentiated from <span class="annotated ">S. morookaense</span>, <span class="annotated ">S. lavenduligriseus</span> and other closely related species of the genus Streptomyces based on morphological, physiological and biochemical characteristics. On the basis of its physiological and molecular properties, strain GIMN4.001(T) is considered to represent a novel species of the genus Streptomyces, for which the name <span class="annotated ">Streptomyces lacticiproducens</span> sp. nov. is proposed. The type strain is GIMN4.001(T) (=CCTCC M208214(T)=NRRL B-24800(T)). 
+</body></html>

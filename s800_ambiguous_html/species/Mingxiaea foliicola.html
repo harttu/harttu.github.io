@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>Mingxiaea foliicola</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>20139282</h3>Proposal of Mingxiaea gen. nov. for the anamorphic basidiomycetous <span class="LINNAEUS_only ">yeast</span> species in the Bulleribasidium clade (Tremellales) based on molecular phylogenetic analysis, with six new combinations and four novel species. <br><br>The distinction and monophyletic property of the basidiomycetous <span class="LINNAEUS_only ">yeast</span> species in the Bulleribasidium clade of the order Tremellales was resolved by molecular phylogenetic analysis based on the combined sequences of the 18S rRNA gene, internal transcribed spacer (ITS) region including 5.8S rRNA gene and 26S rRNA gene D1/D2 domain. The addition to the clade of new anamorphic species identified among ballistoconidium-forming yeasts isolated from China confirmed and strengthened the separation of this clade from other clades or lineages in the order Tremellales. <span class="unannotated ">A</span> new anamorphic genus, Mingxiaea gen. nov. (type species <span class="annotated ">Mingxiaea variabilis</span> comb. nov.) is therefore proposed to accommodate the anamorphic species in the Bulleribasidium clade. Six new combinations are proposed for the described species of this clade which were formerly assigned to the genus Bullera. Four novel species in the new genus were identified among 16 ballistoconidium-forming <span class="LINNAEUS_only ">yeast</span> strains isolated from plant leaves collected in Hainan province, southern China, by D1/D2 and ITS sequence analyses. The novel species are described as Mingxiaea sanyaensis sp. nov. (type strain SY-3.23(T) =AS 2. 3623(T) =CBS 11408(T)), <span class="annotated ">Mingxiaea hainanensis</span> (type strain WZS-8.13(T) =AS 2.4161(T) =CBS 11409(T)), <span class="match annotated ">Mingxiaea foliicola</span> (type strain WZS-8.14(T) =AS 2.3518(T) =CBS 11407(T)) and <span class="annotated ">Mingxiaea wuzhishanensis</span> (type strain WZS-29.8(T) =AS 2.4163(T) =CBS 11411(T)). 
+</body></html>

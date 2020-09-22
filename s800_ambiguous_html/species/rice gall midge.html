@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"> <head><meta charset="utf-8"> 
+<title>s800 inconsistencies</title> 
+<style>
+
+.gray { background-color:rgba(125, 125, 125, 0.5); } 
+.orange { background-color:rgba(210, 180, 180, 0.5); } 
+
+.match { text-decoration: underline; 
+/*
+  -webkit-text-decoration-color: red;  
+  text-decoration-color: red; */
+    -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+   color:yellow;
+/*   font-weight:bold; */
+  
+  
+  } 
+.LINNAEUS_only { background-color: rgba(125, 125, 125, 0.5); }
+.annotated { background-color:rgba(50, 180, 180, 0.5); } 
+.unannotated { background-color:rgba(214, 75, 79, 0.5); } 
+
+.match_species { text-decoration: underline; } 
+/*
+ul#menu li {
+/*  display:inline; 
+}
+.horizontal { display: inline; border-left: 3px solid darkorange; padding-left: 0.3em; }
+.first { border-left: none; padding-left: 0; }
+*/
+ul#menu li {
+list-style-type: circle;
+}
+table { border-collapse: collapse; } 
+th, td { border: 1px solid orange; padding: 4px; } 
+th {  cursor: pointer; } 
+th:hover { background: yellow; }
+
+html, body, iframe { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that sits next to each other */
+.column2 {
+  flex: 70%;
+  padding: 0px;
+ /*height: 300px; /* Should be removed. Only for demonstration */
+}
+ 
+</style></head><body>
+<h2>rice gall midge</h2><span class="unannotated">not annotated</span> - <span class="annotated">annotated</span> - <span class="LINNAEUS_only">LINNAEUS only</span><br><hr><h3>21668550</h3>Compatible interaction with its <span class="annotated ">rice</span> host leads to enhanced expression of the gamma subunit of oligosaccharyl transferase in the <span class="annotated ">Asian rice gall midge</span>, <span class="annotated ">Orseolia oryzae</span>. <br><br>The <span class="annotated ">Asian rice gall midge</span>, <span class="annotated ">Orseolia oryzae</span>, is a fast evolving, damaging pest of <span class="annotated ">rice</span>. Understanding the underlying molecular mechanism of interaction between the <span class="annotated ">gall midge</span> and <span class="annotated ">rice</span> will help in devising strategies to control and manage the pest. The present study aims to identify <span class="annotated ">rice</span>-responsive genes in the <span class="unannotated ">gall midge</span> that aid pest survival. The abundance of transcripts coding for enzymes related to glycosylation, in a cDNA library prepared from maggots of the <span class="match annotated ">rice gall midge</span> feeding on susceptible hosts, indicated their probable involvement in the <span class="annotated ">gall midge</span>-<span class="annotated ">rice</span> interaction. Hence, a full-length transcript for a gamma subunit of the oligosaccharyl transferase gene (OoOST) from the <span class="unannotated ">gall midge</span> was cloned and characterized. It has 72% similarity to its orthologue cloned from <span class="annotated ">Aedes aegypti</span>. Tissue-specific analysis of the expression of OoOST revealed an increase (&gt; sevenfold) in the transcripts of the gene in the salivary glands of maggots in susceptible plants when compared with the transcript level in the salivary glands of maggots feeding on resistant hosts. Using quantitative PCR, performed on different developmental stages of the maggots in two susceptible and two resistant hosts, we observed similar expression patterns (i.e. overexpression in the compatible interaction). These results indicate the involvement of OoOST in maggot survival and establishment in the susceptible host. In order to identify polymorphism in the gene, OoOST was cloned from three <span class="unannotated ">gall midge</span> biotypes GMB1, GMB4 and GMB4M. 
+</body></html>
